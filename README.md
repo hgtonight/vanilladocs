@@ -1,0 +1,4 @@
+VanillaDocs
+===========
+
+Vanilla Documentation
