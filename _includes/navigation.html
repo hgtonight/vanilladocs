@@ -1,0 +1,17 @@
+<ul>
+    {% for entry in site.pages %}
+
+        {% capture slug    %}{{ entry.url | split: "/"   | last                       }}{% endcapture %}
+        {% capture current %}{{ entry.url | remove: slug | remove: "//" | append: "/" }}{% endcapture %}
+
+        {% if current == include.context %}
+            <li>
+                <a href="{{ entry.url }}" class="{% if page.url == entry.url %}active{% endif %}">{{ entry.title }}</a>
+                {% if entry.children != false %}
+                    {% include navigation.html context=entry.url %}
+                {% endif %}
+            </li>
+        {% endif %}
+
+    {% endfor %}
+</ul>

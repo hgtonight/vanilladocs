@@ -9,3 +9,6 @@ _notes
 .settings
 .buildpath
 .idea/*
+_site
+node_modules/
+bower_components/

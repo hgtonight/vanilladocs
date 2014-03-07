@@ -1,0 +1,7 @@
+{
+  "name": "vanilladocs",
+  "private": true,
+  "dependencies": {
+    "bourbon": "~3.1.8"
+  }
+}

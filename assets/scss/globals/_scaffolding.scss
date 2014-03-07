@@ -1,0 +1,42 @@
+//
+// # Scaffolding
+//
+// No styleguide reference.
+
+* {
+  @include box-sizing(border-box);
+}
+*:before,
+*:after {
+  @include box-sizing(border-box);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  line-height: (20px / 14px);
+  color: #444;
+}
+
+a {
+  color: #4183c4;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: #156cc2;
+    text-decoration: none;
+  }
+}
+
+.page-wrapper {
+  position: relative;
+  padding: 30px;
+  margin-left: 230px;
+}

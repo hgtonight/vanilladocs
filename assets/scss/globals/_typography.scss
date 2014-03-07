@@ -1,0 +1,63 @@
+//
+// # Typography
+//
+// No styleguide reference.
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  line-height: 1.2;
+  color: #444;
+}
+
+.markdown-body {
+  font-size: 15px;
+  line-height: 1.7;
+  word-wrap: break-word;
+
+  > *:first-child {
+    margin-top: 0 !important;
+  }
+
+  > *:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  a.anchor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: inline-block;
+    min-width: 1em;
+    margin-left: -1em;
+    vertical-align: middle;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    position: relative;
+    margin: 1em 0 15px;
+    font-weight: bold;
+    line-height: 1.7;
+    cursor: text;
+
+    a.anchor {
+      opacity: 0;
+    }
+
+    &:hover a.anchor {
+      opacity: 1;
+    }
+  }
+
+  p,
+  blockquote,
+  ul,
+  ol,
+  dl,
+  table,
+  pre {
+      margin: 15px 0
+  }
+}
