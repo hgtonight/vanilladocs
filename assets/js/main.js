@@ -9,8 +9,7 @@
     });
 
     $('body').scrollspy({
-      target : '.js-toc-page'
-    , offset : 0
+      target: '.js-toc-page'
     });
 
     // Asynchronous Google Analytics
