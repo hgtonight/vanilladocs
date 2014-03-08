@@ -10,5 +10,3 @@ _notes
 .buildpath
 .idea/*
 _site
-node_modules/
-bower_components/

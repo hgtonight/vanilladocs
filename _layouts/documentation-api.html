@@ -1,9 +1,18 @@
 {% include header.html %}
 
-{% include toc.html title="API Documentation" context="/api/" %}
+<div class="toc-wrapper">
+    <h3>API Documentation</h3>
+    <div class="toc toc-site">
+        {% include navigation.html context="/api/" %}
+    </div>
+
+    <div class="toc-footer">
+
+    </div>
+</div>
 
 <div class="page-wrapper">
-    <div class="content content-api js-content markdown-body">{{ content }}</div>
+    <div class="content content-api markdown-body">{{ content }}</div>
     <div class="dark-box"></div>
 </div>
 

@@ -1,9 +1,18 @@
 {% include header.html %}
 
-{% include toc.html title="Features" context="/features/" %}
+<div class="toc-wrapper">
+    <h3>Features</h3>
+    <div class="toc toc-site">
+        {% include navigation.html context="/features/" %}
+    </div>
+
+    <div class="toc-footer">
+
+    </div>
+</div>
 
 <div class="page-wrapper">
-    <div class="content js-content markdown-body">{{ content }}</div>
+    <div class="content markdown-body">{{ content }}</div>
 </div>
 
 {% include footer.html %}

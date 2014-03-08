@@ -1,0 +1,223 @@
+---
+layout: nil
+---
+
+{% include assets/normalize.min.css %}
+{% include assets/pygments.min.css %}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #444;
+}
+
+a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #156cc2;
+  text-decoration: none;
+}
+
+.browsehappy {
+  padding: 30px;
+  margin: 0;
+  margin-left: 230px;
+  background-color: #fcdb9a;
+}
+
+.page-wrapper {
+  position: relative;
+  min-height: 100%;
+  margin-left: 230px;
+}
+
+.content {
+  padding: 30px;
+}
+
+.content h2 {
+  clear: both;
+  padding: 30px 30px 0;
+  margin: 40px -30px 15px !important;
+  border-top: #ddd solid 1px;
+}
+
+.content h2:first-child {
+  margin-top: -30px !important;
+  border-top: 0;
+}
+
+.toc-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 230px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: 13px;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  border-right: #ddd solid 1px;
+}
+
+.toc-wrapper h3 {
+  padding: 0 15px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.toc-wrapper ul,
+.toc-wrapper li {
+  padding: 0;
+  margin: 0;
+  line-height: 30px;
+  list-style: none;
+}
+
+.toc-wrapper li a {
+  display: block;
+  padding: 0 15px;
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-decoration: none;
+  text-overflow: ellipsis;
+}
+
+.toc-wrapper ul ul {
+  display: none;
+}
+
+.toc-wrapper ul ul li a {
+  padding-left: 25px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.toc-wrapper ul ul ul li a {
+  padding-left: 35px;
+  font-size: 12px;
+}
+
+.toc-wrapper .active > a {
+  color: #fff;
+  background-color: #2467af;
+}
+
+.toc-wrapper .active > ul {
+  display: block;
+}
+
+.toc-wrapper ul ul .active > a {
+  background-color: #468dd9;
+}
+
+.toc-wrapper ul ul ul .active > a {
+  background-color: #71a7e2;
+}
+
+.toc-wrapper .toc {
+  margin-bottom: 20px;
+}
+
+.content-api {
+  position: relative;
+  z-index: 10;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.content-api h2 {
+  margin-right: 50% !important;
+  margin-left: 0 !important;
+}
+
+.content-api > h1,
+.content-api > h2,
+.content-api > h3,
+.content-api > h4,
+.content-api > h5,
+.content-api > h6,
+.content-api > p,
+.content-api > table,
+.content-api > ul,
+.content-api > ol,
+.content-api > dl,
+.content-api > aside {
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: 50%;
+}
+
+.content-api pre,
+.content-api blockquote {
+  float: right;
+  clear: right;
+  width: 50%;
+  padding: 2em 30px;
+  margin: 0;
+  color: #fff;
+  text-shadow: 0 1px rgba(0,0,0,.7);
+  background-color: #333;
+}
+
+.content-api pre > p,
+.content-api blockquote > p {
+  margin: 0;
+}
+
+.content-api blockquote > p {
+  padding: 12px 18px;
+  color: #ccc;
+  background-color: #1c1c1c;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #404040;
+  border-radius: 5px;
+}
+
+.content-api table {
+  display: block;
+  width: 50%;
+  overflow: auto;
+}
+
+.content-api table thead,
+.content-api table tbody {
+  width: 100%;
+}
+
+.content-api table code {
+  white-space: nowrap;
+}
+
+.dark-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  background-color: #444;
+  border-left: #222 solid 1px;
+}
