@@ -1,7 +1,6 @@
 ---
 title: Discussions
 layout: documentation-api
-toc: true
 ---
 
 ## /discussions/add

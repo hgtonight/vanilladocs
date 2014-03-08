@@ -1,7 +1,6 @@
 ---
 title: Warnign a User
 layout: documentation
-toc: true
 children: false
 ---
 

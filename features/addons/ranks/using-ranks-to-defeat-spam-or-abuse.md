@@ -1,7 +1,6 @@
 ---
 title: Using Ranks to Defeat Spam or Abuse
 layout: documentation
-toc: true
 children: false
 ---
 

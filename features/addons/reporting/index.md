@@ -1,7 +1,6 @@
 ---
 title: Reporting
 layout: documentation
-toc: true
 children: false
 ---
 

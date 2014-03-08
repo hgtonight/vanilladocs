@@ -1,7 +1,6 @@
 ---
 title: Warnings and Notes
 layout: documentation
-toc: true
 ---
 
 ## What are Warnings?

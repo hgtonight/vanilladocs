@@ -1,7 +1,6 @@
 ---
 title: API
 layout: documentation-api
-toc: true
 ---
 
 ## API Overview

@@ -1,7 +1,6 @@
 ---
 title: Smart ID
 layout: documentation-api
-toc: true
 ---
 
 ## Smart ID

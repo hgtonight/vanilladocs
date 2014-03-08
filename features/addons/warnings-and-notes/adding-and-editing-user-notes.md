@@ -1,7 +1,6 @@
 ---
 title: Adding and Editing User Notes
 layout: documentation
-toc: true
 children: false
 ---
 

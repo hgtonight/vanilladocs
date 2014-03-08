@@ -1,7 +1,6 @@
 ---
 title: Upgrading from Warnings
 layout: documentation
-toc: true
 children: false
 ---
 

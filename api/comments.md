@@ -1,7 +1,6 @@
 ---
 title: Comments
 layout: documentation-api
-toc: true
 ---
 
 ## /comments/add

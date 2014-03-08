@@ -1,7 +1,6 @@
 ---
 title: Using Ranks as Incentives
 layout: documentation
-toc: true
 children: false
 ---
 

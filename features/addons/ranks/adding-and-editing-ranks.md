@@ -1,7 +1,6 @@
 ---
 title: Adding and Editing Ranks
 layout: documentation
-toc: true
 children: false
 ---
 

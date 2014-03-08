@@ -1,7 +1,6 @@
 ---
 title: Addons
 layout: documentation
-toc: true
 ---
 
 ## What Are Addons?

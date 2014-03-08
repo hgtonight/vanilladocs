@@ -1,7 +1,6 @@
 ---
 title: Ranks
 layout: documentation
-toc: true
 ---
 
 ## What is a Rank?

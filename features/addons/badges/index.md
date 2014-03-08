@@ -1,7 +1,6 @@
 ---
 title: Badges
 layout: documentation
-toc: true
 ---
 
 ## Purpose
