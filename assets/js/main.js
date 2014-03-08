@@ -9,7 +9,8 @@
     });
 
     $('body').scrollspy({
-      target: '.js-toc-page'
+      target : '.js-toc-page'
+    , offset : 0
     });
 
     // Asynchronous Google Analytics
