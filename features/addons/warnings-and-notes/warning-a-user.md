@@ -1,5 +1,5 @@
 ---
-title: Warnign a User
+title: Warning a User
 layout: documentation
 children: false
 ---
