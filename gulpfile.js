@@ -24,9 +24,8 @@ gulp.task('sass', function () {
 
 gulp.task('scripts', function () {
   gulp.src([
-    'assets/js/vendor/anchorific-1.0.0.min.js'
-
-    // Application specific Javascript
+    'assets/js/vendor/tocjs-1.1.2.min.js'
+  , 'assets/js/vendor/scrollspy-3.1.1.min.js'
   , 'assets/js/main.js'
   ])
     .pipe(uglify())

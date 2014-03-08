@@ -3,14 +3,14 @@
   window.docsInit = function () {
 
     // Build Table of Contents
-    $('.content').anchorific({
-        navigation  : '.js-toc-page' // Position of navigation
-      , speed       : 200            // Speed of sliding back to top
-      , anchorClass : 'anchor'       // Class of anchor links
-      , anchorText  : '#'            // Prepended or appended to anchor headings
-      , top         : '.top'         // Back to top button or link class
-      , spy         : true           // Scroll spy
-      , position    : 'append'       // Position of anchor text
+    $('.js-toc-page').toc({
+      selector : '.js-content h2, .js-content h3'
+    , ulClass  : 'nav' // Scrollspy integration
+    });
+
+    $('body').scrollspy({
+      target : '.js-toc-page'
+    , offset : 0
     });
 
     // Asynchronous Google Analytics

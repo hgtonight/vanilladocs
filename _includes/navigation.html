@@ -5,8 +5,8 @@
         {% capture current %}{{ entry.url | remove: slug | remove: "//" | append: "/" }}{% endcapture %}
 
         {% if current == include.context %}
-            <li>
-                <a href="{{ site.baseurl }}{{ entry.url }}" class="{% if page.url == entry.url %}active{% endif %}">{{ entry.title }}</a>
+            <li class="{% if page.url contains entry.url %}active{% endif %}">
+                <a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
                 {% if entry.children != false %}
                     {% include navigation.html context=entry.url %}
                 {% endif %}

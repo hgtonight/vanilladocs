@@ -21,28 +21,12 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0 !important;
   }
 
-  a.anchor {
-    display: inline-block;
-    min-width: 1em;
-    margin-left: 10px;
-    cursor: pointer;
-    text-align: center;
-  }
-
   h1, h2, h3, h4, h5, h6 {
     position: relative;
     margin: 1em 0 15px;
     font-weight: bold;
     line-height: 1.7;
     cursor: text;
-
-    a.anchor {
-      opacity: 0;
-    }
-
-    &:hover a.anchor {
-      opacity: 1;
-    }
   }
 
   p,
