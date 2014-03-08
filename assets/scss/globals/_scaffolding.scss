@@ -19,7 +19,6 @@ body {
 body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 14px;
-  -webkit-font-smoothing: antialiased;
   line-height: (20px / 14px);
   color: #444;
 }
@@ -37,12 +36,15 @@ a {
 
 .page-wrapper {
   position: relative;
-  padding: 30px;
+  min-height: 100%;
   margin-left: 230px;
 }
 
 .content {
+  padding: 30px;
+
   h2 {
+    clear: both;
     padding: 30px 30px 0;
     margin: 40px -30px 15px !important;
     border-top: #ddd solid 1px;

@@ -1,0 +1,15 @@
+<div class="toc-wrapper">
+    {% if page.toc %}
+        <h3>Table of Contents</h3>
+        <div class="toc-page js-toc-page"></div>
+    {% endif %}
+
+    <h3>{{ include.title }}</h3>
+    <div class="toc-site js-toc-site">
+        {% include navigation.html context=include.context %}
+    </div>
+
+    <div class="toc-footer">
+
+    </div>
+</div>

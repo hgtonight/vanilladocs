@@ -1,0 +1,74 @@
+//
+// # API Documentation
+//
+// No styleguide reference.
+
+.content-api {
+  position: relative;
+  z-index: 10;
+  padding-right: 0;
+  padding-left: 0;
+
+  h2 {
+    margin-right: 50% !important;
+    margin-left: 0 !important;
+  }
+
+  > h1, > h2, > h3,
+  > p,
+  > table,
+  > ul,
+  > ol,
+  > aside,
+  > dl {
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: 50%;
+  }
+
+  pre,
+  blockquote {
+    float: right;
+    clear: right;
+    width: 50%;
+    padding: 2em 30px;
+    margin: 0;
+    color: #fff;
+    text-shadow: 0 1px rgba(#000,.7);
+    background-color: #333;
+
+    > p {
+      margin: 0;
+    }
+  }
+
+  blockquote > p {
+    padding: 12px 18px;
+    color: #ccc;
+    background-color: #1c1c1c;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #404040;
+    border-radius: 5px;
+  }
+
+  table {
+    display: block;
+    width: 50%;
+    overflow: auto;
+
+    thead,
+    tbody {
+      width: 100%;
+    }
+  }
+}
+
+.dark-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  background-color: #444;
+  border-left: #222 solid 1px;
+}
