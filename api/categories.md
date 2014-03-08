@@ -13,7 +13,7 @@ POST https://yoursite.vanillaforums.com/api/v1/categories/add.ext
 
 Adds a new category.
 
-[__Authentication__](../#making-api-calls): `required`
+[__Authentication__](../#toc_5): `required`
 
 ### Parameters
 
@@ -39,7 +39,7 @@ POST https://yoursite.vanillaforums.com/api/v1/categories/edit.ext
 
 Edits an existing category.
 
-[__Authentication__](../#making-api-calls): `required`
+[__Authentication__](../#toc_5): `required`
 
 ### Parameters
 
@@ -67,7 +67,7 @@ POST https://yoursite.vanillaforums.com/api/v1/categories/delete.ext
 
 Deletes an existing category.
 
-[__Authentication__](../#making-api-calls): `required`
+[__Authentication__](../#toc_5): `required`
 
 ### Parameters
 
@@ -86,7 +86,7 @@ GET https://yoursite.vanillaforums.com/api/v1/categories/list.ext
 
 Get a list of categories.
 
-[__Authentication__](../#making-api-calls): `optional`  
+[__Authentication__](../#toc_5): `optional`  
 If not provided, perspective will be that of a guest.
 
 ### Parameters

@@ -12,7 +12,7 @@ GET https://yoursite.vanillaforums.com/api/v1/configuration.ext
 
 Retrieve forum configuration.
 
-[__Authentication__](../#making-api-calls): `required`
+[__Authentication__](../#toc_5): `required`
 
 ### Parameters
 

@@ -13,7 +13,7 @@ POST https://yoursite.vanillaforums.com/api/v1/discussions/add.ext
 
 Creates a new discussion.
 
-[__Authentication__](../#making-api-calls): `required`
+[__Authentication__](../#toc_5): `required`
 
 ### Parameters
 
@@ -41,7 +41,7 @@ POST https://yoursite.vanillaforums.com/api/v1/discussions/bookmark.ext
 
 Bookmark or unbookmark a discussion.
 
-[__Authentication__](../#making-api-calls): `required`
+[__Authentication__](../#toc_5): `required`
 
 ### Parameters
 
@@ -65,7 +65,7 @@ GET https://yoursite.vanillaforums.com/api/v1/discussions/bookmarked.ext
 
 List a user's bookmarked discussions.
 
-[__Authentication__](../#making-api-calls): `required`
+[__Authentication__](../#toc_5): `required`
 
 
 ## /discussions/edit
@@ -77,7 +77,7 @@ POST https://yoursite.vanillaforums.com/api/v1/discussions/edit.ext
 
 Edits an existing discussion.
 
-[__Authentication__](../#making-api-calls): `required`
+[__Authentication__](../#toc_5): `required`
 
 ### Parameters
 
@@ -104,7 +104,7 @@ __`Discussion`__    | [`smart id`](../smart-id) | Discussion to be deleted.
 POST https://yoursite.vanillaforums.com/api/v1/discussions/list.ext
 ```
 
-[__Authentication__](../#making-api-calls): `optional`  
+[__Authentication__](../#toc_5): `optional`  
 If not provided, perspective will be that of a guest.
 
 
@@ -117,7 +117,7 @@ GET https://yoursite.vanillaforums.com/api/v1/discussions/category.ext
 
 Get a list of discussions within a category.
 
-[__Authentication__](../#making-api-calls): `optional`  
+[__Authentication__](../#toc_5): `optional`  
 If not provided, perspective will be that of a guest.
 
 ### Parameters

@@ -13,7 +13,7 @@ POST https://yoursite.vanillaforums.com/api/v1/comments/add.ext
 
 Creates a new comment.
 
-[__Authentication__](../#making-api-calls): `required`
+[__Authentication__](../#toc_5): `required`
 
 ### Parameters
 
