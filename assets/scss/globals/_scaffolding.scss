@@ -40,3 +40,16 @@ a {
   padding: 30px;
   margin-left: 230px;
 }
+
+.content {
+  h2 {
+    padding: 30px 30px 0;
+    margin: 60px -30px 15px !important;
+    border-top: #ddd solid 1px;
+
+    &:first-of-type {
+      margin-top: -30px !important;
+      border-top: 0;
+    }
+  }
+}
