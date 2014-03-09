@@ -1,7 +1,6 @@
 ---
 title: Using Ranks to Defeat Spam or Abuse
 layout: documentation
-children: false
 ---
 
 Ranks can be used to limit the ability of spammers to take advantage of your site and protect members from abuse. To do this, limit the abilities of your newest users until they have been proven their value to the community.

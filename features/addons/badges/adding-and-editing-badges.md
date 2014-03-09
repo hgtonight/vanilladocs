@@ -1,7 +1,6 @@
 ---
 title: Adding and Editing Badges
 layout: documentation
-children: false
 ---
 
 ## Disabling badges

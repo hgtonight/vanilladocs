@@ -1,7 +1,6 @@
 ---
 title: Applying Ranks over SSO
 layout: documentation
-children: false
 ---
 
 ## Applying Ranks over SSO

@@ -1,7 +1,6 @@
 ---
 title: Reporting
 layout: documentation
-children: false
 ---
 
 ## What is Reporting?

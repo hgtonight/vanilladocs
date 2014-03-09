@@ -1,7 +1,6 @@
 ---
 title: Upgrading from Warnings
 layout: documentation
-children: false
 ---
 
 ## Warnings & Notes is version 2

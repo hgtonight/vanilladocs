@@ -1,7 +1,6 @@
 ---
 title: Warning a User
 layout: documentation
-children: false
 ---
 
 ## Warning a User

@@ -1,7 +1,6 @@
 ---
 title: Adding and Editing User Notes
 layout: documentation
-children: false
 ---
 
 ## Adding a Note

@@ -1,7 +1,6 @@
 ---
 title: Giving and Requesting Badges
 layout: documentation
-children: false
 ---
 
 ## Giving a badge
