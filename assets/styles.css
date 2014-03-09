@@ -90,6 +90,10 @@
   content: "\25BE";
 }
 
+.toc > ul > li:first-child > a:before {
+  display: none;
+}
+
 /* Hide nested lists */
 .toc ul ul {
   display: none;
