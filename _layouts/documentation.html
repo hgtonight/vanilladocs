@@ -1,6 +1,8 @@
 {% include header.html %}
 
 <div class="toc-wrapper">
+    {% include search.html %}
+
     <h3>Documentation</h3>
     <div class="toc">
         {% include navigation.html context="/" %}
@@ -12,7 +14,6 @@
 </div>
 
 <div class="page-wrapper">
-    {% include search.html %}
     <div class="content markdown-body js-markdown-body">{{ content }}</div>
     <div class="code-examples"></div>
 </div>
