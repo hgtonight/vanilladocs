@@ -1,3 +1,5 @@
+{% capture html %}
+
 {% include header.html %}
 
 <div class="toc-wrapper">
@@ -19,3 +21,5 @@
 </div>
 
 {% include footer.html %}
+
+{% endcapture %}{{ html | strip_newlines | replace:'    ','' | replace:'    ','' | replace:'  ',' ' }}
