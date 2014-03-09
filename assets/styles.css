@@ -14,6 +14,92 @@
   margin-left: 230px;
 }
 
+.toc ul,
+.toc li {
+  padding: 0;
+  margin: 0;
+  line-height: 30px;
+  list-style: none;
+}
+
+.toc li a {
+  display: block;
+  padding: 0 15px;
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-decoration: none;
+  text-overflow: ellipsis;
+}
+
+.toc li > a {
+  border-color: #eee;
+  border-style: solid;
+  border-width: 1px 0;
+}
+
+.toc li + li > a {
+  border-top-color: transparent;
+}
+
+.toc ul ul li:first-child > a {
+  border-top-color: transparent;
+}
+
+.toc ul ul li a {
+  font-size: 12px;
+  font-weight: 400;
+  color: #777;
+  background-color: #f9f9f9;
+}
+
+.toc ul ul li a:hover {
+  color: #4183c4;
+  background-color: #f2f2f2;
+}
+
+.toc ul ul ul li a {
+  padding-left: 30px;
+  line-height: 26px;
+}
+
+.toc ul ul ul ul li a {
+  padding-left: 45px;
+  line-height: 24px;
+}
+
+.toc > ul > li > a {
+  color: #333;
+}
+
+.toc > ul > li > a:hover {
+  color: #4183c4;
+  background-color: #fdfdfd;
+}
+
+.toc > ul > li > a:before {
+  display: inline-block;
+  float: right;
+  vertical-align: top;
+  font-size: 18px;
+  font-weight: 400;
+  color: #9a9a9a;
+  content: "\25B8";
+}
+
+.toc > ul > .active > a:before {
+  content: "\25BE";
+}
+
+/* Hide nested lists */
+.toc ul ul {
+  display: none;
+}
+
+/* Show nested lists in active items */
+.toc .active > ul {
+  display: block;
+}
+
 .toc-wrapper {
   position: fixed;
   top: 0;
@@ -24,7 +110,8 @@
   overflow-y: auto;
   font-size: 13px;
   font-weight: bold;
-  background-color: #fafafa;
+  line-height: 20px;
+  /*background-color: #fafafa;*/
   border-right: #ddd solid 1px;
 }
 
@@ -33,59 +120,6 @@
   margin-bottom: 5px;
   font-size: 14px;
   line-height: 24px;
-}
-
-.toc-wrapper ul,
-.toc-wrapper li {
-  padding: 0;
-  margin: 0;
-  line-height: 30px;
-  list-style: none;
-}
-
-.toc-wrapper li a {
-  display: block;
-  padding: 0 15px;
-  overflow-x: hidden;
-  white-space: nowrap;
-  text-decoration: none;
-  text-overflow: ellipsis;
-}
-
-.toc-wrapper ul ul {
-  display: none;
-}
-
-.toc-wrapper ul ul li a {
-  padding-left: 25px;
-  font-size: 13px;
-  font-weight: 400;
-}
-
-.toc-wrapper ul ul ul li a {
-  padding-left: 35px;
-  font-size: 12px;
-}
-
-.toc-wrapper .active > a {
-  color: #fff;
-  background-color: #2467af;
-}
-
-.toc-wrapper .active > ul {
-  display: block;
-}
-
-.toc-wrapper ul ul .active > a {
-  background-color: #468dd9;
-}
-
-.toc-wrapper ul ul ul .active > a {
-  background-color: #71a7e2;
-}
-
-.toc-wrapper .toc {
-  margin-bottom: 20px;
 }
 
 .content {
@@ -97,7 +131,7 @@
 .content h2 {
   clear: both;
   padding: 30px 30px 0;
-  margin: 40px 50% 15px 0 !important;
+  margin: 35px 50% 15px 0 !important;
   border-top: #ddd solid 1px;
 }
 
@@ -121,6 +155,11 @@
   padding-right: 30px;
   padding-left: 30px;
   margin-right: 50%;
+}
+
+.content > ul,
+.content > ol {
+  padding-left: 70px;
 }
 
 .content pre,
