@@ -1,6 +1,7 @@
 ---
 title: Categories
 layout: documentation
+categories: ["API"]
 ---
 
 ## /categories/add

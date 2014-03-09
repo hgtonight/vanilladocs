@@ -1,6 +1,7 @@
 ---
 title: Giving and Requesting Badges
 layout: documentation
+categories: ["Features", "Addons", "Badges"]
 ---
 
 ## Giving a badge

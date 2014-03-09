@@ -14,6 +14,7 @@
   // Initialize Lunr
   window.docs = lunr(function () {
     this.field('title', 10);
+    this.field('categories', 5);
     this.field('content');
   });
 
@@ -43,8 +44,9 @@
 
         // Push result to results array
         results.push({
-          title : page.title
-        , url   : page.id
+          title      : page.title
+        , url        : page.id
+        , categories : page.categories
         });
       });
     });

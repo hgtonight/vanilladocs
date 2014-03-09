@@ -1,6 +1,7 @@
 ---
 title: Comments
 layout: documentation
+categories: ["API"]
 ---
 
 ## /comments/add

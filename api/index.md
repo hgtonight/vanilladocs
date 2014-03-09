@@ -1,6 +1,7 @@
 ---
 title: API
 layout: documentation
+categories: ["API"]
 ---
 
 ## API Overview

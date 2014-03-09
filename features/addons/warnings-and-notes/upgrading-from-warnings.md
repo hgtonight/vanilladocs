@@ -1,6 +1,7 @@
 ---
 title: Upgrading from Warnings
 layout: documentation
+categories: ["Features", "Addons", "Warnings and Notes"]
 ---
 
 ## Warnings & Notes is version 2

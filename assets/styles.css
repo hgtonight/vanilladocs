@@ -270,6 +270,12 @@
   background-color: #2467af;
 }
 
+.search-results li a span {
+  display: block;
+  font-size: 90%;
+  font-weight: bold;
+}
+
 .search-results li:first-child a {
   border-top-right-radius: 1px;
    border-top-left-radius: 1px;

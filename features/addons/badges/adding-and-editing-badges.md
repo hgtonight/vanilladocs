@@ -1,6 +1,7 @@
 ---
 title: Adding and Editing Badges
 layout: documentation
+categories: ["Features", "Addons", "Badges"]
 ---
 
 ## Disabling badges

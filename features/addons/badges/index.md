@@ -1,6 +1,7 @@
 ---
 title: Badges
 layout: documentation
+categories: ["Features", "Addons"]
 ---
 
 ## Purpose

@@ -1,6 +1,7 @@
 ---
 title: Reporting
 layout: documentation
+categories: ["Features", "Addons"]
 ---
 
 ## What is Reporting?

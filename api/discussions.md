@@ -1,6 +1,7 @@
 ---
 title: Discussions
 layout: documentation
+categories: ["API"]
 ---
 
 ## /discussions/add

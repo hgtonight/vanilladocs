@@ -1,6 +1,7 @@
 ---
 title: Addons
 layout: documentation
+categories: ["Features"]
 ---
 
 ## What Are Addons?

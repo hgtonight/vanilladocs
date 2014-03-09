@@ -1,6 +1,7 @@
 ---
 title: Warnings and Notes
 layout: documentation
+categories: ["Features", "Addons"]
 ---
 
 ## What are Warnings?

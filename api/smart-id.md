@@ -1,6 +1,7 @@
 ---
 title: Smart ID
 layout: documentation
+categories: ["API"]
 ---
 
 ## Smart ID
