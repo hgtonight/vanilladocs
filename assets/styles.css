@@ -1,0 +1,173 @@
+---
+layout: nil
+---
+
+{% include assets/vendor/normalize-3.0.0.min.css %}
+
+{% include assets/shared/scaffolding.css %}
+{% include assets/shared/markdown.css %}
+{% include assets/shared/pygments.css %}
+
+.page-wrapper {
+  position: relative;
+  min-height: 100%;
+  margin-left: 230px;
+}
+
+.toc-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 230px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: 13px;
+  font-weight: bold;
+  background-color: #fafafa;
+  border-right: #ddd solid 1px;
+}
+
+.toc-wrapper h3 {
+  padding: 0 15px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.toc-wrapper ul,
+.toc-wrapper li {
+  padding: 0;
+  margin: 0;
+  line-height: 30px;
+  list-style: none;
+}
+
+.toc-wrapper li a {
+  display: block;
+  padding: 0 15px;
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-decoration: none;
+  text-overflow: ellipsis;
+}
+
+.toc-wrapper ul ul {
+  display: none;
+}
+
+.toc-wrapper ul ul li a {
+  padding-left: 25px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.toc-wrapper ul ul ul li a {
+  padding-left: 35px;
+  font-size: 12px;
+}
+
+.toc-wrapper .active > a {
+  color: #fff;
+  background-color: #2467af;
+}
+
+.toc-wrapper .active > ul {
+  display: block;
+}
+
+.toc-wrapper ul ul .active > a {
+  background-color: #468dd9;
+}
+
+.toc-wrapper ul ul ul .active > a {
+  background-color: #71a7e2;
+}
+
+.toc-wrapper .toc {
+  margin-bottom: 20px;
+}
+
+.content {
+  padding: 30px 0;
+  position: relative;
+  z-index: 10;
+}
+
+.content h2 {
+  clear: both;
+  padding: 30px 30px 0;
+  margin: 40px 50% 15px 0 !important;
+  border-top: #ddd solid 1px;
+}
+
+.content h2:first-child {
+  margin-top: -30px !important;
+  border-top: 0;
+}
+
+.content > h1,
+.content > h2,
+.content > h3,
+.content > h4,
+.content > h5,
+.content > h6,
+.content > p,
+.content > table,
+.content > ul,
+.content > ol,
+.content > dl,
+.content > aside {
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: 50%;
+}
+
+.content pre,
+.content blockquote {
+  float: right;
+  clear: right;
+  width: 50%;
+  padding: 2em 30px;
+  margin: 0;
+  text-shadow: 0 1px #fff;
+  background-color: #f5f5f5;
+  border-left: #ddd solid 1px;
+}
+
+.content pre > p,
+.content blockquote > p {
+  margin: 0;
+}
+
+.content blockquote > p {
+  padding: 12px 18px;
+  background-color: #fff;
+  border: #ddd solid 1px;
+  border-radius: 2px;
+}
+
+.content table {
+  display: block;
+  width: 50%;
+  overflow: auto;
+}
+
+.content table thead,
+.content table tbody {
+  width: 100%;
+}
+
+.content table code {
+  white-space: nowrap;
+}
+
+.code-examples {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  background-color: #fafafa;
+  border-left: #ddd solid 1px;
+}

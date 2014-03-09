@@ -1,0 +1,52 @@
+/**
+ * # Scaffolding
+ *
+ * No styleguide reference.
+ */
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #444;
+}
+
+a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #156cc2;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  line-height: 1.2;
+  color: #444;
+}
+
+.browsehappy {
+  padding: 30px;
+  margin: 0;
+  margin-left: 230px;
+  background-color: #fcdb9a;
+}

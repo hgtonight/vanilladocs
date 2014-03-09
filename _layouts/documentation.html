@@ -1,0 +1,22 @@
+{% include header.html %}
+
+<div class="toc-wrapper">
+    {% if page.url != "/" %}
+        <h3><a href="{{ site.baseurl }}/">Back to Overview</a></h3>
+    {% endif %}
+    <h3>Documentation</h3>
+    <div class="toc">
+        {% include navigation.html context="/" %}
+    </div>
+
+    <div class="toc-footer">
+
+    </div>
+</div>
+
+<div class="page-wrapper">
+    <div class="content markdown-body js-markdown-body">{{ content }}</div>
+    <div class="code-examples"></div>
+</div>
+
+{% include footer.html %}
