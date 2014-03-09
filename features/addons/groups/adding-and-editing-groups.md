@@ -1,5 +1,5 @@
 ---
-title: Addins and Editing Groups
+title: Adding and Editing Groups
 layout: documentation
 children: false
 ---
