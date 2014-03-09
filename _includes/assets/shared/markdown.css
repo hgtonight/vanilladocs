@@ -30,6 +30,28 @@
   cursor: text;
 }
 
+.markdown-body h1 .anchor,
+.markdown-body h2 .anchor,
+.markdown-body h3 .anchor,
+.markdown-body h4 .anchor,
+.markdown-body h5 .anchor,
+.markdown-body h6 .anchor {
+  display: inline-block;
+  opacity: 0;
+  width: 30px;
+  text-align: center;
+  margin-left: -30px;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  opacity: 1;
+}
+
 .markdown-body p,
 .markdown-body blockquote,
 .markdown-body ul,

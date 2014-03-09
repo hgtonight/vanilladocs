@@ -7,12 +7,9 @@
             ga('create','UA-XXXXX-X');
         </script>
 
-        <script src="{{ site.baseurl }}/assets/js/instantclick-3.0.0.min.js" data-no-instant></script>
+        <script src="{{ site.baseurl }}/assets/scripts.js" data-no-instant></script>
         <script data-no-instant>
-            InstantClick.on('change', function () {
-                // Asynchronous Google Analytics
-                ga('send', 'pageview', location.pathname + location.search);
-            });
+            InstantClick.on('change', init);
             InstantClick.init();
         </script>
     </body>

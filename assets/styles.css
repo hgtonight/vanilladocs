@@ -2,11 +2,11 @@
 layout: nil
 ---
 
-{% include assets/vendor/normalize.min.css %}
-{% include assets/vendor/pygments.min.css %}
+{% include assets/vendor/normalize-3.0.0.min.css %}
 
 {% include assets/shared/scaffolding.css %}
 {% include assets/shared/markdown.css %}
+{% include assets/shared/pygments.css %}
 
 .page-wrapper {
   position: relative;
