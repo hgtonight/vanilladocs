@@ -1,0 +1,5 @@
+{
+  "id": "{{ site.baseurl }}{{ include.entry.url }}",
+  "title": "{{ include.entry.title }}",
+  "content": "{{ include.entry.content | strip_html | strip_newlines | escape }}"
+}

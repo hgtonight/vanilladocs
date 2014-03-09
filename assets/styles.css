@@ -1,10 +1,10 @@
 ---
-layout: nil
 ---
 
 {% include assets/vendor/normalize-3.0.0.min.css %}
 
 {% include assets/shared/scaffolding.css %}
+{% include assets/shared/utilities.css %}
 {% include assets/shared/markdown.css %}
 {% include assets/shared/pygments.css %}
 
@@ -170,4 +170,73 @@ layout: nil
   width: 50%;
   background-color: #fafafa;
   border-left: #ddd solid 1px;
+}
+
+.search {
+  position: absolute;
+  right: 0;
+  z-index: 20;
+  margin: 23px 30px;
+}
+
+.search input[type="text"] {
+  display: inline-block;
+  width: 180px;
+  padding: 6px 12px;
+  line-height: 20px;
+  border: #ddd solid 1px;
+  border-radius: 2px;
+  box-shadow: none;
+  transition: width 140ms ease-in-out;
+}
+
+.search input[type="text"]:focus {
+  width: 260px;
+  outline: none;
+}
+
+.search-results {
+  position: absolute;
+  right: 0;
+  left: auto;
+  display: none;
+  width: 300px;
+  padding: 0;
+  margin: 0;
+  margin-top: 5px;
+  list-style: none;
+  background-color: #fff;
+  border: #ddd solid 1px;
+  border-radius: 2px;
+}
+
+.search-results.open {
+  display: block;
+}
+
+.search-results li a,
+.search-results .no-results {
+  display: block;
+  padding: 10px;
+  word-wrap: break-word;
+}
+
+.search-results li a:hover,
+.search-results li a:focus {
+  color: #fff;
+  background-color: #2467af;
+}
+
+.search-results li:first-child a {
+  border-top-right-radius: 1px;
+   border-top-left-radius: 1px;
+}
+
+.search-results li:last-child a {
+  border-bottom-right-radius: 1px;
+   border-bottom-left-radius: 1px;
+}
+
+.search-results .no-results {
+  text-align: center;
 }
