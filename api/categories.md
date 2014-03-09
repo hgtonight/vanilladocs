@@ -5,8 +5,6 @@ layout: documentation
 
 ## /categories/add
 
-> This is a code comment!
-
 ```sh
 # HTTP Request
 POST https://yoursite.vanillaforums.com/api/v1/categories/add.ext
