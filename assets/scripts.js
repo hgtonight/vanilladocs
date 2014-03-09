@@ -63,6 +63,9 @@
         query   : query
       , results : results.slice(0, 6) // Only show the first 6 matches
       });
+
+      // Let InstantClick know new links are available
+      InstantClick.instantanize();
     });
 
     // Toggle the results dropdown
