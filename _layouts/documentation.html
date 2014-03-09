@@ -1,9 +1,12 @@
 {% include header.html %}
 
 <div class="toc-wrapper">
-    <h3>Features</h3>
+    {% if page.url != "/" %}
+        <h3><a href="{{ site.baseurl }}/">Back to Overview</a></h3>
+    {% endif %}
+    <h3>Documentation</h3>
     <div class="toc toc-site">
-        {% include navigation.html context="/features/" %}
+        {% include navigation.html context="/" %}
     </div>
 
     <div class="toc-footer">
@@ -13,6 +16,7 @@
 
 <div class="page-wrapper">
     <div class="content markdown-body">{{ content }}</div>
+    <div class="code-examples"></div>
 </div>
 
 {% include footer.html %}

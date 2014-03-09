@@ -1,6 +1,6 @@
 ---
 title: Comments
-layout: documentation-api
+layout: documentation
 ---
 
 ## /comments/add

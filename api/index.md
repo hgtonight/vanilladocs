@@ -1,6 +1,6 @@
 ---
 title: API
-layout: documentation-api
+layout: documentation
 ---
 
 ## API Overview

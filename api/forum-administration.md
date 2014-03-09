@@ -1,6 +1,6 @@
 ---
 title: Forum Administration
-layout: documentation-api
+layout: documentation
 ---
 
 ## /configuration

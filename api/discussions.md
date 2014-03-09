@@ -1,6 +1,6 @@
 ---
 title: Discussions
-layout: documentation-api
+layout: documentation
 ---
 
 ## /discussions/add

@@ -1,9 +1,11 @@
 ---
 title: Categories
-layout: documentation-api
+layout: documentation
 ---
 
 ## /categories/add
+
+> This is a code comment!
 
 ```sh
 # HTTP Request

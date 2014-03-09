@@ -14,22 +14,6 @@ layout: nil
   margin-left: 230px;
 }
 
-.content {
-  padding: 30px;
-}
-
-.content h2 {
-  clear: both;
-  padding: 30px 30px 0;
-  margin: 40px -30px 15px !important;
-  border-top: #ddd solid 1px;
-}
-
-.content h2:first-child {
-  margin-top: -30px !important;
-  border-top: 0;
-}
-
 .toc-wrapper {
   position: fixed;
   top: 0;
@@ -40,7 +24,7 @@ layout: nil
   overflow-y: auto;
   font-size: 13px;
   font-weight: bold;
-  background-color: #f5f5f5;
+  background-color: #fafafa;
   border-right: #ddd solid 1px;
 }
 
@@ -104,82 +88,86 @@ layout: nil
   margin-bottom: 20px;
 }
 
-.content-api {
+.content {
+  padding: 30px 0;
   position: relative;
   z-index: 10;
-  padding-right: 0;
-  padding-left: 0;
 }
 
-.content-api h2 {
-  margin-right: 50% !important;
-  margin-left: 0 !important;
+.content h2 {
+  clear: both;
+  padding: 30px 30px 0;
+  margin: 40px 50% 15px 0 !important;
+  border-top: #ddd solid 1px;
 }
 
-.content-api > h1,
-.content-api > h2,
-.content-api > h3,
-.content-api > h4,
-.content-api > h5,
-.content-api > h6,
-.content-api > p,
-.content-api > table,
-.content-api > ul,
-.content-api > ol,
-.content-api > dl,
-.content-api > aside {
+.content h2:first-child {
+  margin-top: -30px !important;
+  border-top: 0;
+}
+
+.content > h1,
+.content > h2,
+.content > h3,
+.content > h4,
+.content > h5,
+.content > h6,
+.content > p,
+.content > table,
+.content > ul,
+.content > ol,
+.content > dl,
+.content > aside {
   padding-right: 30px;
   padding-left: 30px;
   margin-right: 50%;
 }
 
-.content-api pre,
-.content-api blockquote {
+.content pre,
+.content blockquote {
   float: right;
   clear: right;
   width: 50%;
   padding: 2em 30px;
   margin: 0;
-  color: #fff;
-  text-shadow: 0 1px rgba(0,0,0,.7);
-  background-color: #333;
+  text-shadow: 0 1px #fff;
+  background-color: #f5f5f5;
+  border-left: #ddd solid 1px;
 }
 
-.content-api pre > p,
-.content-api blockquote > p {
+.content pre > p,
+.content blockquote > p {
   margin: 0;
 }
 
-.content-api blockquote > p {
+.content blockquote > p {
   padding: 12px 18px;
-  color: #ccc;
-  background-color: #1c1c1c;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #404040;
-  border-radius: 5px;
+  background-color: #fff;
+  border: #ddd solid 1px;
+  border-radius: 2px;
 }
 
-.content-api table {
+.content table {
   display: block;
   width: 50%;
   overflow: auto;
 }
 
-.content-api table thead,
-.content-api table tbody {
+.content table thead,
+.content table tbody {
   width: 100%;
 }
 
-.content-api table code {
+.content table code {
   white-space: nowrap;
 }
 
-.dark-box {
+.code-examples {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   width: 50%;
-  background-color: #444;
-  border-left: #222 solid 1px;
+  background-color: #fafafa;
+  border-left: #ddd solid 1px;
 }
