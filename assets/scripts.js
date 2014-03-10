@@ -79,7 +79,11 @@
   }
 
   window.init = function () {
-    var self = this;
+    var self = this
+      , html = document.querySelector('html')
+
+    html.classList.add('js');
+    html.classList.remove('no-js');
 
     // Asynchronous Google Analytics
     ga('send', 'pageview', location.pathname + location.search);

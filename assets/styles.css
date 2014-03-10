@@ -225,6 +225,10 @@
   margin: 15px;
 }
 
+.no-js .search {
+  display: none;
+}
+
 .search-results li a span {
   display: block;
   font-size: 90%;
