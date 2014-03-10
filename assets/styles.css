@@ -1,6 +1,6 @@
 ---
 ---
-
+{% capture css %}
 {% include assets/vendor/normalize-3.0.0.min.css %}
 
 {% include assets/shared/scaffolding.css %}
@@ -241,3 +241,4 @@
   word-wrap: break-word;
   text-align: center;
 }
+{% endcapture %}{{ css | strip_newlines | replace:'    ','' | replace:'  ',' ' }}
