@@ -34,26 +34,42 @@
 }
 
 .dropdown li a {
+  position: relative;
   display: block;
   padding: 10px;
-  margin: 0 -1px;
   word-wrap: break-word;
+  border-color: #eee;
+  border-style: solid;
+  border-width: 1px 0;
 }
 
 .dropdown li a:hover,
 .dropdown li a:focus {
+  z-index: 1;
+  padding-right: 11px;
+  padding-left: 11px;
+  margin-right: -1px;
+  margin-left: -1px;
   color: #fff;
   background-color: #2467af;
+  border-color: #2467af;
+}
+
+.dropdown li + li a {
+  margin-top: -1px;
+  border-top-color: transparent;
 }
 
 .dropdown li:first-child a {
   margin-top: -1px;
+  border-top-color: transparent;
   border-top-right-radius: 2px;
    border-top-left-radius: 2px;
 }
 
 .dropdown li:last-child a {
   margin-bottom: -1px;
+  border-bottom-color: transparent;
   border-bottom-right-radius: 2px;
    border-bottom-left-radius: 2px;
 }
