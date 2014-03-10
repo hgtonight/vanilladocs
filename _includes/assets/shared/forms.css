@@ -1,0 +1,19 @@
+/**
+ * # Forms
+ *
+ * No styleguide reference.
+ */
+
+.form-control {
+  display: inline-block;
+  width: 100%;
+  padding: 6px 12px;
+  line-height: 20px;
+  border: #ddd solid 1px;
+  border-radius: 2px;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  outline: none;
+}
