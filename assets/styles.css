@@ -1,114 +1,23 @@
 ---
 ---
 {% capture css %}
-{% include assets/vendor/normalize-3.0.0.min.css %}
+{% include assets/css/vendor/normalize-3.0.0.min.css %}
 
-{% include assets/shared/scaffolding.css %}
-{% include assets/shared/utilities.css %}
-{% include assets/shared/forms.css %}
-{% include assets/shared/markdown.css %}
-{% include assets/shared/pygments.css %}
+{% include assets/css/shared/scaffolding.css %}
+{% include assets/css/shared/utilities.css %}
+{% include assets/css/shared/forms.css %}
+{% include assets/css/shared/markdown.css %}
+{% include assets/css/shared/highlight.css %}
 
-{% include assets/components/dropdown.css %}
+{% include assets/css/components/dropdown.css %}
+{% include assets/css/components/float-view.css %}
+{% include assets/css/components/navigation.css %}
+{% include assets/css/components/search.css %}
 
 .page-wrapper {
   position: relative;
   min-height: 100%;
-  margin-left: 230px;
-}
-
-.toc {
-  font-weight: bold;
-}
-
-.toc ul,
-.toc li {
-  padding: 0;
-  margin: 0;
-  line-height: 30px;
-  list-style: none;
-}
-
-.toc li a {
-  display: block;
-  padding: 0 15px;
-  overflow-x: hidden;
-  white-space: nowrap;
-  text-decoration: none;
-  text-overflow: ellipsis;
-}
-
-.toc li > a {
-  border-color: #eee;
-  border-style: solid;
-  border-width: 1px 0;
-}
-
-.toc li + li > a {
-  border-top-color: transparent;
-}
-
-.toc ul ul li:first-child > a {
-  border-top-color: transparent;
-}
-
-.toc ul ul li a {
-  font-size: 12px;
-  font-weight: 400;
-  color: #777;
-  background-color: #f9f9f9;
-}
-
-.toc ul ul li a:hover {
-  color: #4183c4;
-  background-color: #f2f2f2;
-}
-
-.toc ul ul ul li a {
-  padding-left: 30px;
-  line-height: 26px;
-}
-
-.toc ul ul ul ul li a {
-  padding-left: 45px;
-  line-height: 24px;
-}
-
-.toc > ul > li > a {
-  color: #333;
-}
-
-.toc > ul > li > a:hover {
-  color: #4183c4;
-  background-color: #fdfdfd;
-}
-
-.toc > ul > li > a:before {
-  display: inline-block;
-  float: right;
-  vertical-align: top;
-  font-size: 18px;
-  font-weight: 400;
-  color: #9a9a9a;
-  content: "\25B8";
-}
-
-.toc > ul > .active > a:before {
-  content: "\25BE";
-}
-
-.toc > ul > li:first-child > a:before {
-  display: none;
-}
-
-/* Hide nested lists */
-.toc ul ul {
-  display: none;
-}
-
-/* Show nested lists in active items */
-.toc .active > ul {
-  display: block;
+  margin-left: 17.5rem;
 }
 
 .toc-wrapper {
@@ -117,128 +26,48 @@
   left: 0;
   bottom: 0;
   z-index: 15;
-  width: 230px;
-  font-size: 13px;
-  line-height: 20px;
+  width: 17.5rem;
+  font-size: 0.9rem;
   border-right: #ddd solid 1px;
 }
 
 .toc-wrapper h3 {
-  padding: 0 15px;
-  margin-bottom: 5px;
-  font-size: 14px;
-  line-height: 24px;
+  padding: 0 1rem;
+  margin-bottom: .35rem;
+  font-size: 1rem;
+  line-height: 2rem;
 }
 
 .content {
-  padding: 30px 0;
   position: relative;
   z-index: 10;
 }
 
 .content h2 {
   clear: both;
-  padding: 30px 30px 0;
-  margin: 35px 50% 15px 0 !important;
+  padding: 2rem 2rem 0;
+  margin-top: 2.5rem !important;
   border-top: #ddd solid 1px;
 }
 
 .content h2:first-child {
-  margin-top: -30px !important;
+  margin-top: -2.5rem !important;
   border-top: 0;
 }
 
-.content > h1,
-.content > h2,
-.content > h3,
-.content > h4,
-.content > h5,
-.content > h6,
-.content > p,
-.content > table,
-.content > ul,
-.content > ol,
-.content > dl,
-.content > aside {
-  padding-right: 30px;
-  padding-left: 30px;
-  margin-right: 50%;
-}
-
-.content > ul,
-.content > ol {
-  padding-left: 70px;
-}
-
-.content pre,
-.content blockquote {
-  float: right;
-  clear: right;
-  width: 50%;
-  padding: 2em 30px;
+.content blockquote,
+.content .highlight {
+  padding: 1.5rem 2rem;
   margin: 0;
   text-shadow: 0 1px #fff;
   background-color: #f5f5f5;
   border-left: #ddd solid 1px;
 }
 
-.content pre > p,
 .content blockquote > p {
-  margin: 0;
-}
-
-.content blockquote > p {
-  padding: 12px 18px;
+  padding: .85rem 1.4rem;
   background-color: #fff;
   border: #ddd solid 1px;
   border-radius: 2px;
-}
-
-.content table {
-  display: block;
-  width: 50%;
-  overflow: auto;
-}
-
-.content table thead,
-.content table tbody {
-  width: 100%;
-}
-
-.content table code {
-  white-space: nowrap;
-}
-
-.code-examples {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 50%;
-  background-color: #fafafa;
-  border-left: #ddd solid 1px;
-}
-
-.search {
-  position: relative;
-  z-index: 20;
-  margin: 15px;
-}
-
-.no-js .search {
-  display: none;
-}
-
-.search-results li a span {
-  display: block;
-  font-size: 90%;
-  font-weight: bold;
-}
-
-.search-results .no-results {
-  display: block;
-  padding: 10px;
-  word-wrap: break-word;
-  text-align: center;
 }
 {% endcapture %}{{ css | strip_newlines | replace:'    ','' | replace:'  ',' ' }}

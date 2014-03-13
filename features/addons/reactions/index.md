@@ -1,6 +1,6 @@
 ---
 title: Reactions
-layout: documentation
+layout: page
 categories: ["Features", "Addons"]
 ---
 

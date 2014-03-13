@@ -1,6 +1,8 @@
 /**
  * # Scaffolding
  *
+ * Required, global styles.
+ *
  * No styleguide reference.
  */
 
@@ -20,10 +22,10 @@ body {
   height: 100%;
 }
 
-body {
+html {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 14px;
-  line-height: 1.42857;
+  line-height: 1.5;
   color: #444;
 }
 
@@ -45,8 +47,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .browsehappy {
-  padding: 30px;
+  padding: 2rem;
   margin: 0;
-  margin-left: 230px;
+  margin-left: 17.5rem;
   background-color: #fcdb9a;
 }

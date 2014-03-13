@@ -1,6 +1,6 @@
 ---
 title: Adding and Editing User Notes
-layout: documentation
+layout: page
 categories: ["Features", "Addons", "Warnings and Notes"]
 ---
 

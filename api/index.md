@@ -1,6 +1,6 @@
 ---
 title: API
-layout: documentation
+layout: page
 categories: ["API"]
 ---
 

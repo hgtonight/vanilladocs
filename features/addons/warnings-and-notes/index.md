@@ -1,6 +1,6 @@
 ---
 title: Warnings and Notes
-layout: documentation
+layout: page
 categories: ["Features", "Addons"]
 ---
 

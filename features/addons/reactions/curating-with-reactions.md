@@ -1,6 +1,6 @@
 ---
 title: Curating with Reactions
-layout: documentation
+layout: page
 categories: ["Features", "Addons", "Reactions"]
 ---
 
