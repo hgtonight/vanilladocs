@@ -1,5 +1,5 @@
 ---
-title: Introduction to Pockets
+title: Pockets
 layout: documentation
 categories: ["Features", "Addons"]
 ---
