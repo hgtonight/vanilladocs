@@ -16,13 +16,14 @@ All configuration changes are to be exclusively made to your config.php file. We
 
 ## Editing configuation
 
-Config file entries look like this:
 
 ```php
+<?php
+// Config file entries look like this:
 $Configuration['Area']['FeatureSet']['Setting'] = 'Value';
 ```
 
-They must render as valid PHP code, so the placement of quotes, brackets, and semicolons is extremely important. Line order does not matter, unless you accidentally duplicate values (which should be avoided). In that case, the last duplicate would take precedence.
+Config entires must render as valid PHP code, so the placement of quotes, brackets, and semicolons is extremely important. Line order does not matter, unless you accidentally duplicate values (which should be avoided). In that case, the last duplicate would take precedence.
 
 Some scenarios for editing your config:
 
@@ -40,9 +41,11 @@ When we talk about config lines, we use the following shorthand:
 
 `Area.FeatureSet.Setting = 'Value'`
 
-If the above is written in instructions or comments, it is still to be formatted in the config according to the format shown earlier with brackets and quotes:
+If the above is written in instructions or comments, it is still to be formatted in the config according to the format shown earlier with brackets and quotes.
 
 ```php
+<?php
+// The shorthand written using the full formatting 
 $Configuration['Area']['FeatureSet']['Setting'] = 'Value';
 ```
 
