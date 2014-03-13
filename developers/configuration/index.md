@@ -41,12 +41,12 @@ When we talk about config lines, we use the following shorthand:
 
 `Area.FeatureSet.Setting = 'Value'`
 
-If the above is written in instructions or comments, it is still to be formatted in the config according to the format shown earlier with brackets and quotes.
-
 ```php
 <?php
 // The shorthand written using the full formatting 
 $Configuration['Area']['FeatureSet']['Setting'] = 'Value';
 ```
+
+If the above is written in instructions or comments, it is still to be formatted in the config according to the format shown earlier with brackets and quotes.
 
 Always double-check you have properly transcribed the name and value before saving.
