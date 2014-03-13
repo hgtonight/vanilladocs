@@ -1,25 +1,27 @@
-safe: true
-lsi: false
+# GitHub Pages
+# None of these can actually be changed
+safe:     true
+lsi:      false
 pygments: true
 
-baseurl: /VanillaDocs
-permalink: pretty
-
+# Formatting
 markdown: redcarpet
 redcarpet:
   extensions: [
-    "no_intra_emphasis",
-    "fenced_code_blocks",
-    "autolink",
-    "tables",
-    "with_toc_data",
-    "strikethrough"
+    "autolink"
+  , "tables"
+  , "strikethrough"
+  , "with_toc_data"
+  , "fenced_code_blocks"
+  , "no_intra_emphasis"
   ]
 
-exclude: [
-  "bower_components",
-  "node_modules",
-  "package.json",
-  "bower.json",
-  "gulpfile.js"
-]
+# Permalinks
+permalink: pretty
+
+# Project specific
+baseurl:      /VanillaDocs
+title:        Vanilla Docs
+tagline:      Vanilla Documentation
+description:  "Documentation for Vanilla Forums"
+url:          http://vanillaforums.github.io/VanillaDocs

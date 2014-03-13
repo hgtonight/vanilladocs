@@ -1,6 +1,6 @@
 ---
 title: Adding and Editing Ranks
-layout: documentation
+layout: page
 categories: ["Features", "Addons", "Ranks"]
 ---
 

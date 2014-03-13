@@ -1,6 +1,6 @@
 ---
 title: Upgrading from Warnings
-layout: documentation
+layout: page
 categories: ["Features", "Addons", "Warnings and Notes"]
 ---
 

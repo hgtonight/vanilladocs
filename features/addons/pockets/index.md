@@ -1,6 +1,6 @@
 ---
 title: Introduction to Pockets
-layout: documentation
+layout: page
 categories: ["Features", "Addons"]
 ---
 

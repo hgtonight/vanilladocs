@@ -1,6 +1,6 @@
 ---
 title: Applying Ranks over SSO
-layout: documentation
+layout: page
 categories: ["Features", "Addons", "Ranks"]
 ---
 

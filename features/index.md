@@ -1,6 +1,6 @@
 ---
 title: Features
-layout: documentation
+layout: page
 ---
 
 These are features

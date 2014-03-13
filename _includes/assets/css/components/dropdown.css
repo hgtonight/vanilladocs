@@ -8,10 +8,10 @@
   position: absolute;
   z-index: 1000;
   display: none;
-  min-width: 300px;
+  width: 100%;
   padding: 0;
   margin: 0;
-  margin-top: 5px;
+  margin-top: .35rem;
   list-style: none;
   background-color: #fff;
   border: #ddd solid 1px;
@@ -36,8 +36,10 @@
 .dropdown li a {
   position: relative;
   display: block;
+  overflow: hidden;
   padding: 10px;
-  word-wrap: break-word;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   border-color: #eee;
   border-style: solid;
   border-width: 1px 0;

@@ -1,6 +1,6 @@
 ---
 title: Using Ranks as Incentives
-layout: documentation
+layout: page
 categories: ["Features", "Addons", "Ranks"]
 ---
 

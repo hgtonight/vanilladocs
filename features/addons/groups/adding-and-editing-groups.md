@@ -1,5 +1,5 @@
 ---
 title: Adding and Editing Groups
-layout: documentation
+layout: page
 categories: ["Features", "Addons", "Groups"]
 ---

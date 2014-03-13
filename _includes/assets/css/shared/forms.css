@@ -5,10 +5,11 @@
  */
 
 .form-control {
-  display: inline-block;
+  display: block;
   width: 100%;
-  padding: 6px 12px;
-  line-height: 20px;
+  height: 2.5rem;
+  padding: .5rem .85rem;
+  line-height: 1.4rem;
   border: #ddd solid 1px;
   border-radius: 2px;
   box-shadow: none;

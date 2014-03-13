@@ -1,6 +1,6 @@
 ---
 title: Forum Administration
-layout: documentation
+layout: page
 categories: ["API"]
 ---
 

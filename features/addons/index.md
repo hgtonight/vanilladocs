@@ -1,6 +1,6 @@
 ---
 title: Addons
-layout: documentation
+layout: page
 categories: ["Features"]
 ---
 

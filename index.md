@@ -1,4 +1,4 @@
 ---
 title: Vanilla Docs
-layout: documentation
+layout: page
 ---
