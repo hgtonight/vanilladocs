@@ -1,6 +1,6 @@
 ---
 title: Developers
-layout: documentation
+layout: page
 categories: ["Developers"]
 ---
 

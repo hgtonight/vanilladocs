@@ -1,6 +1,6 @@
 ---
 title: Configuration
-layout: documentation
+layout: page
 categories: ["Developers","Configuration"]
 ---
 
