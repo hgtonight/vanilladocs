@@ -7,7 +7,7 @@ categories: ["Developers", "Smarty"]
 ## Tag: `{link}`
 
 ```smarty
-{link path="string" text="string"}
+{link path="string" text="string" notag=boolean format="string" withdomain=boolean}
 ```
 
 Takes a route and prepends the web root (expects `/controller/action/params` as `path`).
