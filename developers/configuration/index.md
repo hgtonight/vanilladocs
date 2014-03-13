@@ -8,17 +8,19 @@ categories: ["Developers","Configuration"]
 
 Vanilla uses a file-based configuration system.
 
-Vanilla is distributed with a file at /conf/config-defaults.php which we will call "config-defaults". After installation, a file is created at /conf/config.php which we will call simply "config" or "config.php".
+Vanilla is distributed with a file at `/conf/config-defaults.php` which we will call "config-defaults". After installation, a file is created at `/conf/config.php` which we will call simply "config" or "config.php".
 
 Your config-defaults file should **never** be edited. It is overwritten during every upgrade. Sometimes future changes may depend on your default configuration being changed and this is the mechanism thru which it will happen.
 
-All configuration changes are to be exclusively made to your config.php file. We recommend periodically making a backup copy of your config.php and storing it in a safe location (not on your web server).
+All configuration changes are to be exclusively made to your config.php file. We recommend periodically making a backup copy of your `config.php` and storing it in a safe location (not on your web server).
 
 ## Editing configuation
 
 Config file entries look like this:
 
+```php
 $Configuration['Area']['FeatureSet']['Setting'] = 'Value';
+```
 
 They must render as valid PHP code, so the placement of quotes, brackets, and semicolons is extremely important. Line order does not matter, unless you accidentally duplicate values (which should be avoided). In that case, the last duplicate would take precedence.
 
@@ -36,10 +38,12 @@ Only open or copy your config for editing *after* you have applied or saved your
 
 When we talk about config lines, we use the following shorthand:
 
-Area.FeatureSet.Setting = 'Value'
+`Area.FeatureSet.Setting = 'Value'`
 
 If the above is written in instructions or comments, it is still to be formatted in the config according to the format shown earlier with brackets and quotes:
 
+```php
 $Configuration['Area']['FeatureSet']['Setting'] = 'Value';
+```
 
 Always double-check you have properly transcribed the name and value before saving.
