@@ -1,7 +1,7 @@
 ---
 title: "{link}"
 layout: page
-categories: ["Developers", "Smarty"]
+categories: ["Theming", "Smarty"]
 ---
 
 ## Tag: `{link}`

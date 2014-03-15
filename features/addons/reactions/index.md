@@ -21,6 +21,7 @@ Communities can use Reactions for a number of scenarios. All reactions can be cu
 * Positive reinforcement for contributions
 * Increased participation and interaction
 * Member-powered curation of content
+* Enables skimming by high-reaction comments
 * Optional integration with Badges for gamification
 
 Reactions is a dynamic tool that encourage emergent behaviors and uses. We consider it a feature that most communities will benefit from in some way.

@@ -1,7 +1,7 @@
 ---
 title: "{breadcrumbs}"
 layout: page
-categories: ["Developers", "Smarty"]
+categories: ["Theming", "Smarty"]
 ---
 
 ## Tag: `{breadcrumbs}`

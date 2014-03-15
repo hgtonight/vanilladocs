@@ -1,7 +1,7 @@
 ---
 title: "{asset}"
 layout: page
-categories: ["Developers", "Smarty"]
+categories: ["Theming", "Smarty"]
 ---
 
 ## Tag: `{asset}`
