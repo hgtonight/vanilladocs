@@ -4,7 +4,7 @@ layout: page
 categories: ["Theming", "Smarty"]
 ---
 
-## Tag: `{link}`
+## Function: `{link}`
 
 ```smarty
 {link path="string" text="string" notag=boolean format="string" withdomain=boolean}

@@ -4,7 +4,7 @@ layout: page
 categories: ["Theming", "Smarty"]
 ---
 
-## Tag: `{breadcrumbs}`
+## Function: `{breadcrumbs}`
 
 ```smarty
 {breadcrumbs homelink="string" hidelast=boolean}

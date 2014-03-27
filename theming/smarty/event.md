@@ -4,7 +4,7 @@ layout: page
 categories: ["Theming", "Smarty"]
 ---
 
-## Tag: `{event}`
+## Function: `{event}`
 
 ```smarty
 {event name="string"}

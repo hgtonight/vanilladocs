@@ -4,7 +4,7 @@ layout: page
 categories: ["Theming", "Smarty"]
 ---
 
-## Tag: `{custom_menu}`
+## Function: `{custom_menu}`
 
 ```smarty
 {custom_menu format="string" wrap="string"}

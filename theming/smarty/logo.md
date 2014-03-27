@@ -4,7 +4,7 @@ layout: page
 categories: ["Theming", "Smarty"]
 ---
 
-## Tag: `{logo}`
+## Function: `{logo}`
 
 ```smarty
 {logo}

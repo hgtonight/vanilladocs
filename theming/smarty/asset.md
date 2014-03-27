@@ -4,7 +4,7 @@ layout: page
 categories: ["Theming", "Smarty"]
 ---
 
-## Tag: `{asset}`
+## Function: `{asset}`
 
 ```smarty
 {asset name="string" id="string" tag="string" class="string"}
