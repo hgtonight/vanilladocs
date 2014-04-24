@@ -23,8 +23,8 @@ permalink: pretty
 include: ["_assets", "_search.json"]
 
 # Project specific
-baseurl:      /VanillaDocs
+baseurl:      /
 title:        Vanilla Docs
 tagline:      Vanilla Documentation
 description:  "Documentation for Vanilla Forums"
-url:          http://vanillaforums.github.io/VanillaDocs
+url:          http://docs.vanillaforums.com
