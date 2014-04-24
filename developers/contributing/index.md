@@ -4,4 +4,13 @@ layout: page
 categories: ["Developers","Contributing"]
 ---
 
+## How to Contribute
 
+1. Answer questions for the community.
+1. File detailed issues on GitHub.
+1. Test pre-releases.
+1. Contribute code via pull requests (requires [Contributor Agreement](http://vanillaforums.org/contributors))
+1. Contribute revisions & additions to docs.
+1. Audit code for security issues.
+1. Evaluate community addons & offer feedback.
+1. Contribute addons & themes to the Official Directory.
