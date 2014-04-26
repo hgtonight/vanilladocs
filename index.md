@@ -10,10 +10,11 @@ These are the official docs for Vanilla Forums. You can contribute via the [GitH
 Vanilla Forums consists of both an [open source project](http://github.com/vanillaforums.com/vanilla) and a [cloud hosting solution](http://vanillaforums.com). Therefore, the documents are broken into 5 major areas:
 
 * [API](/api) - describes the exclusive API for cloud clients.
-* [Developers](/developers) - targetted at open source.
+* [Cloud Services](/cloud) - for cloud-based professional services.
+* [Developers](/developers) - for open source developers & site owners.
 * [Features](/features) - using Vanilla (covers both open source and cloud exclusives).
 * [Theming](/theming) - building a Vanilla theme.
-* [Workflow](/workflow) - for cloud-based professional services.
+
 
 ### Why go cloud-hosted?
 
@@ -25,9 +26,9 @@ Vanilla Forums consists of both an [open source project](http://github.com/vanil
 ### Why go open source?
 
 * Community is just getting started or is a hobby.
-* Shoestring budget but lots of time to invest.
-* Valuing tinkering & creativity over stability & scaling.
-* Requiring a major customization that isn't cost-effective in the cloud.
+* Tight budget but plenty of time to invest.
+* Value tinkering & creativity over stability & scaling.
+* Require a major customization that isn't cost-effective in the cloud.
 
 We're confident you won't want to leave our cloud solution once you've tried it, but there is no lock-in. Our cloud solution is fully compatible with our open source code and we provide full data exports on demand.
 

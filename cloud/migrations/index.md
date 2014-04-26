@@ -1,7 +1,7 @@
 ---
 title: Migration Services
 layout: page
-categories: ["Workflow","Migrations"]
+categories: ["Cloud","Migrations"]
 ---
 
 

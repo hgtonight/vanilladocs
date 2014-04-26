@@ -1,7 +1,7 @@
 ---
 title: Theming Services
 layout: page
-categories: ["Workflow","Theming"]
+categories: ["Cloud","Theming"]
 ---
 
 
