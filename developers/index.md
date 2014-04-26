@@ -4,7 +4,7 @@ layout: page
 categories: ["Developers"]
 ---
 
-## Purpose
+## Developers Overview
 
 The Developers section is primarily targetted at folks using the **open source product** who have at least a basic understanding of PHP, HTML, CSS and Javascript.
 
