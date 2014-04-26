@@ -13,6 +13,7 @@
 {% include assets/css/components/float-view.css %}
 {% include assets/css/components/navigation.css %}
 {% include assets/css/components/search.css %}
+{% include assets/css/components/topbar.css %}
 
 .page-wrapper {
   position: relative;
@@ -26,6 +27,7 @@
   left: 0;
   bottom: 0;
   z-index: 15;
+  overflow-y: scroll;
   width: 17.5rem;
   font-size: 0.9rem;
   border-right: #ddd solid 1px;
