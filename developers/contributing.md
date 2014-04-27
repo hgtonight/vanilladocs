@@ -17,4 +17,4 @@ categories: ["Developers","Contributing"]
 1. Contribute addons & themes to the [Official Directory](http://vanillaforums.org/addons).
 1. Evaluate community addons & offer feedback and pull requests.
 
-     ![awesome](http://www.favething.com/uploads/images/main-fave-images/you_re_awesome_bill_murray-1.jpg =200x)
+     <img src="http://www.favething.com/uploads/images/main-fave-images/you_re_awesome_bill_murray-1.jpg" alt="Drawing" style="width: 200px;"/>
