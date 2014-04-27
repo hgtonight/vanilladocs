@@ -41,3 +41,5 @@ This is how the Akismet plugin uses the ConfigurationModule to build a simple se
           'Plugins.Akismet.Server' => array('Description' => 'You can use either Akismet or TypePad antispam.', 'Control' => 'DropDown', 'Items' => array('' => 'Aksimet', 'api.antispam.typepad.com' => 'TypePad', 'DefaultValue' => ''))
           ));
       $Cf->RenderAll();
+      
+ That's all there is to it - no custom view is involved.

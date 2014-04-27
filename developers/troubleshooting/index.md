@@ -4,12 +4,13 @@ layout: page
 categories: ["Features", "Troubleshooting"]
 ---
 
-### My view counters aren't working
+These are some generic tips for addressing problems during an upgrade.
 
-Vanilla.Views.Denormalize = FALSE
-Javascript errors.
-
-
-### Q&A: How to make 'Question' the default discussion type
-
-
+* Set `$Configuration['Debug'] = TRUE;` in your `conf/config.php` to reveal full error messages. Remember to remove it when you are done.
+* Clear your browser cache and cookies, then restart your browser.
+* Clear *.ini files from the `cache` folder.
+* Revert to the default theme. You can do this manually in `conf/config.php` by setting the `$Configuration['Garden']['Theme']` value to `default`.
+* Disable plugins. If you cannot get to your Dashboard, you can manually delete lines containing `EnabledPlugins` in `conf/config.php` but **do not remove HTMLawed's line**.
+* Try running `/utility/update` again (see upgrade instructions).
+* Verify your permissions are correct for every role. Then go to `/role/defaultroles` and confirm your default roles are set correctly.
+* Start a **new discussion** on this site with your version number (likely 2.1 if you're reading this), the exact error message you got, and what you were doing when you got it.
