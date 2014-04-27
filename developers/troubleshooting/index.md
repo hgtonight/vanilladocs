@@ -4,6 +4,8 @@ layout: page
 categories: ["Features", "Troubleshooting"]
 ---
 
+## Troubleshooting Vanilla
+
 These are some generic tips for addressing problems during an upgrade.
 
 * Set `$Configuration['Debug'] = TRUE;` in your `conf/config.php` to reveal full error messages. Remember to remove it when you are done.

@@ -1,10 +1,11 @@
 ---
-title: Dispatcher
+title: Controllers
 layout: page
 categories: ["Developers","Framework"]
 ---
 
-<h1>Controllers &amp; Urls</h1>
+## Controllers &amp; Urls
+
 <p>Controllers handle HTTP requests in Garden. A controller is simply a class file that extends the base controller class, and relates directly to the url being requested. Let's look at an example request in Garden:</p>
 <pre>http://domain.com/default.php/garden/settings/configure</pre>
 <p>And let's examine each part of the request: <strong>http://domain.com/default.php</strong>: As you saw in [[FolderStructure|Folder Structure]], the default.php file that handles all requests in Garden. <strong>/garden</strong>: The next part of the url is the application that is being requested. In this case, we are requesting the "garden" application within the application folder. <strong>/settings</strong>: The next part of the url is the controller that is being requested within the garden application. In this example, we are requesting a controller called "Settings". <strong>/configure</strong>: the final part of the url in this example is the method within the "Settings" controller that we are calling. In this example, we are calling <code>$SettingsController-&gt;Configure();</code>. If you were to map this request to the filesystem, it would be like this:</p>
@@ -17,7 +18,9 @@ categories: ["Developers","Framework"]
 <pre>http://domain.com/default.php/garden/user/edit/mark</pre>
 <p>Which would map to:</p>
 <pre>$UserController-&gt;Edit('mark');</pre>
-<h2>Analyzing the Request</h2>
+
+## Dispatcher
+
 <p>All requests are handled through the Dispatcher class. The dispatcher class looks at the request (everything after default.php) and tries to figure out the best way to handle it. As far as the dispatcher is concerned, in a perfect world the request would always include the application name, the controller name, and the method name. But in reality you might not always want all three items in your url. For example, you might want your application invisible to the user - so that, for example, a request to vanilla's discussion list goes to</p>
 <pre>http://domain.com/default.php/discussions/all</pre>
 <p>... instead of ...</p>

@@ -1,7 +1,7 @@
 ---
-title: Addons
+title: Plugins
 layout: page
-categories: ["Developers","Addons"]
+categories: ["Developers","Plugins"]
 ---
 
 <h2>Plugins</h2>
