@@ -13,7 +13,7 @@ categories: ["Developers"]
 ### 2.1.0
 *[Released ?](http://vanillaforums.org/discussion/)*
 
-Vanilla internals were completely revamped for 2.1.
+Vanilla internals were completely revamped for 2.1. Many views and several plugin hooks were changed, so **themes and plugins must be tested** and may need to be refactored before upgrading.
 
 * Better localization support.
 * Improved embedding.
