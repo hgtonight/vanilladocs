@@ -12,7 +12,7 @@ If you have large quantities of data or data that is written frequently, conside
 
 ## Reading from config
 
-The `C` function is the appropriate shortcut for reading from the config. The first parameter is the name of the config value in [dot notation](/developers/configuration). The second is an optional value to default to if none is set in the config.
+The `C` function is the appropriate shortcut for reading from the config. The first parameter is the name of the config value in [dot notation](/developers/configuration). The second is an optional default value to return if requested config setting is not defined.
 
 Example:
 `$Value = C('Name.Of.Setting', 'DefaultValue');`
@@ -33,7 +33,7 @@ We've created a shortcut for making simple settings pages using the `Configurati
 
 The configuration module can be instantiated and rendered from any plugin. You `Initialize` it with an array of config values, each of which has its own array of properties to define it (type of field, label, default, etc). See `applications/dashboard/modules/class.configurationmodule.php` for details.
 
-This is how the Akismet plugin uses the ConfigurationModule to build a simple settings page consisting of a text field and a dropdown: 
+This is how the Akismet plugin uses the ConfigurationModule to build a simple settings page consisting of a text field and a dropdown:
 
      $Cf = new ConfigurationModule($Sender);
      $Cf->Initialize(array(
@@ -41,5 +41,5 @@ This is how the Akismet plugin uses the ConfigurationModule to build a simple se
           'Plugins.Akismet.Server' => array('Description' => 'You can use either Akismet or TypePad antispam.', 'Control' => 'DropDown', 'Items' => array('' => 'Aksimet', 'api.antispam.typepad.com' => 'TypePad', 'DefaultValue' => ''))
           ));
       $Cf->RenderAll();
-      
+
  That's all there is to it - no custom view is involved.
