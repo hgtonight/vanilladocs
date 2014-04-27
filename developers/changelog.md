@@ -4,7 +4,7 @@ layout: page
 categories: ["Developers"]
 ---
 
-# Open Source Release Change Log
+# Open Source Change Log
 
 
 2.1
@@ -18,9 +18,15 @@ Vanilla internals were completely revamped for 2.1. Many views and several plugi
 * Better localization support.
 * Improved embedding.
 * Performance and caching enhancements.
- .* Revamped Activity structure.
+* Revamped Activity structure.
 * Framework improvements.
 * Hundreds of bug fixes.
+
+Incremental changelogs from the [first 2.1 beta](http://vanillaforums.org/discussion/23322/vanilla-2-1b1-released) thru RC1 can be found in their individual release announcements:
+
+* [Beta 2](http://vanillaforums.org/discussion/24845/vanilla-2-1b2-released)
+* [Beta 3](http://vanillaforums.org/discussion/26518/vanillla-2-1-beta-3)
+* [Release Candidate 1](http://vanillaforums.org/discussion/26626/vanilla-2-1-release-candidate)
 
 
 2.0.18
