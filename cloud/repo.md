@@ -20,6 +20,6 @@ You will need a GitHub account for each developer that requires access. We stron
 
 ### Local testing
 
-If you're like to use a localhost install of Vanilla for testing, please use the `master` branch from our [main repository](http://github.com/vanillaforums/vanilla). Please follow the installation instruction in the README.
+If you'd like to use a local install of Vanilla for testing, please use the `master` branch from our [main repository](http://github.com/vanillaforums/vanilla). Please follow the installation instruction in the README.
 
-Unfortunately, we are not able to provide cloud-exclusive addons for localhost installation. However, some additional addons may be found in the [addons repository](http://github.com/vanillaforums/Addons).
+Unfortunately, we are not able to provide cloud-exclusive addons for local installation. However, some additional addons may be found in the [addons repository](http://github.com/vanillaforums/Addons).

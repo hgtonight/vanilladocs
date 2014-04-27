@@ -6,7 +6,7 @@ categories: ["Developers"]
 
 ## Developers Overview
 
-The Developers section is primarily targetted at folks using the **open source product** who have at least a basic understanding of PHP, HTML, CSS and Javascript.
+The Developers section is primarily targeted at folks using the **open source product** who have at least a basic understanding of PHP, HTML, CSS and Javascript.
 
 Clients of VanillaForums.com (cloud) should [contact support](http://vanillaforums.com/help) to address technical issues. Our hosted product does not allow direct file access to ensure security and performance, which precludes many instructions in this section.
 
