@@ -8,6 +8,8 @@ categories: ["Cloud","Migration"]
 
 Vanilla offers full, professional migration services from nearly any platform imaginable. If you provide the data, we'll figure out how to make it work in Vanilla.
 
+The process below assumes you will be provde a database dump. We also perform API-based migrations from cloud services where that is necessary and possible. Talk to your account representative if you require a different type of migration like this.
+
 ### Estimating your migration
 
 1. You provide the platform name, version number (if applicable), and number of users & posts for your current community platform.
