@@ -27,17 +27,19 @@ The [Multilingual plugin](http://vanillaforums.org/addon/multilingual-plugin) al
 
 ## Overriding locales
 
-You can override your default locale by adding a `conf/locale.php` file to your installation with additional definitions. Any definitions in this file will override your locale. The contents of the file should look like this:
+```php
+<?php if (!defined('APPLICATION')) exit();
+     
+// Note about what you're translating
+$Definition['TranslationString1'] = "Override String 1";
+$Definition['TranslationString2'] = "Override String 2";
+     
+// More stuff
+$Definition['TranslationString3'] = "Override String 3";
+$Definition['TranslationString4'] = "Override String 4";
+```
 
-     <?php if (!defined('APPLICATION')) exit();
-     
-	 // Note about what you're translating
-     $Definition['TranslationString1'] = "Override String 1";
-     $Definition['TranslationString2'] = "Override String 2";
-     
-     // More stuff
-     $Definition['TranslationString3'] = "Override String 3";
-     $Definition['TranslationString4'] = "Override String 4";
+You can override your default locale by adding a `conf/locale.php` file to your installation with additional definitions. Any definitions in this file will override your locale.
 
 If you duplicate an entry's translation string, the latter one will take precedence. You can, however, assign the same override string to mulptiple translation strings.
 
