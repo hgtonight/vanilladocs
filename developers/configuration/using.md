@@ -27,6 +27,8 @@ Change a config setting only for this pageload: `SaveToConfig('Name.Of.Setting',
 
 Simply passing the value `FALSE` in place of the options array has the same effect as passing `array('Save' => FALSE)`.
 
+<aside class="warning">Do not used numeric-key arrays as config values. Associative arrays are fine.</aside>
+
 ## Configuration module
 
 We've created a shortcut for making simple settings pages using the `ConfigurationModule`.
