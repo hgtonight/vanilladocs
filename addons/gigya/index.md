@@ -1,5 +1,5 @@
 ---
-title: Groups
+title: Gigya Sign In
 layout: page
 categories: ["Features", "Addons", "Integrations"]
 ---
