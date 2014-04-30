@@ -14,7 +14,7 @@ User notes are notes attached to individual users that only moderators can add a
 
 ## Warning Levels and Expiry
 
-When a moderator warns a user the severity of the warning determines how many points it adds to the user’s warning level and when the warning expires. You can see a user’s warning level from their profile via a banner at the top.
+When a moderator warns a user the severity of the warning determines how many points it adds to the user’s warning level and when the warning expires. Admins can see a user’s warning level from the member profile via a banner at the top. Moderators can see the details of warning and expiry from the notes tab.
 
 When a user’s warnings expire then their warning level will be reset to zero and the user will have a clean slate.
 
