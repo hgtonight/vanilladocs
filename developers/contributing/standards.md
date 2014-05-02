@@ -12,10 +12,11 @@ We've named our primary exception to PSR-2 **[Lord Brackos](https://twitter.com/
 
 ## CodeSniffer
 
-This assumes you have both PEAR and homebrew with PHP 5.5.
+This assumes you have both PEAR and homebrew with PHP 5.5. Our standard is in the [Vanilla addons repo](http://github/vanillaforums/addons), where you can submit issues and pull requests.
 
-1. Get CodeSniffer: `pear install PHP_CodeSniffer`
-2. Add to bash profile: `export PATH="$(brew --prefix php55)/bin:$PATH"`
-3. Symlink `addons/standards` to CodeSniffer's Standards folder as `Vanilla`
-4. Set Vanilla as your standard: `phpcs --config-set default_standard Vanilla`
-5. Use it: `phpcs /path/to/vanilla`
+1. Get CodeSniffer: `pear install PHP_CodeSniffer`.
+2. Add to bash profile: `export PATH="$(brew --prefix php55)/bin:$PATH"`.
+3. Find CodeSniffer's Standards folder. Use `pear config-get php_dir` and go from there.
+3. Symlink `addons/standards/Vanilla/` to CodeSniffer's Standards folder.
+4. Set Vanilla as your standard: `phpcs --config-set default_standard Vanilla`.
+5. Use it: `phpcs /path/to/code`.
