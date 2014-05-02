@@ -12,7 +12,7 @@ We've named our primary exception to PSR-2 **[Lord Brackos](https://twitter.com/
 
 ## CodeSniffer
 
-This assumes you have both PEAR and homebrew with PHP 5.5. Our standard is in the [Vanilla addons repo](http://github/vanillaforums/addons), where you can submit issues and pull requests.
+This assumes you have both PEAR and homebrew with PHP 5.5. Our standard is in the [Vanilla addons repo](http://github.com/vanillaforums/addons), where you can submit issues and pull requests.
 
 1. Get CodeSniffer: `pear install PHP_CodeSniffer`.
 2. Add to bash profile: `export PATH="$(brew --prefix php55)/bin:$PATH"`.
