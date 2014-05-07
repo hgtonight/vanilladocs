@@ -17,6 +17,13 @@ The `C` function is the appropriate shortcut for reading from the config. The fi
 Example:
 `$Value = C('Name.Of.Setting', 'DefaultValue');`
 
+You can call a partial config key to get an array of all values below it in dot notation. For instance, say this was in your config:
+
+     $Configuration['Example']['Settings']['A'] = 1;
+     $Configuration['Example']['Settings']['B'] = 2;
+     
+Now calling `C('Examples.Settings');` will return `array('A'=>1, 'B'=>2)`.
+
 ## Writing to config
 
 Save to the config with the `SaveToConfig` function. It takes the name of the config value, a new value to associate with it, and an optional options array. In the options array, you can pass the key `Save` with the value `FALSE` to make the config change only apply for this pageload.
