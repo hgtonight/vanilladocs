@@ -23,6 +23,3 @@ A list of a users' badges will display, by default, in the panel of their profil
 ## Viewing a badge
 
 Clicking a badge's name in the badges list will take you to a public page describing the badge. Users can get to this page by clicking the badge in their profile. This page shows the most recent recipients of the badge.
-
-
-

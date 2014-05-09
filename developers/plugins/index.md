@@ -9,12 +9,12 @@ categories: ["Developers","Plugins"]
 <h2>1. Custom Events</h2>
 <p>Any class that extends the class "Pluggable" has the ability to call <code>$this-&gt;FireEvent('EventName')</code>, and then plugins can attach to that event to perform some kind of operation. There should be no surprises here. There is a PluginManager class that picks up any defined plugins in the bootstrapper file (the file that includes core classes, defines constants, defines configuration settings, etc), and when the FireEvent method is called, it references the PluginManager class to see if there are any plugins that want to attach to the event name being fired. Of course it passes along some extra information that may be useful to the plugins as well:</p>
 <pre lang="php">public function FireEvent($EventName) {
-  // Look to the PluginManager to see if there are related 
+  // Look to the PluginManager to see if there are related
   // event handlers and call them:
   $this-&gt;PluginManager-&gt;CallEventHandlers(
-     $this, 
-     $this-&gt;ClassName, 
-     $EventName, 
+     $this,
+     $this-&gt;ClassName,
+     $EventName,
      $this-&gt;EventArguments
   );
 }</pre>

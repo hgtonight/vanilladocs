@@ -20,7 +20,7 @@ You can warn a user for a post they’ve made. To do this click on the post’s 
 
 Clicking a warn button will bring up the warn dialog where you can enter information about the warning.
 
-### Severity 
+### Severity
 
 Select from a list of warning severities. The idea is that moderators should pick a severity based on the action that the user did and let the system keep track of those warnings to decide on punishments based on the points that accumulate on successive warnings.
 
@@ -28,7 +28,7 @@ Select from a list of warning severities. The idea is that moderators should pic
 
 Enter a message that will be sent to the user explaining why you’re warning them. This message is sent in the form of a private message and the user can reply to it to plead their case.
 
-### Private Note to Moderators: 
+### Private Note to Moderators:
 
 Optional. Enter a short note that only moderators can see. This is useful if you want to convey sensitive information that should be hidden from the user that has been warned.
 
@@ -45,6 +45,3 @@ Users that may view warnings are those with the permission Garden.Moderation.Man
 ## Reverse Warning
 
 You can reverse warnings by hovering over them and clicking the reverse button. Reversing a warning removes its points from the user’s warning level, but doesn’t remove the warnings from the user’s profile. Reversed warnings are noted with a reversed tag.
-
-
-

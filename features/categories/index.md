@@ -10,9 +10,9 @@ Categories are how Vanilla organizes discussions. Categories can be added, edite
 
 ## Adding Categories
 
-To add a category, click the "Add Category" button at the top of the "Categories" page in the Dashboard. As you type a name, Vanilla will auto-generate the Category Url which you can customize by clicking the "edit" link next to it. 
+To add a category, click the "Add Category" button at the top of the "Categories" page in the Dashboard. As you type a name, Vanilla will auto-generate the Category Url which you can customize by clicking the "edit" link next to it.
 
-The "Css Class" is a tool for themers to style visually-distinct categories (the specified text will be added as a class to the category's HTML wrapper). The "Photo" is a 100x100 image that will appear next to the category on the Categories page. 
+The "Css Class" is a tool for themers to style visually-distinct categories (the specified text will be added as a class to the category's HTML wrapper). The "Photo" is a 100x100 image that will appear next to the category on the Categories page.
 
 The "Display As" option can be set to "Categories" in order to turn a category into a "container" for other categories without allowing discussions to be placed in it directly.
 
@@ -56,7 +56,4 @@ When you delete a category all discussions contained within that category will b
 
 ## Unfollow a Category
 
-
-
 ## Re-follow a Category
-

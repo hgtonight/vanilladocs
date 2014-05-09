@@ -17,4 +17,3 @@ Groups can cause discussion segregation and draw attention away from your main f
 ## Getting started with Groups
 
 Try creating three to eight groups as a pilot program to introduce groups to your community. Carefully managing the list of groups available can encourage the creation of fewer groups with higher quality and participation. Ten groups with 30 members each will create a far better experience than 100 groups with three members each.
-

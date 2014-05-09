@@ -4,7 +4,6 @@ layout: page
 categories: ["Theming"]
 ---
 
-
 <h1>A Quick-Start Guide to Creating Themes for Vanilla</h1>
 <p><strong>***Vanilla Forums Cloud Customers, check out our <a href="http://blog.vanillaforums.com/help/vanilla-forums-themes/">Ultimate Vanilla Forums Theme Guide</a>.***</strong></p>
 <p>With Vanilla, you have full control over both the CSS and the actual HTML of every page in every application. The easiest thing for most designers is to just alter the CSS, so we'll start there:</p>

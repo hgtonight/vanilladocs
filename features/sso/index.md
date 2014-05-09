@@ -5,4 +5,3 @@ categories: ["Features","Single Sign-On"]
 ---
 
 ## Single Sign-On Overview
-

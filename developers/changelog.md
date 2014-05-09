@@ -6,11 +6,11 @@ categories: ["Developers"]
 
 # Open Source Change Log
 
-
 2.1
 ===
 
 ### 2.1.0
+
 *[Released 28 April 2014](http://vanillaforums.org/discussion/26685/vanilla-2-1-stable-released)*
 
 Vanilla internals were completely revamped for 2.1. Many views and several plugin hooks were changed, so **themes and plugins must be tested** and may need to be refactored before upgrading.
@@ -27,7 +27,6 @@ Incremental changelogs from the [first 2.1 beta](http://vanillaforums.org/discus
 * [Beta 2](http://vanillaforums.org/discussion/24845/vanilla-2-1b2-released)
 * [Beta 3](http://vanillaforums.org/discussion/26518/vanillla-2-1-beta-3)
 * [Release Candidate 1](http://vanillaforums.org/discussion/26626/vanilla-2-1-release-candidate)
-
 
 2.0.18
 ===
@@ -154,7 +153,7 @@ SECURITY: Fixed Facebook, Twitter, and Embed plugins' access control.
 SECURITY: Fixed cookie theft vulnerability.
 ### 2.0.17.8
 Fixed a packaging problem that caused the contents of index.php to be duplicated
-### 2.0.17.7 
+### 2.0.17.7
 Updated analytics client and server software to fix a bug in stats transmission and rendering
 ### 2.0.17.6
 SECURITY: Fixed potential querystring XSS and cookie HMAC Timing vulnerabilities in core
@@ -164,7 +163,7 @@ Fixed problem with category permissions where some configurations would result i
 Fixed problem with dashboard structure file where Activity and Profile permissions were not granted automatically on fresh install
 ### 2.0.17.3
 Repackaged distribution without OS-Specific meta data, and fixed ajax information exposure bug
-### 2.0.17.2 
+### 2.0.17.2
 Fixed bug where analytics registration would occur repeatedly if config file was read-only
 ### 2.0.17.1
 Fixed bug where analytics hooked before Garden.Installed=true, causing a fatal error on install
@@ -184,7 +183,6 @@ Fixed bug where analytics hooked before Garden.Installed=true, causing a fatal e
 * Fixed bugs in OpenID and GoogleSignIn where redirect targets were not getting sent to the signin.
 * Fixed bug where mobile theme would sometimes display incorrect "last comment date".
 * Optimized Announced Discussions query to improve performance.
-
 
 Older Releases
 ===

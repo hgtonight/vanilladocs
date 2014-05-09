@@ -4,5 +4,4 @@ layout: page
 categories: ["Theming"]
 ---
 
-
 ## Theming Views

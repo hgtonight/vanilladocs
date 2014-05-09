@@ -4,7 +4,6 @@ layout: page
 categories: ["Developers","Locales"]
 ---
 
-
 ## Translating Vanilla
 
 Want to help us improve our translations? We have a [Transifex project](https://www.transifex.com/projects/p/vanilla/) for contributing to this. Create an account there and submit your improvements.
@@ -29,11 +28,11 @@ The [Multilingual plugin](http://vanillaforums.org/addon/multilingual-plugin) al
 
 ```php
 <?php if (!defined('APPLICATION')) exit();
-     
+
 // Note about what you're translating
 $Definition['TranslationString1'] = "Override String 1";
 $Definition['TranslationString2'] = "Override String 2";
-     
+
 // More stuff
 $Definition['TranslationString3'] = "Override String 3";
 $Definition['TranslationString4'] = "Override String 4";

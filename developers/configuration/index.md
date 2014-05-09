@@ -16,7 +16,6 @@ All configuration changes are to be exclusively made to your config.php file. We
 
 ## Editing configuation
 
-
 ```php
 <?php
 // Config file entries look like this:
@@ -29,7 +28,7 @@ Some scenarios for editing your config:
 
 * You want to change a config setting, so you simply change 'Value' on 1 line.
 * You want to change a default, so you copy a line from config-defaults into config, then modify its value.
-* You want to add a new config value entirely, so you enter it using the format indicated above on a new line in the config. 
+* You want to add a new config value entirely, so you enter it using the format indicated above on a new line in the config.
 
 ## Avoiding accidental overwrites
 
@@ -43,7 +42,7 @@ When we talk about config lines, we use the following shorthand:
 
 ```php
 <?php
-// The shorthand written using the full formatting 
+// The shorthand written using the full formatting
 $Configuration['Area']['FeatureSet']['Setting'] = 'Value';
 ```
 

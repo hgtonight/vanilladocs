@@ -19,9 +19,11 @@ Example:
 
 You can call a partial config key to get an array of all values below it in dot notation. For instance, say this was in your config:
 
-     $Configuration['Example']['Settings']['A'] = 1;
-     $Configuration['Example']['Settings']['B'] = 2;
-     
+```php
+$Configuration['Example']['Settings']['A'] = 1;
+$Configuration['Example']['Settings']['B'] = 2;
+```
+
 Now calling `C('Examples.Settings');` will return `array('A'=>1, 'B'=>2)`.
 
 ## Writing to config
@@ -44,11 +46,13 @@ The configuration module can be instantiated and rendered from any plugin. You `
 
 This is how the Akismet plugin uses the ConfigurationModule to build a simple settings page consisting of a text field and a dropdown:
 
-     $Cf = new ConfigurationModule($Sender);
-     $Cf->Initialize(array(
-          'Plugins.Akismet.Key' => array('Description' => $KeyDesc),
-          'Plugins.Akismet.Server' => array('Description' => 'You can use either Akismet or TypePad antispam.', 'Control' => 'DropDown', 'Items' => array('' => 'Aksimet', 'api.antispam.typepad.com' => 'TypePad', 'DefaultValue' => ''))
-          ));
-      $Cf->RenderAll();
+```php
+$Cf = new ConfigurationModule($Sender);
+$Cf->Initialize(array(
+    'Plugins.Akismet.Key' => array('Description' => $KeyDesc),
+    'Plugins.Akismet.Server' => array('Description' => 'You can use either Akismet or TypePad antispam.', 'Control' => 'DropDown', 'Items' => array('' => 'Aksimet', 'api.antispam.typepad.com' => 'TypePad', 'DefaultValue' => ''))
+));
+$Cf->RenderAll();
+```
 
- That's all there is to it - no custom view is involved.
+That's all there is to it - no custom view is involved.

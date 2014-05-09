@@ -6,6 +6,4 @@ categories: ["Developers","Framework"]
 
 ## Permissions Overview
 
-
 ## Using Permissions
-
