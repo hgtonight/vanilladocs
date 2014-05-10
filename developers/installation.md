@@ -4,7 +4,6 @@ layout: page
 categories: ["Developers","Installation"]
 ---
 
-
 ## Installing Vanilla
 
 Our current installation and upgrade instructions are in the [README file](https://github.com/vanillaforums/vanilla/blob/master/README.md) that comes with Vanilla. If you run into issues, see the Developers > Troubleshooting section of these docs.

@@ -4,7 +4,6 @@ layout: page
 categories: ["Cloud"]
 ---
 
-
 ## Cloud Support
 
 We provide professional support **exclusively** for our [cloud clients](http://vanillaforums.com/plans). Because of this, we require the forum owner to request support, or to specifically authorize other users to receive support.

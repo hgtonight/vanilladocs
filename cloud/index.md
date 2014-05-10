@@ -4,7 +4,6 @@ layout: page
 categories: ["Cloud"]
 ---
 
-
 ## Cloud Services Overview
 
 This section details services and processes offered exclusively to clients of our [cloud service](http://vanillaforums.com/plans). It includes workflows between Vanilla Forums and our clients, suggestions for getting the most out of your services, and expectations for how services will be delivered and communicated.

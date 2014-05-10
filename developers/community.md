@@ -10,10 +10,10 @@ We have a vibrant [developers' community at vanillaforums.org](http://vanillafor
 
 ### Get Notified
 
-Want to get notified about the newest releases? 
+Want to get notified about the newest releases?
 
 * Sign up for the VanillaForums.org newsletter in [your community profile](http://vanillaforums.org/profile/edit).
-* Watch the [RSS feed for the 'blog' category](http://vanillaforums.org/categories/blog/feed.rss). 
+* Watch the [RSS feed for the 'blog' category](http://vanillaforums.org/categories/blog/feed.rss).
 * Follow our [Twitter account](http://twitter.com/vanilla).
 
 ### Plugins

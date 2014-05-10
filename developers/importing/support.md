@@ -11,16 +11,18 @@ Migration tools are available for the following platforms. All migration tools m
 ### Vanilla 1
 
 ### phpBB
+
 phpBB file attachments can be renamed using utilities/phpbb.extensions.php in the GitHub project.
 
 ### vBulletin
+
 vBulletin has additional options for exporting files and custom profile fields. See the comments at the top of its class file.
 
 ### bbPress
 
 ### SimplePress
 
-### Simple Machines 
+### Simple Machines
 
 ### PunBB
 

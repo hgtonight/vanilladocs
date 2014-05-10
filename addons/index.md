@@ -12,7 +12,7 @@ Vanilla is structured such that its baseline installation only contains features
 
 ## Enabling Addons
 
-Enabling an addon immediately makes it active and available. To do this, visit the addons list and click "Enable" next to the addon. There may be a delay while enabling a new addon for the first time while it makes whatever changes are needed to your database. 
+Enabling an addon immediately makes it active and available. To do this, visit the addons list and click "Enable" next to the addon. There may be a delay while enabling a new addon for the first time while it makes whatever changes are needed to your database.
 
 ## Configuring Addons
 
@@ -29,4 +29,3 @@ Disabling an addon will remove whatever features it added, but it never destroys
 Addons can do many things. Some common changes include adding new options to the Dashboard's menu, adding information to discussions or comments, changing how parts of the forum work or appear, adding information to user accounts or profiles, or adding new pages of content to your forum.
 
 Every addon comes with a short description of what it does. As a general rule, enabling an addon is fully reversible, so it's safe to turn on any addon and try it out to get a better understanding of how it effects your community.
-

@@ -40,7 +40,7 @@ $PluginInfo['SamplePlugin'] = array(
     }
 
     public function PostController_Render_Override(&amp;$Sender) {
-        // This method gets called in place of the PostController's Render method. 
+        // This method gets called in place of the PostController's Render method.
     }
 
     public function DraftsController_Render_After(&amp;$Sender) {
@@ -48,7 +48,7 @@ $PluginInfo['SamplePlugin'] = array(
     }
 
     public function Base_Render_Before(&amp;$Sender) {
-        // This method gets called before the Render method gets called on every single class that 
+        // This method gets called before the Render method gets called on every single class that
         // extends the Controller class (ie. every controller in every application).
     }
 }</pre>

@@ -13,12 +13,12 @@ The process below assumes you will provide a database dump. We also perform API-
 ### Estimating your migration
 
 1. You provide the platform name, version number (if applicable), and number of users & posts for your current community platform.
-1. Vanilla will provide an SFTP drop.
-1. You provide a test dump of your data to the SFTP. This is typically a database dump, but may include additional files like avatars or attachments depending on your platform. **Please provide a full dump for an accurate estimate**. Vanilla will generally accept an NDA if one is required.
-2. You provide the email address for the user that will become the owner account.
-3. You provide any working username & password combination for testing.
-2. Vanilla will evaluate the data and provide a cost estimate and, if requested, a downtime estimate (how long your forum will need to be offline during the transition).
-3. Vanilla will provide feedback on concerns, limitations, or other needs.
+2. Vanilla will provide an SFTP drop.
+3. You provide a test dump of your data to the SFTP. This is typically a database dump, but may include additional files like avatars or attachments depending on your platform. **Please provide a full dump for an accurate estimate**. Vanilla will generally accept an NDA if one is required.
+4. You provide the email address for the user that will become the owner account.
+5. You provide any working username & password combination for testing.
+6. Vanilla will evaluate the data and provide a cost estimate and, if requested, a downtime estimate (how long your forum will need to be offline during the transition).
+7. Vanilla will provide feedback on concerns, limitations, or other needs.
 
 ### Test migration
 

@@ -37,7 +37,6 @@ Vanilla 2 has an import utility in its dashboard. This is what you'll use to imp
 	<li>At this point you're done. Congratulations! Your Vanilla 2 installation is ready to go with your old forum's data.</li>
 </ol>
 
-
 ### Notes
 
 You can port your attachments over to Vanilla 2. To do this you must enable the File Upload plugin before importing your data. You them must copy them to Vanilla 2's `uploads` folder.

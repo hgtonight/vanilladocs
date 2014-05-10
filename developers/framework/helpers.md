@@ -12,11 +12,10 @@ Where to find them
 
 ### Get/Set
 
-### config 
+### config
 
 ### Anchor & Wrap
 
 ### URL builders
 
 ### Categories
-
