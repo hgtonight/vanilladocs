@@ -1,6 +1,6 @@
 ---
 title: Plugins
-layout: page
+layout: docs
 categories: ["Developers","Plugins"]
 ---
 

@@ -1,5 +1,5 @@
 ---
 title: Moderation
-layout: page
+layout: docs
 categories: ["Features","Moderation"]
 ---

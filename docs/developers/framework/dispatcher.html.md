@@ -1,6 +1,6 @@
 ---
 title: Dispatcher
-layout: page
+layout: docs
 categories: ["Developers","Framework"]
 ---
 

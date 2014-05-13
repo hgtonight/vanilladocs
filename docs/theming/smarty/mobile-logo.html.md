@@ -1,6 +1,6 @@
 ---
 title: "{mobile_logo}"
-layout: page
+layout: docs
 categories: ["Theming", "Smarty"]
 ---
 

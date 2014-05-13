@@ -1,6 +1,6 @@
 ---
 title: Adding and Editing Reactions
-layout: page
+layout: docs
 categories: ["Features", "Addons", "Reactions"]
 ---
 
@@ -8,7 +8,7 @@ categories: ["Features", "Addons", "Reactions"]
 
 Vanilla comes with a wide range of reactions in your Dashboard, of which a few are enabled by default. You can toggle them on or off depending on what reactions are appropriate to your community. To enable or disable a reaction on your forum, click the "Active/Inactive" toggle next to each reaction in the Dashboard under "Reactions".
 
-Generally, we recommend using one to four reactions. Reacting should be simple and reflexive, not a complex decision over which reaction to use. 
+Generally, we recommend using one to four reactions. Reacting should be simple and reflexive, not a complex decision over which reaction to use.
 
 ![The list of Reactions in the Dashboard](images/reactions-list.png)
 
@@ -18,7 +18,7 @@ Reactions are universal to all categories on your site. You can use CSS rules to
 
 To edit a reaction, go to Reactions in the Dashboard and click the name of the Reaction you wish to edit.
 
-Editing an existing reaction is the best way to tweak your list to fit the culture of your community. We recommend selecting the default reaction that most closely matches your desired reaction and simply changing its name. 
+Editing an existing reaction is the best way to tweak your list to fit the culture of your community. We recommend selecting the default reaction that most closely matches your desired reaction and simply changing its name.
 
 You can also change the "Points" field to modify how many points it give to the user receiving each reaction of that type. The number of points assigned to the discussion or comment is not currently editable via the Dashboard. Yes, Reactions assigns points to users and content independently.
 

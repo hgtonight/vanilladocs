@@ -1,6 +1,6 @@
 ---
 title: Cloud Services
-layout: page
+layout: docs
 categories: ["Cloud"]
 ---
 

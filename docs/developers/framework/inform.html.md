@@ -1,6 +1,6 @@
 ---
 title: Inform Notifications
-layout: page
+layout: docs
 categories: ["Developers","Framework"]
 ---
 

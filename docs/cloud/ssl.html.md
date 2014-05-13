@@ -1,5 +1,5 @@
 ---
 title: SSL
-layout: page
+layout: docs
 categories: ["Features","SSL"]
 ---

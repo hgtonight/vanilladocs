@@ -1,6 +1,6 @@
 ---
 title: Controllers
-layout: page
+layout: docs
 categories: ["Developers","Framework"]
 ---
 

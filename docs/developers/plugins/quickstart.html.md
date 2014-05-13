@@ -1,6 +1,6 @@
 ---
 title: Plugin Quickstart
-layout: page
+layout: docs
 categories: ["Developers","Addons"]
 ---
 

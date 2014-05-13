@@ -1,6 +1,6 @@
 ---
 title: Permissions
-layout: page
+layout: docs
 categories: ["Developers","Framework"]
 ---
 

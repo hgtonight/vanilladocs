@@ -1,5 +1,5 @@
 ---
 title: WishList Integration
-layout: page
+layout: docs
 categories: ["Features","WordPress"]
 ---

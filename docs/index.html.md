@@ -1,6 +1,6 @@
 ---
 title: Vanilla Docs
-layout: page
+layout: docs
 ---
 
 ## Vanilla Forums Official Documentation

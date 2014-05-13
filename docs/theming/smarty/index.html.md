@@ -1,6 +1,6 @@
 ---
 title: Smarty
-layout: page
+layout: docs
 categories: ["Theming"]
 ---
 

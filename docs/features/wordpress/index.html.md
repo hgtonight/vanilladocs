@@ -1,5 +1,5 @@
 ---
 title: WordPress Integration
-layout: page
+layout: docs
 categories: ["Features","WordPress"]
 ---

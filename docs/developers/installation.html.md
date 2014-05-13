@@ -1,6 +1,6 @@
 ---
 title: Installation
-layout: page
+layout: docs
 categories: ["Developers","Installation"]
 ---
 

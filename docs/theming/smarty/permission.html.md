@@ -1,6 +1,6 @@
 ---
 title: "{permission}"
-layout: page
+layout: docs
 categories: ["Theming", "Smarty"]
 ---
 

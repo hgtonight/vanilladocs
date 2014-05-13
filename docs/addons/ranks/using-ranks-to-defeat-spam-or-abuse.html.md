@@ -1,6 +1,6 @@
 ---
 title: Using Ranks to Defeat Spam or Abuse
-layout: page
+layout: docs
 categories: ["Features", "Addons", "Ranks"]
 ---
 
@@ -14,7 +14,7 @@ This guide is for communities currently having spam problems that have already t
 
 What follows is a generalized recommendation for a large, high-traffic site. Please adjust the suggested values to match your needs and community.
 
-Click "Edit" on your "Level 1" rank. If you've edited your default ranks already, instead set a Rank to have level 1 (or any level as long as it is the lowest level) with no Criteria (all fields should be blank. 
+Click "Edit" on your "Level 1" rank. If you've edited your default ranks already, instead set a Rank to have level 1 (or any level as long as it is the lowest level) with no Criteria (all fields should be blank.
 
 Under Abilities, set the following values:
 

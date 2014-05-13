@@ -1,6 +1,6 @@
 ---
 title: Groups
-layout: page
+layout: docs
 categories: ["Features", "Addons"]
 ---
 

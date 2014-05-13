@@ -1,6 +1,6 @@
 ---
 title: Theming Hooks
-layout: page
+layout: docs
 categories: ["Theming"]
 ---
 

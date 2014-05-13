@@ -1,6 +1,6 @@
 ---
 title: "{text}"
-layout: page
+layout: docs
 categories: ["Theming", "Smarty"]
 ---
 

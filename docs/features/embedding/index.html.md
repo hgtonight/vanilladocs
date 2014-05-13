@@ -1,5 +1,5 @@
 ---
 title: Embedding
-layout: page
+layout: docs
 categories: ["Features","Embedding"]
 ---

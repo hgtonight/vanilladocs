@@ -1,6 +1,6 @@
 ---
 title: Setting Up Your New Forum
-layout: page
+layout: docs
 categories: ["Features","Setup"]
 ---
 

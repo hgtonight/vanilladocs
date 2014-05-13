@@ -1,6 +1,6 @@
 ---
 title: Contributing
-layout: page
+layout: docs
 categories: ["Developers","Contributing"]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Using Comments
-layout: page
+layout: docs
 ---
 
 ## Transition to Vanilla Comments

@@ -1,6 +1,6 @@
 ---
 title: Models and Forms
-layout: page
+layout: docs
 categories: ["Developers","Framework"]
 ---
 
@@ -40,7 +40,7 @@ Array (
 )</pre>
 <p>This means that the "BlogID" field has encountered a problem when attempting to validate that the BlogID value was an integer. If there had been other errors for that column, they would have also appeared, for example:</p>
 <pre lang="php">// Empty value is also incorrect
-$Blog['BlogID'] = ''; 
+$Blog['BlogID'] = '';
 $BlogModel-&gt;Save($Blog);
 print_r($BlogModel-&gt;Validation-&gt;Results());
 
@@ -84,12 +84,12 @@ echo $this-&gt;Form-&gt;Close('Save');</pre>
 <pre lang="php">public function Edit($BlogID = '') {
    $Validation = new Validation();
    $BlogModel = new Model('Blog', $Validation);
-   
+
    <strong>// Load the blog being edited $Blog = $BlogModel -&gt;GetWhere(array('BlogID' =&gt; $BlogID)) -&gt;FirstRow();</strong>
-   
+
    // Set the BlogModel on the form.
    $this-&gt;Form-&gt;SetModel($BlogModel);
-   
+
    // Make sure the form knows which item we are editing.
    $this-&gt;Form-&gt;AddHidden('BlogID', $BlogID);
 

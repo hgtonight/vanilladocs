@@ -1,6 +1,6 @@
 ---
 title: Asynchronous Requests
-layout: page
+layout: docs
 categories: ["Developers","Framework"]
 ---
 

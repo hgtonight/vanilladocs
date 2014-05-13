@@ -1,12 +1,12 @@
 ---
 title: Giving and Requesting Badges
-layout: page
+layout: docs
 categories: ["Features", "Addons", "Badges"]
 ---
 
 ## Giving a badge
 
-Badges->Give is the permission that defines who can give badges. By default, moderators and administrators have it. 
+Badges->Give is the permission that defines who can give badges. By default, moderators and administrators have it.
 
 To manually give a badge to one or more users, click the "Give" button from the Badges list. Type a username in the provided box. You can give a badge to many users at once by typing all their names, separated by commas.
 

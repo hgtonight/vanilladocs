@@ -1,6 +1,6 @@
 ---
 title: Support
-layout: page
+layout: docs
 categories: ["Cloud"]
 ---
 

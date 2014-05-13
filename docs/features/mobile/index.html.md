@@ -1,5 +1,5 @@
 ---
 title: Mobile
-layout: page
+layout: docs
 categories: ["Features","Mobile"]
 ---

@@ -1,6 +1,6 @@
 ---
 title: "{custom_menu}"
-layout: page
+layout: docs
 categories: ["Theming", "Smarty"]
 ---
 

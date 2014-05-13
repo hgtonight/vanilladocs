@@ -1,6 +1,6 @@
 ---
 title: Views
-layout: page
+layout: docs
 categories: ["Developers","Framework"]
 ---
 

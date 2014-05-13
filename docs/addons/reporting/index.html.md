@@ -1,6 +1,6 @@
 ---
 title: Reporting
-layout: page
+layout: docs
 categories: ["Features", "Addons"]
 ---
 
@@ -12,8 +12,8 @@ Reporting is a way for members to bring moderators’ attention to content that 
 
 Go to Flag -> Report in the Reactions menu at the end of the post. A popup box will prompt you to add a “Reason” both to explain the report and discourage useless reports. Any member may use this function.
 
-Reporting content creates a new discussion in a special moderator-only forum. 
-Additional reports of the same content (the exact same post) add new comments to the special discussion. 
+Reporting content creates a new discussion in a special moderator-only forum.
+Additional reports of the same content (the exact same post) add new comments to the special discussion.
 
 If different posts in the same discussion are reported, each will get its own special discussion. Moderators can comment in the special discussion normally to coordinate a response.
 

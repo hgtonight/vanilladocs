@@ -1,6 +1,6 @@
 ---
 title: "{pocket}"
-layout: page
+layout: docs
 categories: ["Theming", "Smarty"]
 ---
 

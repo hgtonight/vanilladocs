@@ -1,6 +1,6 @@
 ---
 title: Adding and Editing Badges
-layout: page
+layout: docs
 categories: ["Features", "Addons", "Badges"]
 ---
 
@@ -20,7 +20,7 @@ You may change the Points for a badge at any time. Point changes are not retroac
 
 ## Creating your own badges
 
-Create a memorable Name for your badge and give it a Description that explains what it is for and how users can earn it. This information will appear on the Badge's page. 
+Create a memorable Name for your badge and give it a Description that explains what it is for and how users can earn it. This information will appear on the Badge's page.
 
 The Slug should consist of only lowercase letters, numbers, and hyphens. The Slug must be unique for each badge.
 

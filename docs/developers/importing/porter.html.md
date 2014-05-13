@@ -1,6 +1,6 @@
 ---
 title: Vanilla Porter
-layout: page
+layout: docs
 categories: ["Developers","Importing"]
 ---
 

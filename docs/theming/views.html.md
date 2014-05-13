@@ -1,6 +1,6 @@
 ---
 title: Theming Views
-layout: page
+layout: docs
 categories: ["Theming"]
 ---
 

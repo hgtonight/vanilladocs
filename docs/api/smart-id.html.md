@@ -1,6 +1,6 @@
 ---
 title: Smart ID
-layout: page
+layout: docs
 categories: ["API"]
 ---
 

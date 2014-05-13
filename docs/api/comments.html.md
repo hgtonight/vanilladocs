@@ -1,6 +1,6 @@
 ---
 title: Comments
-layout: page
+layout: docs
 categories: ["API"]
 ---
 

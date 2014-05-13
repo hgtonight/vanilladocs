@@ -1,6 +1,6 @@
 ---
 title: Database Queries
-layout: page
+layout: docs
 categories: ["Developers","Framework"]
 ---
 
@@ -141,7 +141,7 @@ Array
         echo "This car is ". $Car->Color.", it has a $Car->Engine.
            " engine, and it goes ". $Car->MaxSpeed."KM/h";
      } ?></pre>
-     
+
 
 <h1>Database Objects</h1>
 <p>Most open-source web applications have database setup scripts that are simply a set of SQL instructions that you can inject directly into your database (typically mysql) to get going. Vanilla 1 was no exception to this rule. The benefit of this approach is that you can quickly and easily get your app up and running. The downside to this approach is that when it is time to upgrade the application to a newer version, you have to write extremely convoluted scripts to figure out what application version the user currently user has, or write scripts to examine database table structure to see what fields need to be removed, or what fields need to be added. Hell, it's even difficult to understand what I just wrote, let alone the code that would go along with it.</p>
@@ -176,17 +176,17 @@ $Construct-&gt;Table('User')
    -&gt;Set(TRUE, FALSE);</pre>
 <p>The hardest part of understanding this SQL is knowing what each of the arguments in the "Column" method are. I've done my best to keep these arguments similar to the way they appear when writing a column definition in SQL. Let's take a look at all of the arguments:</p>
 <pre lang="php">public function Column(
-    $Name, 
-    $Type, 
-    $Length = '', 
-    $Null = FALSE, 
-    $Default = NULL, 
-    $KeyType = FALSE, 
+    $Name,
+    $Type,
+    $Length = '',
+    $Null = FALSE,
+    $Default = NULL,
+    $KeyType = FALSE,
     $AutoIncrement = FALSE
 ) { }</pre>
 <p><strong>Name (string):</strong> The name of the column to create. <strong>Type (mixed):</strong> The data type of the column to be created. If an array of values is provided, the type will be set as "enum" and the array will be assigned as the column's Enum property. <strong>Length (mixed, not required, default "empty"):</strong> The length of the column. <strong>Null (bool, not required, default FALSE):</strong> Does the column allow null values. <strong>Default (mixed, not required, default NULL):</strong> The default value of the column. If NULL is provided (default), there will be no default value. <strong>KeyType (string, not required, default FALSE):</strong> What type of key is this column on the table. Options are primary, key, and FALSE (not a key). <strong>AutoIncrement (bool, not required, default FALSE):</strong>A boolean value indicating if this column auto-increments. Once you master the arguments for the column method, building and altering tables is a breeze. The Set() method (used above to execute the creation of the user table) also has some important arguments:</p>
 <pre lang="php">public function Set(
-    $Explicit = FALSE, 
+    $Explicit = FALSE,
     $Drop = FALSE
 ) {}</pre>
 <p>The Set method creates the table and columns specified with $this-&gt;Table() and $this-&gt;Column(). If no table or columns have been specified, this method will throw a fatal error. <strong>Explicit (bool, not required, default FALSE):</strong> If TRUE, and the table specified with $this-&gt;Table() already exists, this method will remove any columns from the table that were not defined with $this-&gt;Column(). <strong>Drop (bool, not required, default FALSE):</strong> If TRUE, and the table specified with $this-&gt;Table() already exists, this method will drop the table before attempting to re-create it. As you can imagine, these are some pretty powerful commands that you must pay close attention to. In 90% of my structure scripts, Explicit is TRUE, and Drop is FALSE. Despite this fact, I have kept both arguments FALSE by default so that tables are not dropped and columns are not removed if a user does not know what they are doing. As I mentioned, there are other methods available to you if you don't want to redefine an entire table, but you do want to add or remove columns (or drop entire tables). Those are: <strong>Drop</strong> (allows you to drop a table), <strong>RenameTable</strong>, <strong>DropColumn</strong>, and <strong>RenameColumn</strong>.</p>

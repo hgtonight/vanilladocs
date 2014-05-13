@@ -1,6 +1,6 @@
 ---
 title: Gigya Sign In
-layout: page
+layout: docs
 categories: ["Features", "Addons", "Integrations"]
 ---
 

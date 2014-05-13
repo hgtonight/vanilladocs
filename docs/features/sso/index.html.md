@@ -1,6 +1,6 @@
 ---
 title: Single Sign-On
-layout: page
+layout: docs
 categories: ["Features","Single Sign-On"]
 ---
 

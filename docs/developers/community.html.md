@@ -1,6 +1,6 @@
 ---
 title: Developers Community
-layout: page
+layout: docs
 categories: ["Developers"]
 ---
 

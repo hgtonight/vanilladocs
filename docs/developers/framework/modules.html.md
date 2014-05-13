@@ -1,6 +1,6 @@
 ---
 title: Modules
-layout: page
+layout: docs
 categories: ["Developers","Framework"]
 ---
 
@@ -16,14 +16,14 @@ categories: ["Developers","Framework"]
 <h2>Examples</h2>
 <p>The simplest modules will have just two methods: AssetTarget and ToString. Let's make a "Hello World" module. Create a file called class.helloworldmodule.php and place it in your test application's modules folder (if you don't have a test application, put it in Vanilla's modules folder). Open the file and enter the following:</p>
 <pre lang="php">class HelloWorldModule extends Module {
-   
+
    public function AssetTarget() {
       return 'Panel';
    }
-   
+
    public function ToString() {
       return 'Hello World!';
-   }   
+   }
 }</pre>
 <p>Now let's go add it to a controller. Open up a controller in your test application and add the following (if you don't have a test application, use vanilla's controllers/discussions.php file and add it to the bottom of the index method) right above the call to $this-&gt;Render():</p>
 <pre lang="php">$this-&gt;AddModule('HelloWorldModule');</pre>

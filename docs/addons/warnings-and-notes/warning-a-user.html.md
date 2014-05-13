@@ -1,6 +1,6 @@
 ---
 title: Warning a User
-layout: page
+layout: docs
 categories: ["Features", "Addons", "Warnings and Notes"]
 ---
 

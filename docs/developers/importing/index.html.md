@@ -1,6 +1,6 @@
 ---
 title: Importing
-layout: page
+layout: docs
 categories: ["Developers","Importing"]
 ---
 

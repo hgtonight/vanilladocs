@@ -1,6 +1,6 @@
 ---
 title: "{asset}"
-layout: page
+layout: docs
 categories: ["Theming", "Smarty"]
 ---
 

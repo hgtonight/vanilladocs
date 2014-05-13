@@ -1,5 +1,5 @@
 ---
 title: Notifications
-layout: page
+layout: docs
 categories: ["Features","Notifications"]
 ---
