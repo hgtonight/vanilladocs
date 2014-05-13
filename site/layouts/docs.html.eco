@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-2">
+      <nav class="docs-nav" role="navigation">
+        <%- @partial 'nav', false, { items: @generateMenu(@document.url, 'html') } %>
+      </nav>
+    </div>
+
+    <div class="col-md-10">
+      <div class="edit-doc pull-right">
+        <a class="btn btn-default btn-xs" href="https://github.com/vanilla/vanilladocs/edit/master/docs/<%= @document.relativePath %>">Improve this doc</a>
+      </div>
+      <article class="markdown-body" role="article">
+        <%- @content %>
+      </article>
+    </div>
+
+  </div>
+</div>

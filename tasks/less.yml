@@ -1,0 +1,3 @@
+dist:
+  files:
+    ".tmp/assets/main.css": "site/assets/css/main.less"

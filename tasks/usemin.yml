@@ -1,0 +1,4 @@
+options:
+  assetsDirs:
+    - "dist"
+html: "dist/**/*.html"

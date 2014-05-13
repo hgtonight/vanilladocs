@@ -1,0 +1,76 @@
+.docs-nav {
+  font-size: 12px;
+
+  .nav {
+    &:before,
+    &:after {
+      display: none;
+    }
+
+    li {
+      margin: 5px 0;
+
+      > a {
+        padding: 0;
+        line-height: 20px;
+        color: #666;
+
+        &:hover,
+        &:focus {
+          color: #444;
+          background-color: transparent;
+        }
+      }
+
+      &.active > a {
+        color: #428bca;
+        border-right: 2px solid #428bca;
+      }
+
+      &.active > .nav {
+        display: block;
+      }
+
+      > .nav {
+        display: none;
+
+        li > .nav {
+          padding-left: 12px;
+        }
+      }
+    }
+  }
+
+  > .nav > li {
+    margin-top: 0;
+
+    > a {
+      font-size: 11px;
+      color: #aaa;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  }
+}
+
+.markdown-body {
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.footer {
+  padding: 20px 0;
+  margin-top: 40px;
+  border-top: #eee solid 1px;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+@import "syntax";

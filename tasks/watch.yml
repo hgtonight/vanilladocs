@@ -1,0 +1,8 @@
+docs:
+  options:
+    interrupt: true
+  files:
+    - "docs/**/*"
+    - "site/**/*"
+  tasks:
+    - default

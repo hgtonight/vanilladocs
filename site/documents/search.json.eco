@@ -1,0 +1,8 @@
+<% pages = @getCollection('html').toJSON() %>{
+  "pages": [<% for page, index in pages: %>{
+    "id": "<%= page.url %>",
+    "title": "<%= page.title %>",
+    "categories": "<%= page.categories %>",
+    "content": "<%= page.content %>"
+  }<%= ", " if index isnt pages.length - 1 %><% end %>]
+}

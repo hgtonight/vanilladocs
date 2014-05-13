@@ -1,0 +1,19 @@
+build:
+  - clean
+  - docs
+  - useminPrepare
+  - less
+  - concat
+  - cssmin
+  - uglify
+  - rev
+  - usemin
+  - htmlmin
+
+serve:
+  - connect
+  - watch
+
+default:
+  - bowerInstall
+  - build

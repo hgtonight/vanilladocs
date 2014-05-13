@@ -1,0 +1,41 @@
+{
+  "name": "vanilla-docs",
+  "private": true,
+  "dependencies": {
+    "docpad": "6.64.x",
+    "docpad-plugin-eco": "*",
+    "docpad-plugin-highlightjs": "*",
+    "docpad-plugin-marked": "*",
+    "docpad-plugin-menu": "*",
+    "docpad-plugin-partials": "*",
+    "docpad-plugin-shortcodes": "*",
+    "docpad-plugin-sitemap": "*"
+  },
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-bower-install": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-connect": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-htmlmin": "*",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-docs": "*",
+    "grunt-rev": "^0.1.0",
+    "grunt-usemin": "*",
+    "grunt-useref": "*",
+    "load-grunt-config": "*",
+    "time-grunt": "*"
+  },
+  "scripts": {
+    "start": "grunt serve",
+    "build": "grunt",
+    "clean": "grunt clean"
+  },
+  "engines": {
+    "node": "0.10",
+    "npm": "1.3"
+  }
+}

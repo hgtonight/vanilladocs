@@ -1,0 +1,13 @@
+srcPath: "site"
+outPath: "dist"
+documentsPaths:
+  - "documents/"
+  - "../docs/"
+
+plugins:
+  cleanurls:
+    static: true
+
+templateData:
+  site:
+    url: "http://docs.vanillaforums.com"
