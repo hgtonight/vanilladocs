@@ -255,14 +255,8 @@ for the class MUST go on the next line after the body.
 
 ```php
 <?php
-namespace Vendor\Package;
 
-use FooClass;
-use BarClass as Bar;
-use OtherVendor\OtherPackage\BazClass;
-
-class ClassName extends ParentClass implements \ArrayAccess, \Countable
-{
+class ClassName extends ParentClass implements \ArrayAccess, \Countable {
     // constants, properties, methods
 }
 ```
@@ -273,11 +267,6 @@ MUST be on the next line, and there MUST be only one interface per line.
 
 ```php
 <?php
-namespace Vendor\Package;
-
-use FooClass;
-use BarClass as Bar;
-use OtherVendor\OtherPackage\BazClass;
 
 class ClassName extends ParentClass implements
     \ArrayAccess,
@@ -303,10 +292,8 @@ A property declaration looks like the following.
 
 ```php
 <?php
-namespace Vendor\Package;
 
-class ClassName
-{
+class ClassName {
     public $foo = null;
 }
 ```
@@ -338,7 +325,7 @@ class ClassName {
 }
 ```
 
-The major exception to this rule is Event Methods.  Any method that has:
+The major exception to this rule is Event Methods.  Any method that has the following patterns:
 
 ```
 '_handler',
@@ -348,6 +335,8 @@ The major exception to this rule is Event Methods.  Any method that has:
 '_after',
 'controller_
 ```
+
+Event methods MUST be `camelCase` separated by `_`.
 
 ### 4.5. Method Arguments
 
@@ -388,8 +377,15 @@ class ClassName {
     }
 }
 ```
+### 4.6. Global Functions
 
-### 4.6. `abstract`, `final`, and `static`
+Global function names SHOULD be declared in `camelCase()`.
+
+Global function names that match php style; such as array_something() are allowed
+and MUST be declared in lowercase.
+
+
+### 4.7. `abstract`, `final`, and `static`
 
 When present, the `abstract` and `final` declarations MUST precede the
 visibility declaration.
@@ -411,7 +407,7 @@ abstract class ClassName {
 }
 ```
 
-### 4.7. Method and Function Calls
+### 4.8. Method and Function Calls
 
 When making a method or function call, there MUST NOT be a space between the
 method or function name and the opening parenthesis, there MUST NOT be a space
@@ -702,8 +698,6 @@ There are many elements of style and practice intentionally omitted by this
 guide. These include but are not limited to:
 
 - Declaration of global variables and global constants
-
-- Declaration of functions
 
 - Operators and assignment
 
