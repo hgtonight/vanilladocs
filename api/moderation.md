@@ -1,4 +1,4 @@
-#Moderation API
+# Moderation API
 
 Details about API endpoints for moderation.
 
@@ -10,29 +10,26 @@ List the items in each of the queues.
 
 ### Parameters
 
-Field           | Type      |
+Parameter           | Type      | Description
 ---             | ---       | ---
 `Page`          | `string`  | Page Number. Default is first page.
 `CategoryID`    | `int`     | Category ID. Default all categories. 
 `State`         | `enum`    | Open or Closed.  Default ALL.
 
-###Sample Request:
+### Sample Request/Response:
 
-    [
-    curl "http://example.vanillaforums.com/moderation/preapproval?page=p2"
-    ]    
+```http
+GET /moderation/preapproval?page=p2 HTTP/1.1
+Host: http://example.vanillaforums.com
 
-###Sample Response:
-
-    [
-    JSON - (see database)
-    ]    
+{"response": "json"}
+```
 
 ## GET /moderation/relation
 
 Get all items in the queue by relation.
 
-Field           | Type      |
+Parameter           | Type      | Description
 ---             | ---       | ---
 `Page`          | `string`  | Page Number. Default is first page.
 `relation`  | `enum` | foreign-id, foreign-userid
@@ -46,7 +43,8 @@ Field           | Type      |
 Add content to an existing queue.
 
 ### Parameters
-Field           | Type      |
+
+Parameter           | Type      | Description
 ---             | ---       | ---
 `CategoryID`    | `string`  | Category ID 
 `Name`          | `string`  | Content Title.    RE: Discussion Title for comments 
@@ -68,7 +66,7 @@ Approve or deny an item in the queue.
 
 ### Parameters
 
-Field           | Type      |
+Parameter           | Type      | Description
 ---             | ---       | ---
 `Status`    | `enum`  | approved, denied, unread 
 
@@ -81,7 +79,9 @@ Batch process items in the queue.
 
 Batch update items in queue.
 
-Field           | Type      |
+### Parameters
+
+Parameter           | Type      | Description
 ---             | ---       | ---
 `Ids` | `string`  | CSV of queue ids
 `Status` | `enum` | approved, denied, unread
@@ -90,7 +90,7 @@ Field           | Type      |
 
 Batch delete items in queue.
 
-Field           | Type      |
+Parameter           | Type      |
 ---             | ---       | ---
 `Ids` | `string`  | CSV of queue ids
 
@@ -104,8 +104,8 @@ What format?
 ### Database Table
 All of these rows will be returned in output of the above calls.
 
-Field           | Type      |
----             | ---       |
+Parameter           | Type      | Description
+---             | ---       | ---
 `Queue`         | `enum`    | preapproval, reported, spam
 `State`         | `enum`    | Open, Closed
 `DateInserted`  | `string`  | Timestamp
