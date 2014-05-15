@@ -157,8 +157,7 @@ include "file.php";
 echo "<html>\n";
 
 // declaration
-function foo()
-{
+function foo() {
     // function body
 }
 ```
@@ -169,15 +168,13 @@ effects; i.e., an example of what to emulate:
 ```php
 <?php
 // declaration
-function foo()
-{
+function foo() {
     // function body
 }
 
 // conditional declaration is *not* a side effect
 if (! function_exists('bar')) {
-    function bar()
-    {
+    function bar() {
         // function body
     }
 }
@@ -238,8 +235,7 @@ For example:
 <?php
 namespace Vendor\Model;
 
-class Foo
-{
+class Foo {
     const VERSION = '1.0';
     const DATE_APPROVED = '2012-06-01';
 }
