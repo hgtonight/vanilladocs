@@ -6,7 +6,7 @@ categories: ["Theming", "Smarty"]
 
 ## Block: `{permission}`
 
-```smarty
+```
 {permission require="string"}
     Foo
 {/permission}

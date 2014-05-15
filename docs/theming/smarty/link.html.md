@@ -6,7 +6,7 @@ categories: ["Theming", "Smarty"]
 
 ## Function: `{link}`
 
-```smarty
+```
 {link path="string" text="string" notag=boolean format="string" withdomain=boolean}
 ```
 

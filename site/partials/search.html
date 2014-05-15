@@ -1,0 +1,13 @@
+<div id="search-docs" class="dropdown{{hasResults ? ' open' : ' closed'}}">
+  <div class="form-group">
+    <input v-on="input:search" type="text" class="form-control" placeholder="Search">
+  </div>
+  <ul class="dropdown-menu dropdown-search-results">
+    <li v-repeat="results">
+      <a href="{{url}}">
+        <span class="title">{{title}}</span>
+        <span class="categories">{{categories.join(' / ')}}</span>
+      </a>
+    </li>
+  </ul>
+</div>

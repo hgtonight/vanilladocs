@@ -1,3 +1,7 @@
 dist:
+  options:
+    sourceMap: true
+    sourceMapURL: "docs.css.map"
+    sourceMapFilename: ".tmp/assets/docs.css.map"
   files:
-    ".tmp/assets/main.css": "site/assets/css/main.less"
+    ".tmp/assets/docs.css": "site/assets/css/docs.less"

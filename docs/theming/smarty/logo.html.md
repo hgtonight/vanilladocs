@@ -6,7 +6,7 @@ categories: ["Theming", "Smarty"]
 
 ## Function: `{logo}`
 
-```smarty
+```
 {logo}
 ```
 

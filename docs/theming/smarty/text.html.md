@@ -6,7 +6,7 @@ categories: ["Theming", "Smarty"]
 
 ## Function: `{text}`
 
-```smarty
+```
 {text code="string" default="string"}
 ```
 

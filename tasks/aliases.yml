@@ -1,17 +1,20 @@
 build:
   - clean
   - docs
-  - useminPrepare
   - less
+  - copy
+  - useminPrepare
   - concat
-  - cssmin
   - uglify
+  - cssmin
   - rev
   - usemin
   - htmlmin
 
 serve:
-  - build
+  - docs
+  - less
+  - copy
   - connect
   - watch
 

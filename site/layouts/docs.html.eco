@@ -2,18 +2,25 @@
 layout: default
 ---
 
+<header class="jumbotron masthead" role="banner">
+  <div class="container">
+    <h1><%= @document.title %></h1>
+    <% if @document.description: %><p><%= @document.description %></p><% end %>
+  </div>
+</header>
+
 <div class="container">
   <div class="row">
 
-    <div class="col-md-2">
-      <nav class="docs-nav" role="navigation">
+    <div class="col-sm-2">
+      <nav class="docs-nav js-docs-nav" role="navigation">
         <%- @partial 'nav', false, { items: @generateMenu(@document.url, 'html') } %>
       </nav>
     </div>
 
-    <div class="col-md-10">
+    <div class="col-sm-10">
       <div class="edit-doc pull-right">
-        <a class="btn btn-default btn-xs" href="https://github.com/vanilla/vanilladocs/edit/master/docs/<%= @document.relativePath %>">Improve this doc</a>
+        <a class="btn btn-default btn-xs" href="https://github.com/vanilla/vanilladocs/edit/master/docs/<%= @document.relativePath %>">Improve document</a>
       </div>
       <article class="markdown-body" role="article">
         <%- @content %>

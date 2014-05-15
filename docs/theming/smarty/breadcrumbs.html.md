@@ -6,7 +6,7 @@ categories: ["Theming", "Smarty"]
 
 ## Function: `{breadcrumbs}`
 
-```smarty
+```
 {breadcrumbs homelink="string" hidelast=boolean}
 ```
 

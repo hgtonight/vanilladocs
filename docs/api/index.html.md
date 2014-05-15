@@ -30,7 +30,7 @@ All API calls should be made against your forum's "Vanilla URL", for example: `h
 
 ### Versioned Endpoint
 
-```sh
+```http
 # Example of versioned endpoint
 https://mycompany.vanillaforums.com/api/v1/categories/list.ext
 ```
@@ -43,12 +43,16 @@ Calls to the API are strictly separated by HTTP request type. Requests for data 
 
 ### Wire Format
 
-```sh
-# Example of providing an `access_token`
+Regardless of the request type, the `access_token` should always be supplied in the query string:
+
+```http
 GET /categories/all.json?access_token=abc123 HTTP/1.1
 Host: mycompany.vanillaforums.com
+```
 
-# Example response from the above request
+The above request will yield the following response:
+
+```http
 HTTP/1.1 200 OK
 Date: Tue, 19 Jul 2012 19:50:02 GMT
 Content-Type: application/json
@@ -56,8 +60,6 @@ Vary: Accept-Encoding
 Content-Length: 90
 Connection: close
 ```
-
-Regardless of the request type, the `access_token` should always be supplied in the query string.
 
 ### API Smart IDs
 

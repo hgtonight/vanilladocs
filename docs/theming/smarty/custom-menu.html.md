@@ -6,7 +6,7 @@ categories: ["Theming", "Smarty"]
 
 ## Function: `{custom_menu}`
 
-```smarty
+```
 {custom_menu format="string" wrap="string"}
 ```
 

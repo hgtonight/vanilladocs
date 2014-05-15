@@ -6,7 +6,7 @@ categories: ["Theming", "Smarty"]
 
 ## Function: `{pocket}`
 
-```smarty
+```
 {pocket name="string"}
 ```
 

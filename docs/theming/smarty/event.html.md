@@ -6,7 +6,7 @@ categories: ["Theming", "Smarty"]
 
 ## Function: `{event}`
 
-```smarty
+```
 {event name="string"}
 ```
 

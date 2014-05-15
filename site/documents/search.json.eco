@@ -1,8 +1,10 @@
 <% pages = @getCollection('html').toJSON() %>{
-  "pages": [<% for page, index in pages: %>{
-    "id": "<%= page.url %>",
+  "docs": [<% for page, pageIndex in pages: %>{
+    "url": "<%= page.url %>",
     "title": "<%= page.title %>",
-    "categories": "<%= page.categories %>",
-    "content": "<%= page.content %>"
-  }<%= ", " if index isnt pages.length - 1 %><% end %>]
+    "categories": [<% if page.categories: %><% for category, catIndex in page.categories: %>
+      "<%= category %>"<%= ", " if catIndex isnt page.categories.length - 1 %><% end %>
+    <% end %>],
+    "content": "<%= encodeURI(page.content) %>"
+  }<%= ", " if pageIndex isnt pages.length - 1 %><% end %>]
 }

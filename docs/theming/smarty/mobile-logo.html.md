@@ -6,7 +6,7 @@ categories: ["Theming", "Smarty"]
 
 ## Function: `{mobile_logo}`
 
-```smarty
+```
 {mobile_logo}
 ```
 

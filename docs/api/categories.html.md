@@ -1,14 +1,15 @@
 ---
 title: Categories
+menu-title: Hurka Durka
 layout: docs
 categories: ["API"]
 ---
 
 ## /categories/add
 
-```sh
-# HTTP Request
-POST https://yoursite.vanillaforums.com/api/v1/categories/add.ext
+```http
+POST /api/v1/categories/add.ext HTTP/1.1
+Host: https://yoursite.vanillaforums.com
 ```
 
 Adds a new category.
@@ -32,9 +33,9 @@ __`Description`__   | `string`  | Description of this category
 
 ## /categories/edit
 
-```sh
-# HTTP Request
-POST https://yoursite.vanillaforums.com/api/v1/categories/edit.ext
+```http
+POST /api/v1/categories/edit.ext HTTP/1.1
+Host: https://yoursite.vanillaforums.com
 ```
 
 Edits an existing category.
@@ -60,9 +61,9 @@ __`Description`__   | `string`  | Description of this category
 
 ## /categories/delete
 
-```sh
-# HTTP Request
-POST https://yoursite.vanillaforums.com/api/v1/categories/delete.ext
+```http
+POST /api/v1/categories/delete.ext HTTP/1.1
+Host: https://yoursite.vanillaforums.com
 ```
 
 Deletes an existing category.
@@ -79,9 +80,9 @@ __`Category`__      | `string`  | Category to be deleted (Name, use if no ID)
 
 ## /categories/list
 
-```sh
-# HTTP Request
-GET https://yoursite.vanillaforums.com/api/v1/categories/list.ext
+```http
+GET /api/v1/categories/list.ext HTTP/1.1
+Host: https://yoursite.vanillaforums.com
 ```
 
 Get a list of categories.

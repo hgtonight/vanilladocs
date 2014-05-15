@@ -6,9 +6,9 @@ categories: ["API"]
 
 ## /comments/add
 
-```sh
-# HTTP Request
-POST https://yoursite.vanillaforums.com/api/v1/comments/add.ext
+```http
+POST /api/v1/comments/add.ext HTTP/1.1
+Host: https://yoursite.vanillaforums.com
 ```
 
 Creates a new comment.

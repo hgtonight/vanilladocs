@@ -6,7 +6,7 @@ categories: ["Theming", "Smarty"]
 
 ## Function: `{searchbox}`
 
-```smarty
+```
 {searchbox placeholder="string"}
 ```
 

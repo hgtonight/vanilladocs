@@ -6,9 +6,9 @@ categories: ["API"]
 
 ## /configuration
 
-```sh
-# HTTP Request
-GET https://yoursite.vanillaforums.com/api/v1/configuration.ext
+```http
+GET /api/v1/configuration.ext HTTP/1.1
+Host: https://yoursite.vanillaforums.com
 ```
 
 Retrieve forum configuration.

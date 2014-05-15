@@ -6,7 +6,7 @@ categories: ["Theming", "Smarty"]
 
 ## Function: `{asset}`
 
-```smarty
+```
 {asset name="string" id="string" tag="string" class="string"}
 ```
 

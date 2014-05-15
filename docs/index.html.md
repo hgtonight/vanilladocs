@@ -1,9 +1,7 @@
 ---
-title: Vanilla Docs
+title: Vanilla Forums Documentation
 layout: docs
 ---
-
-## Vanilla Forums Official Documentation
 
 You can contribute to these docs via the [GitHub repository](https://github.com/vanillaforums/VanillaDocs/).
 
@@ -15,15 +13,14 @@ Vanilla Forums consists of both an [open source project](http://github.com/vanil
 * [Features](/features) - using Vanilla (covers both open source and cloud exclusives).
 * [Theming](/theming) - building a Vanilla theme.
 
-
-### Why go cloud-hosted?
+## Why go cloud-hosted?
 
 * No installation, upgrades, backups, maintenance, or testing required.
 * Very best stability, security, and scaling possible of any forum solution.
 * Professional on-call support and services to help and guide you.
 * A far better value than self-hosting medium- to enterprise-scale sites.
 
-### Why go open source?
+## Why go open source?
 
 * Community is just getting started or is a hobby.
 * Tight budget but plenty of time to invest.

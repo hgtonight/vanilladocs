@@ -6,9 +6,9 @@ categories: ["API"]
 
 ## /discussions/add
 
-```sh
-# HTTP Request
-POST https://yoursite.vanillaforums.com/api/v1/discussions/add.ext
+```http
+POST /api/v1/discussions/add.ext HTTP/1.1
+Host: https://yoursite.vanillaforums.com
 ```
 
 Creates a new discussion.
@@ -34,9 +34,9 @@ __`Category`__      | `string`  | Discussion Category (Name, use if no ID)
 
 ## /discussions/bookmark
 
-```sh
-# HTTP Request
-POST https://yoursite.vanillaforums.com/api/v1/discussions/bookmark.ext
+```http
+POST /api/v1/discussions/bookmark.ext HTTP/1.1
+Host: https://yoursite.vanillaforums.com
 ```
 
 Bookmark or unbookmark a discussion.
@@ -58,9 +58,9 @@ You need the `Garden.Moderation.Manage` permission to bookmark a discussion for 
 
 ## /discussions/bookmarked
 
-```sh
-# HTTP Request
-GET https://yoursite.vanillaforums.com/api/v1/discussions/bookmarked.ext
+```http
+GET /api/v1/discussions/bookmarked.ext HTTP/1.1
+Host: https://yoursite.vanillaforums.com
 ```
 
 List a user's bookmarked discussions.
@@ -70,9 +70,9 @@ List a user's bookmarked discussions.
 
 ## /discussions/edit
 
-```sh
-# HTTP Request
-POST https://yoursite.vanillaforums.com/api/v1/discussions/edit.ext
+```http
+POST /api/v1/discussions/edit.ext HTTP/1.1
+Host: https://yoursite.vanillaforums.com
 ```
 
 Edits an existing discussion.
@@ -99,9 +99,9 @@ __`Discussion`__    | [`smart id`](../smart-id) | Discussion to be deleted.
 
 ## /discussions/list
 
-```sh
-# HTTP Request
-POST https://yoursite.vanillaforums.com/api/v1/discussions/list.ext
+```http
+POST /api/v1/discussions/list.ext HTTP/1.1
+Host: https://yoursite.vanillaforums.com
 ```
 
 [__Authentication__](../#toc_5): `optional`  
@@ -110,9 +110,9 @@ If not provided, perspective will be that of a guest.
 
 ## /discussions/category
 
-```sh
-# HTTP Request
-GET https://yoursite.vanillaforums.com/api/v1/discussions/category.ext
+```http
+GET /api/v1/discussions/category.ext HTTP/1.1
+Host: https://yoursite.vanillaforums.com
 ```
 
 Get a list of discussions within a category.

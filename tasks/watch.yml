@@ -1,8 +1,27 @@
 docs:
-  options:
-    interrupt: true
   files:
     - "docs/**/*"
-    - "site/**/*"
+    - "site/layouts/*"
+    - "site/partials/*"
+    - "site/documents/*"
   tasks:
-    - default
+    - docs
+
+less:
+  files:
+    - "site/assets/**/*.less"
+  tasks:
+    - less
+
+js:
+  files:
+    - "site/assets/**/*.js"
+  tasks:
+    - "copy:js"
+
+livereload:
+  options:
+    livereload: true
+  files:
+    - ".tmp/assets/*.{css,js}"
+    - "dist/**/*.html"
