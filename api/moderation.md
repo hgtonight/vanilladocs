@@ -16,7 +16,7 @@ Parameter           | Type      | Description
 `CategoryID`    | `int`     | Category ID. Default all categories. 
 `State`         | `enum`    | Open or Closed.  Default ALL.
 
-### Sample Request/Response:
+### Example
 
 ```http
 GET /moderation/preapproval?page=p2 HTTP/1.1
@@ -29,10 +29,10 @@ Host: http://example.vanillaforums.com
 
 Get all items in the queue by relation.
 
-Parameter           | Type      | Description
+Parameter       | Type      | Description
 ---             | ---       | ---
 `Page`          | `string`  | Page Number. Default is first page.
-`relation`  | `enum` | foreign-id, foreign-userid
+`relation`      | `enum`    | foreign-id, foreign-userid
 
 
 
@@ -62,14 +62,14 @@ Remove content from a queue.
 
 ##PATCH /moderation/{id}
 
-Approve or deny an item in the queue.
+Update an item in the queue.
 
 ### Parameters
 
 Parameter           | Type      | Description
 ---             | ---       | ---
 `Status`    | `enum`  | approved, denied, unread 
-
+`Queue` | `enum` | spam, reported, premoderation
 
 ## {METHOD} /moderation/batch
 
@@ -85,6 +85,7 @@ Parameter           | Type      | Description
 ---             | ---       | ---
 `Ids` | `string`  | CSV of queue ids
 `Status` | `enum` | approved, denied, unread
+`Queue` | `enum` | spam, reported, premoderation
 
 ### DELETE Parameters
 
@@ -93,7 +94,6 @@ Batch delete items in queue.
 Parameter           | Type      |
 ---             | ---       | ---
 `Ids` | `string`  | CSV of queue ids
-
 
 
 #Notes
@@ -107,7 +107,7 @@ All of these rows will be returned in output of the above calls.
 Parameter           | Type      | Description
 ---             | ---       | ---
 `Queue`         | `enum`    | preapproval, reported, spam
-`State`         | `enum`    | Open, Closed
+`State`         | `enum`    | approved, denied, unread
 `DateInserted`  | `string`  | Timestamp
 `CategoryID`    | `string`  | Category ID 
 `Name`          | `string`  | Content Title.    RE: Discussion Title for comments 
