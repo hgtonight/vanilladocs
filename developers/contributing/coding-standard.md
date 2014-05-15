@@ -58,6 +58,9 @@ interpreted as described in [RFC 2119].
 
 - Method names SHOULD be declared in `camelCase`.
 
+- View files are excluded from this standard.  You SHOULD try to follow as many rules as possible.
+
+
 [PSR-1]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md
 
 
@@ -117,6 +120,7 @@ All PHP files MUST end with a single blank line.
 
 The closing `?>` tag MUST be omitted from files containing only PHP.
 
+All view files are excluded from this standard.  You SHOULD try to follow as many rules as possible.
 
 ### 2.2. PHP Tags
 
