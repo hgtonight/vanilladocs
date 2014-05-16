@@ -1,5 +1,8 @@
-Vanilla Coding Standard
-=====================
+---
+title: Coding Standard
+layout: docs
+categories: ["Developers", "Contributing"]
+---
 
 This guide extends and expands on [PSR-1], the basic coding standard and
  [PSR-2], the coding style guide.

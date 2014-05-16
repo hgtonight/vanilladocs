@@ -1,4 +1,8 @@
-# Moderation API
+---
+title: Moderation
+layout: docs
+categories: ["API"]
+---
 
 Details about API endpoints for moderation.
 
@@ -13,7 +17,7 @@ List the items in each of the queues.
 Parameter           | Type      | Description
 ---             | ---       | ---
 `Page`          | `string`  | Page Number. Default is first page.
-`CategoryID`    | `int`     | Category ID. Default all categories. 
+`CategoryID`    | `int`     | Category ID. Default all categories.
 `State`         | `enum`    | Open or Closed.  Default ALL.
 
 ### Example
@@ -46,14 +50,14 @@ Add content to an existing queue.
 
 Parameter           | Type      | Description
 ---             | ---       | ---
-`CategoryID`    | `string`  | Category ID 
-`Name`          | `string`  | Content Title.    RE: Discussion Title for comments 
+`CategoryID`    | `string`  | Category ID
+`Name`          | `string`  | Content Title.    RE: Discussion Title for comments
 `Body`          | `string`  | Content Body
 `Format`        | `enum`    | html, bbcode, markdown, text, textex, wysiwyg  
-`ForeignType`   | `enum`    | comment, discussion, activity, activity-comment, conversation - message   
-`ForeignID`     | `string`  | 
+`ForeignType`   | `enum`    | comment, discussion, activity, activity-comment, conversation - message
+`ForeignID`     | `string`  |
 `ForeignUserID` | `string`  | The user who generated the content
-List optional attributes. 
+List optional attributes.
 
 
 ## DELETE /moderation/{id}
@@ -68,7 +72,7 @@ Update an item in the queue.
 
 Parameter           | Type      | Description
 ---             | ---       | ---
-`Status`    | `enum`  | approved, denied, unread 
+`Status`    | `enum`  | approved, denied, unread
 `Queue` | `enum` | spam, reported, premoderation
 
 ## {METHOD} /moderation/batch
@@ -109,11 +113,11 @@ Parameter           | Type      | Description
 `Queue`         | `enum`    | preapproval, reported, spam
 `State`         | `enum`    | approved, denied, unread
 `DateInserted`  | `string`  | Timestamp
-`CategoryID`    | `string`  | Category ID 
-`Name`          | `string`  | Content Title.    RE: Discussion Title for comments 
+`CategoryID`    | `string`  | Category ID
+`Name`          | `string`  | Content Title.    RE: Discussion Title for comments
 `Body`          | `string`  | Content Body
-`ForeignType`   | `enum`    | comment, discussion, activity, activity-comment, conversation - message   
+`ForeignType`   | `enum`    | comment, discussion, activity, activity-comment, conversation - message
 `ForeignID`     | `string`  |  ex d-12
 `ForeignUserID` | `string`  | The user who generated the content
-`Status`        | `string`  | 
+`Status`        | `string`  |
 `Attributes`    | `string`  | see Attributes Document
