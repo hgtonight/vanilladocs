@@ -1,6 +1,5 @@
 ---
 title: Categories
-menu-title: Hurka Durka
 layout: docs
 categories: ["API"]
 ---
