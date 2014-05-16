@@ -14,7 +14,8 @@ layout: default
 
     <div class="col-sm-2">
       <nav class="docs-nav js-docs-nav" role="navigation">
-        <%- @partial 'nav', false, { items: @generateMenu(@document.url, 'html') } %>
+        <%- @partial 'nav', false, items: @generateMenu(@document.url, 'html') %>
+        <p><a class="text-muted" href="#top"><b>Back to top</b></a></p>
       </nav>
     </div>
 
