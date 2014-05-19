@@ -34,7 +34,8 @@ Once you have your SSL certificates you'll need to give them to Vanilla support.
 
 If you have a strict security policy that requires that your site only be served through https we can configure your site to always use ssl. We don't recommend forcing SSL during the set up process in order to help us troubleshoot any issues with the configuration process.
 
-### Troubleshooting
+### Gotchas
 
 * When your site is being served through SSL you could encounter problems if you are externally linking to non-SSL resources such as javascript. Keep this in mind if you are custom theming your site or have other customizations enabled.
 * If you are using jsConnect make sure your authentication url is SSL or else jsConnect will fail.
+* Don't give us a wildcard certificate. Usually you set up Vanilla as a subdomain of your main site (ex. forums.yoursite.com). Make sure you generate certifictes just for the forums and not a wildcard certificate that can be used for your entire domain.
