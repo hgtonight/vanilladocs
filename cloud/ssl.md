@@ -24,6 +24,8 @@ Private keys start like this:
 
 3. The optional **Intermediate SSL Certificate** for your certificate issuing authority.
 
+    `-----BEGIN RSA PRIVATE KEY-----`
+
 ### How to obtain your SSL certificates
 
 Usually, you'll get an SSL certificate in one of two ways:
@@ -46,6 +48,8 @@ The SSL process would be much smoother if Vanilla could just set it up without r
 Once you have your SSL certificates you'll need to give them to Vanilla support. **Don't just email your SSL certificates to us.** These certificates are sort of like passwords and special care should be taken to provide them to us in a secure way. Here are some options.
 
 1. **Secure FTP (sftp)**. If you've been given an SFTP account on Vanilla's project server, then you should upload your certificates there.
+
+2. **PGP Encrypted Email**. If you have the ability to send PGP encrypted email then you can send your SSL certificates that way. Please send them to: ops@vanillaforums.com. Our public key is included in this documentation.
 
 ```
 -----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -81,8 +85,6 @@ iUQOvO9ttzlGCMpsm21HVxjmreHvto9TMJcReeyG
 =rkOa
 -----END PGP PUBLIC KEY BLOCK-----
 ```
-
-2. **PGP Encrypted Email**. If you have the ability to send PGP encrypted email then you can send your SSL certificates that way. Please send them to: ops@vanillaforums.com. Our public key is on the right.
 
 ### SSL only sites
 
