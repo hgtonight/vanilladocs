@@ -25,9 +25,9 @@ Private keys start like this:
 
 Usually, you'll get an SSL certificate in one of two ways:
 
-1. Ask an IT professional at your company. They should know exactly what an SSL certificate is and can coordinate sending a certificate to Vanilla's cloud support. Showing them this documentation will also help.
+1. **Ask an IT professional at your company**. They should know exactly what an SSL certificate is and can coordinate sending a certificate to Vanilla's cloud support. Showing them this documentation will also help.
 
-2. Obtain a new SSL certificate through a certificate authority. Companies like Verisign and TRUSTe act as certificate authorities and you can purchase an SSL certificate through them. Explaining the entire process of purchasing your own SSL certificate is going to be different for each vendor and is beyond the scope of this documentation. We recommend contacting the support of a certificate authority vendor to get more information on purchasing a new SSL certificate.
+2. **Obtain a new SSL certificate through a certificate authority**. Companies like Verisign and TRUSTe act as certificate authorities and you can purchase an SSL certificate through them. Explaining the entire process of purchasing your own SSL certificate is going to be different for each vendor and is beyond the scope of this documentation. We recommend contacting the support of a certificate authority vendor to get more information on purchasing a new SSL certificate.
 
 #### Why can't Vanilla create an SSL certificate for your site?
 
