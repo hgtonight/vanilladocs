@@ -13,12 +13,12 @@ Certificates start like this:
 -----BEGIN CERTIFICATE-----
 ```
 
-1. The **SSL Certificate** for your forum's domain in PEM format.
-
 ```
 Private keys start like this:
 -----BEGIN RSA PRIVATE KEY-----
 ```
+
+1. The **SSL Certificate** for your forum's domain in PEM format.
 
 2. The **SSL Certificate Private Key** for your forum's domain in PEM format, and with **no password**.
 
