@@ -11,18 +11,14 @@ Vanilla offers SSL support in Corporate plans and above. In order for us to to e
 1. The **SSL Certificate** for your forum's domain in PEM format.
 
     **Certificates start like this:**
-
-    ```
-    -----BEGIN CERTIFICATE-----
-    ```
+    
+    `-----BEGIN CERTIFICATE-----`
 
 2. The **SSL Certificate Private Key** for your forum's domain in PEM format, and with **no password**.
 
     **Private keys start like this:**
 
-    ```
-    -----BEGIN RSA PRIVATE KEY-----
-    ```
+    `-----BEGIN RSA PRIVATE KEY-----`
 
 ### How to obtain your SSL certificates
 
@@ -44,40 +40,40 @@ Once you have your SSL certificates you'll need to give them to Vanilla support.
 
 2. **PGP Encrypted Email**. If you have the ability to send PGP encrypted email then you can send your SSL certificates that way. Please send them to: ops@vanillaforums.com. Our public key is included in this documentation.
 
-    ```
-    -----BEGIN PGP PUBLIC KEY BLOCK-----
-    Version: GnuPG/MacGPG2 v2.0.20 (Darwin)
-    Comment: GPGTools - https://gpgtools.org
+```
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: GnuPG/MacGPG2 v2.0.20 (Darwin)
+Comment: GPGTools - https://gpgtools.org
 
-    mQENBFN8vQoBCADnosskImvLPW8GAEw78CKZmwsOChZk0uESR+o1CLTeouLurU6C
-    MusvvhRkcdgaeEdvx01ynFncntCkprJpzbtCojEUGSIUDjuAa9xQ+6GXipZxibdb
-    jelHn8tOzkmabXbzvEp7je1bvdG3y6Q33yv1oIkXzSG95lpNaBXVJSLzqZgtox18
-    0PRqUfwU8jv1/RaUefYUTENDsN4CdlNeLg7DYenqyg8f1xQvhFJWWY6WkdxmLrDm
-    7CCdST5q6tXZmetkMUx0ggxe9bL5PXz7cOO120JqF9FMvsilO37UicL36bxX0pnU
-    ZgTbk+NvDgsElgViiOONbucZ0CJq4dLjFmntABEBAAG0RFZhbmlsbGEgT3BlcmF0
-    aW9ucyAoVmFuaWxsYSBPcGVyYXRpb25zIFRlYW0pIDxvcHNAdmFuaWxsYWZvcnVt
-    cy5jb20+iQE9BBMBCgAnBQJTfL0KAhsDBQkHhh+ABQsJCAcDBRUKCQgLBRYCAwEA
-    Ah4BAheAAAoJEFdr5EjBpxgwyMsH/jxMqCk18JXxjwEjJjgUBK59P5vszu1JqBtx
-    rxJupnj35DJLu+zR5aWaqMTBVzv7bfYuPR9PGa6FltM1bGI2fk8WslEsyA/1vgjz
-    Oou6oc+R1RnW3yr6y2TsRSDx3qSbRGd+ga5yrk4OtMvVK09N9CuvIcgdq1yzfRb2
-    D9QfvxLVLMCIomY/lWgAIzmThRy04/Cw9xBkvHyEJvYI1pRPCf/xk8Icbwi49Bsv
-    IyQWhozmMMbzeBrGx+nb8r/o7Nv24PGHc2QzEudGktNnd3k9WfkEQ69PrjgiuNbK
-    mR0QQb0RUNBOeGn2Ltrxr1TtducdRnvbP9jeipscCBvbqO4sgju5AQ0EU3y9CgEI
-    AMUM1WzpjXtFH1YvbnObfiMLCZW1XoLBUVA9u1dD5kD4n/XEsAcSFyZ4+nBKJvy9
-    gICRWLY82oySrw42eCr5rhog12BNMqW0yqme60qlINChu86qzx2ibGcVORk1wMRg
-    NDOmu79Aq6azhE7npHwiRDEDx3GrTyT9HgqzySR+eujDYitCs66OOBjafXrYM+U0
-    uN3NoGzJtj15A+SmqtoysZUPC5lkHqzKrZVD3SrRTWr+1ahklQQmZPYDhWUfO1sz
-    yGtKdYdUIaTySYrc3T0cZNAROXSre2tRYKWRYaTZzNyu99CBE1PR4YiUqiVBPSQF
-    av7WebC9wM/q7pC+qd4xOD0AEQEAAYkBJQQYAQoADwUCU3y9CgIbDAUJB4YfgAAK
-    CRBXa+RIwacYMMdAB/oDHDVGjPjGZSdhy3pVA65B+t0o8UdSLQwmMo1VM8BvaMqk
-    acqs5WUnjz3uk5ik1IN6A6ZKLbgH38DbovCGgFxqDr0gHX6LFZjdHgBDFJyJEn4J
-    or/vC50Vt4umKIUuwL2RTgMqSAzk3y6wXgQMY+ch3fGv0Zg6KIcP4RSKO4HSuB71
-    +2pLw+Eq+AFiAqSmrzd40yYtB/+mjXUMf3Nu0nptfftxUmOiHyDRRwehwHiXxYfR
-    CrEpviGiuM679h+Ed7hSrS+COK+VJPt3HmZfmlvI8uimMD9HjWxDZava2HmiAqJr
-    iUQOvO9ttzlGCMpsm21HVxjmreHvto9TMJcReeyG
-    =rkOa
-    -----END PGP PUBLIC KEY BLOCK-----
-    ```
+mQENBFN8vQoBCADnosskImvLPW8GAEw78CKZmwsOChZk0uESR+o1CLTeouLurU6C
+MusvvhRkcdgaeEdvx01ynFncntCkprJpzbtCojEUGSIUDjuAa9xQ+6GXipZxibdb
+jelHn8tOzkmabXbzvEp7je1bvdG3y6Q33yv1oIkXzSG95lpNaBXVJSLzqZgtox18
+0PRqUfwU8jv1/RaUefYUTENDsN4CdlNeLg7DYenqyg8f1xQvhFJWWY6WkdxmLrDm
+7CCdST5q6tXZmetkMUx0ggxe9bL5PXz7cOO120JqF9FMvsilO37UicL36bxX0pnU
+ZgTbk+NvDgsElgViiOONbucZ0CJq4dLjFmntABEBAAG0RFZhbmlsbGEgT3BlcmF0
+aW9ucyAoVmFuaWxsYSBPcGVyYXRpb25zIFRlYW0pIDxvcHNAdmFuaWxsYWZvcnVt
+cy5jb20+iQE9BBMBCgAnBQJTfL0KAhsDBQkHhh+ABQsJCAcDBRUKCQgLBRYCAwEA
+Ah4BAheAAAoJEFdr5EjBpxgwyMsH/jxMqCk18JXxjwEjJjgUBK59P5vszu1JqBtx
+rxJupnj35DJLu+zR5aWaqMTBVzv7bfYuPR9PGa6FltM1bGI2fk8WslEsyA/1vgjz
+Oou6oc+R1RnW3yr6y2TsRSDx3qSbRGd+ga5yrk4OtMvVK09N9CuvIcgdq1yzfRb2
+D9QfvxLVLMCIomY/lWgAIzmThRy04/Cw9xBkvHyEJvYI1pRPCf/xk8Icbwi49Bsv
+IyQWhozmMMbzeBrGx+nb8r/o7Nv24PGHc2QzEudGktNnd3k9WfkEQ69PrjgiuNbK
+mR0QQb0RUNBOeGn2Ltrxr1TtducdRnvbP9jeipscCBvbqO4sgju5AQ0EU3y9CgEI
+AMUM1WzpjXtFH1YvbnObfiMLCZW1XoLBUVA9u1dD5kD4n/XEsAcSFyZ4+nBKJvy9
+gICRWLY82oySrw42eCr5rhog12BNMqW0yqme60qlINChu86qzx2ibGcVORk1wMRg
+NDOmu79Aq6azhE7npHwiRDEDx3GrTyT9HgqzySR+eujDYitCs66OOBjafXrYM+U0
+uN3NoGzJtj15A+SmqtoysZUPC5lkHqzKrZVD3SrRTWr+1ahklQQmZPYDhWUfO1sz
+yGtKdYdUIaTySYrc3T0cZNAROXSre2tRYKWRYaTZzNyu99CBE1PR4YiUqiVBPSQF
+av7WebC9wM/q7pC+qd4xOD0AEQEAAYkBJQQYAQoADwUCU3y9CgIbDAUJB4YfgAAK
+CRBXa+RIwacYMMdAB/oDHDVGjPjGZSdhy3pVA65B+t0o8UdSLQwmMo1VM8BvaMqk
+acqs5WUnjz3uk5ik1IN6A6ZKLbgH38DbovCGgFxqDr0gHX6LFZjdHgBDFJyJEn4J
+or/vC50Vt4umKIUuwL2RTgMqSAzk3y6wXgQMY+ch3fGv0Zg6KIcP4RSKO4HSuB71
++2pLw+Eq+AFiAqSmrzd40yYtB/+mjXUMf3Nu0nptfftxUmOiHyDRRwehwHiXxYfR
+CrEpviGiuM679h+Ed7hSrS+COK+VJPt3HmZfmlvI8uimMD9HjWxDZava2HmiAqJr
+iUQOvO9ttzlGCMpsm21HVxjmreHvto9TMJcReeyG
+=rkOa
+-----END PGP PUBLIC KEY BLOCK-----
+```
 
 ### SSL only sites
 
