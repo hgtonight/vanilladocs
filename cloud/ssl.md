@@ -10,19 +10,16 @@ Vanilla offers SSL support in Corporate plans and above. In order for us to to e
 
 ```
 Certificates start like this:
-
 -----BEGIN CERTIFICATE-----
 ```
 
 1. The **SSL Certificate** for your forum's domain in PEM format.
+2. The **SSL Certificate Private Key** for your forum's domain in PEM format, and with **no password**.
 
 ```
 Private keys start like this:
-
 -----BEGIN RSA PRIVATE KEY-----
 ```
-
-2. The **SSL Certificate Private Key** for your forum's domain in PEM format, and with **no password**.
 
 ### How to obtain your SSL certificates
 
@@ -43,8 +40,6 @@ Once you have your SSL certificates you'll need to give them to Vanilla support.
 1. **Secure FTP (sftp)**. If you've been given an SFTP account on Vanilla's project server, then you should upload your certificates there.
 
 ```
-Vanilla Operations (ops@vanillaforums.com) PGP Public Key:
-
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 Version: GnuPG/MacGPG2 v2.0.20 (Darwin)
 Comment: GPGTools - https://gpgtools.org
