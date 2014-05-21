@@ -8,21 +8,21 @@ categories: ["Features","SSL"]
 
 Vanilla offers SSL support in Corporate plans and above. In order for us to to enable SSL for your forum, you will need to provide Vanilla with the following:
 
-> **Certificates start like this:**
-
 ```
+Certificates start like this:
 -----BEGIN CERTIFICATE-----
 ```
 
 1. The **SSL Certificate** for your forum's domain in PEM format.
 
-> **Private keys start like this:**
-
 ```
+Private keys start like this:
 -----BEGIN RSA PRIVATE KEY-----
 ```
 
 2. The **SSL Certificate Private Key** for your forum's domain in PEM format, and with **no password**.
+
+3. The optional **Intermediate SSL Certificate** for your certificate issuing authority.
 
 ### How to obtain your SSL certificates
 
@@ -31,6 +31,11 @@ Usually, you'll get an SSL certificate in one of two ways:
 1. **Ask an IT professional at your company**. They should know exactly what an SSL certificate is and can coordinate sending a certificate to Vanilla's cloud support. Showing them this documentation will also help.
 
 2. **Obtain a new SSL certificate through a certificate authority**. Companies like Verisign and TRUSTe act as certificate authorities and you can purchase an SSL certificate through them. Explaining the entire process of purchasing your own SSL certificate is going to be different for each vendor and is beyond the scope of this documentation. We recommend contacting the support of a certificate authority vendor to get more information on purchasing a new SSL certificate.
+
+
+#### What is this "Intermediate SSL Certificate"?
+
+SSL has 2 components: trust and encryption. Encryption is fairly straightforward: the certificate is used to encrypt communication between the client and the server. Trust, on the other hand, is more complex. Web browsers are pre-configured to "know" about a certain set of certificate authorities, .
 
 #### Why can't Vanilla create an SSL certificate for your site?
 
@@ -75,7 +80,6 @@ CrEpviGiuM679h+Ed7hSrS+COK+VJPt3HmZfmlvI8uimMD9HjWxDZava2HmiAqJr
 iUQOvO9ttzlGCMpsm21HVxjmreHvto9TMJcReeyG
 =rkOa
 -----END PGP PUBLIC KEY BLOCK-----
-
 ```
 
 2. **PGP Encrypted Email**. If you have the ability to send PGP encrypted email then you can send your SSL certificates that way. Please send them to: ops@vanillaforums.com. Our public key is on the right.
