@@ -1,7 +1,7 @@
 VanillaDocs
 ===========
 
-[![Build Status](http://img.shields.io/travis/vanillaforums/VanillaDocs/gh-pages.svg?style=flat)](https://travis-ci.org/vanillaforums/VanillaDocs)
+[![Build Status](http://img.shields.io/travis/vanilla/vanilladocs/gh-pages.svg?style=flat)](https://travis-ci.org/vanillaforums/VanillaDocs)
 
 ## Contributing
 
