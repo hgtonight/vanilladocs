@@ -128,7 +128,7 @@ Parameter           | Type      | Description
 `ForeignType`   | `enum`    | comment, discussion, activity, activity-comment, conversation - message   
 `ForeignID`     | `string`  |  ex d-12
 `ForeignUserID` | `string`  | The user who generated the content
-`Status`        | `string`  | approved, denied, unread
+`Status`        | `string`  | unread, approved, denied
 `DateStatus`	 |  `string` | Timestamp
 `StatusUserID`	| `int` | The user who last change the status
 `Attributes`    | `string`  | see Attributes Document
