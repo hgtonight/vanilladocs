@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "grunt": "*",
+    "grunt-cli": "*",
     "grunt-bower-install": "*",
     "grunt-contrib-clean": "*",
     "grunt-contrib-concat": "*",
