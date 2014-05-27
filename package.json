@@ -12,6 +12,7 @@
     "docpad-plugin-sitemap": "*"
   },
   "devDependencies": {
+    "bower": "*",
     "grunt": "*",
     "grunt-cli": "*",
     "grunt-bower-install": "*",
