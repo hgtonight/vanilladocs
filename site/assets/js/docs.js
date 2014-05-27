@@ -1,6 +1,29 @@
 ;(function ($, window, document, undefined) {
 
-  var docs  = store.get('docs')
+  var cache = {
+    set: function (key, val, exp) {
+      store.set(key, {
+        val  : val
+      , exp  : exp
+      , time : new Date().getTime()
+      });
+    },
+    get: function (key) {
+        var info = store.get(key);
+
+        if (!info) {
+          return null;
+        }
+
+        if (new Date().getTime() - info.time > info.exp) {
+          return null;
+        }
+
+        return info.val;
+    }
+}
+
+  var docs  = cache.get('docs')
     , pages = []
     , index;
 
@@ -25,10 +48,10 @@
         pages.push(result);
       })
       .done(function () {
-        store.set('docs', {
+        cache.set('docs', {
           pages: pages
         , index: index
-        });
+      }, 24 * 60 * 60 * 1000); // Expire after a day
       });
   }
 
