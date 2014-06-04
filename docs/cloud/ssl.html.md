@@ -46,42 +46,42 @@ Once you have your SSL certificates you'll need to give them to Vanilla support.
 
 1. **Secure FTP (sftp)**. If you've been given an SFTP account on Vanilla's project server, then you should upload your certificates there.
 
-2. **PGP Encrypted Email**. If you have the ability to send PGP encrypted email then you can send your SSL certificates that way. Please send them to: ops@vanillaforums.com. Our public key is included in this documentation.
-
 ```
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 Version: GnuPG/MacGPG2 v2.0.20 (Darwin)
 Comment: GPGTools - https://gpgtools.org
 
-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
+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
-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
-=rkOa
+cy5jb20+iQE9BBMBCgAnBQJTjyK9AhsDBQkHhh+ABQsJCAcDBRUKCQgLBRYCAwEA
+Ah4BAheAAAoJEIkj1hflHtRHKu0IAIJ02m3Q0YsWtVVTQ3RI+yz/5G5ewjp+a3iv
+oZybmNGInYEIKRNSlSQYf7K7B7fogGr7pAq+aVHE6yUOIwsHiAnK6U2Qpo6/mrlr
+U2CS24LwSMjX+1x6iV+REEQM9sRZ1olfvrdZAKLgqZZTMyK5/eOyHjgZktHJgzlo
+mIzd5zHx1xopEKDcZnwqxNWvqaZwRIkdUXWuTVs+HqCG6Cc6sO701k0oJmMmWeoI
+4khaIokv4VdEibvdD545ru/NjR3zPHUhsrkxX+EggCWJggZ7fiu+98AUbkhGM24T
+cU4T3TaNsCgjaedgihVb6g1zdKrWCK2AXXOttR8i0PY+ZqSACdy5AQ0EU48ivQEI
+AL8k9yPxIItjQ398+pZUplLDSufYzeMGGgJRJQUjfSGYBN8aPLWJ/E6MZPVRHmBT
+jssIYhyxKUXTUY6M+hiTt0vpoYkD9oz3lLyvEzedgUJ8RrisGU+1dL3P5+YJf1/C
+tC468OkQxAB70oMCag/PXnkljB5fZzgFhfQs8IHeUrdTyVlhrRkUxbh5EjOj3cnE
+nKlW2eNM2QG/FduBYmPaPf9slcGDBo3SacQ+IcmlEH83ZycRhcoaSfa6sKVdQqq8
+/FnhtNsOWnu1kYEvX/Qc8Uaoub40ESVTR5Qdj97IiH1NO6q2h5nAwmMC74q0EZzP
+sQE1vqdsQE+oAEkaNyz5P68AEQEAAYkBJQQYAQoADwUCU48ivQIbDAUJB4YfgAAK
+CRCJI9YX5R7UR5K8B/970DkBOsiZkSWBVuNVedijD4LSo4LF1o+Xm9/DUH5yXe99
+CHuiK6iCHRGrJAGlUC2XETB4mA+dwCLQ/Gs4HTLSWoqeWcOfoyyLlYYHk5whWUw3
+DI3Qj/hH+GvsJoJ2LdgJWBKU8WsXrR/GS9WqhV7sERQbaoUKB8ZbledtXlT7Vjmb
+U6QvNWXl0gzCnBhdcslYzlZ5KxpQqX67Qo020shfemAKJkwXuMJAMB6Q7p5L+JE9
+lFkyInx1ZzHOrVfpO9M8l08+9ArpH3+7RvSS60oMF56fNQwuOKiGgHLOZhkiRao7
+mdgI8Hx09QYcxGjehtMJNzQQ6qryx8UNAaEtB8/w
+=QysZ
 -----END PGP PUBLIC KEY BLOCK-----
 ```
+
+2. **PGP Encrypted Email**. If you have the ability to send PGP encrypted email then you can send your SSL certificates that way. Please send them to: ops@vanillaforums.com. Our public key is included in this documentation.
 
 ### SSL only sites
 
