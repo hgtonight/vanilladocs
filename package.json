@@ -2,14 +2,16 @@
   "name": "vanilla-docs",
   "private": true,
   "dependencies": {
-    "docpad": "6.64.x",
+    "docpad": "6.x.x",
+    "docpad-plugin-cleanurls": "*",
     "docpad-plugin-eco": "*",
     "docpad-plugin-highlightjs": "*",
     "docpad-plugin-marked": "*",
-    "docpad-plugin-menu": "*",
     "docpad-plugin-partials": "*",
     "docpad-plugin-shortcodes": "*",
-    "docpad-plugin-sitemap": "*"
+    "docpad-plugin-sitemap": "*",
+    "underscore": "1.x.x",
+    "underscore.string": "2.x.x"
   },
   "devDependencies": {
     "bower": "*",
@@ -19,7 +21,7 @@
     "grunt-contrib-clean": "*",
     "grunt-contrib-concat": "*",
     "grunt-contrib-connect": "*",
-    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-copy": "*",
     "grunt-contrib-cssmin": "*",
     "grunt-contrib-htmlmin": "*",
     "grunt-contrib-less": "*",
