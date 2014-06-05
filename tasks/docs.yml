@@ -4,10 +4,6 @@ documentsPaths:
   - "documents/"
   - "../docs/"
 
-pluginsPaths:
-  - "node_modules"
-  - "site/plugins"
-
 plugins:
   cleanurls:
     static: true

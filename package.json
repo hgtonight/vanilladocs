@@ -2,7 +2,7 @@
   "name": "vanilla-docs",
   "private": true,
   "dependencies": {
-    "docpad": "6.x.x",
+    "docpad": "6.64.x",
     "docpad-plugin-cleanurls": "*",
     "docpad-plugin-eco": "*",
     "docpad-plugin-highlightjs": "*",
@@ -10,6 +10,7 @@
     "docpad-plugin-partials": "*",
     "docpad-plugin-shortcodes": "*",
     "docpad-plugin-sitemap": "*",
+    "docpad-plugin-tree": "*",
     "underscore": "1.x.x",
     "underscore.string": "2.x.x"
   },
