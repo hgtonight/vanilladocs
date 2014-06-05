@@ -5,12 +5,18 @@ _.mixin _.str.exports()
 
 class MenuTree
   constructor: (@collection, @context) ->
+    # Unsorted tree of documents
     @documents = {}
+
+    # Target trailing slashes and index.* in URLs. This regex is applied
+    # whenever a URL is handled internally and should never be used to
+    # manipulate URLs defined in DocPad core.
+    @urlRegex = /^\/|\/$|index\.\w*$/g
 
     # Construct a nested hash of all the documents in collection
     for doc in @collection
-      # Remove trailing slash from the URL and split it into an array
-      parts = _.compact doc.url.replace(/^\//, '').split('/')
+      # Split the document URL into an array
+      parts = _.compact doc.url.replace(@urlRegex, '').split('/')
 
       continue if not parts.length
 
@@ -34,15 +40,19 @@ class MenuTree
       addChild @documents, 0 for part in parts
 
   toJSON: ->
-    self = @
     output = []
+    context = @context
+    urlRegex = @urlRegex
 
     addDocument = (parent, current) ->
       # Push the current doc onto the parent
       parent.push current if not current.hidden
 
       # Mark documents in the current navigation path as active
-      current.active = _.startsWith(self.context.url, current.url)
+      current.active = _.startsWith(
+        context.url.replace(urlRegex, '')
+      , current.url.replace(urlRegex, '')
+      )
 
       # Grab all child documents of the current document and sort them
       children = _.sortBy current.children, (doc) -> parseFloat doc.order
@@ -72,4 +82,4 @@ module.exports = (BasePlugin) ->
         # Construct the menu tree
         tree = new MenuTree collection.toJSON(), context
 
-        tree.toJSON()
+        return tree.toJSON()
