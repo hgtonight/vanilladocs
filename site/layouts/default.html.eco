@@ -2,7 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Docs</title>
+    <title>
+      <% if @document.url is "/": %>
+        <%= @site.title %>
+      <% else: %>
+        <%= @document.title %> &middot; <%= @site.title %>
+      <% end %>
+    </title>
+    <meta name="description" content="<%= @document.description %>">
     <meta name="viewport" content="width=device-width">
 
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic">
