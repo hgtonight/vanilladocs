@@ -4,7 +4,7 @@ layout: docs
 categories: ["Developers"]
 ---
 
-# Open Source Change Log
+## Open Source Change Log
 
 2.1
 ===

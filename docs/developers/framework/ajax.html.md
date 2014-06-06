@@ -4,7 +4,7 @@ layout: docs
 categories: ["Developers","Framework"]
 ---
 
-# Ajax
+## Ajax
 
 We've chosen [jQuery](http://jquery.com) as the main javascript library for Vanilla. The jQuery core has a number of [ajax-related methods](http://docs.jquery.com/Ajax) that make ajax-based forms and functionality easy as pie. In order to help facilitate partial page loading &amp; updating, We've made Vanilla's base Controller class (the class from which all controllers are extended) accept a DeliveryType parameter on every request. Depending on the type of delivery being requested, a controller in garden will deliver all of a page, part of a page, or part of a page plus extra information as JSON. At the time of this writing, there are four delivery types available:
 
