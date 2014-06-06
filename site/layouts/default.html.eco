@@ -26,7 +26,7 @@
     All custom stylesheets should be included here. They will be concatenated
     with the dependencies installed via Bower when building the docs.
     -->
-    <link rel="stylesheet" href="/assets/docs.css" />
+    <link rel="stylesheet" href="/assets/docs.css">
     <!-- endbuild -->
   </head>
   <body>
