@@ -7,21 +7,21 @@
       , exp  : exp
       , time : new Date().getTime()
       });
-    },
-    get: function (key) {
-        var info = store.get(key);
-
-        if (!info) {
-          return null;
-        }
-
-        if (new Date().getTime() - info.time > info.exp) {
-          return null;
-        }
-
-        return info.val;
     }
-}
+  , get: function (key) {
+      var info = store.get(key);
+
+      if (!info) {
+        return null;
+      }
+
+      if (new Date().getTime() - info.time > info.exp) {
+        return null;
+      }
+
+      return info.val;
+    }
+  }
 
   var docs  = cache.get('docs')
     , pages = []
@@ -51,7 +51,7 @@
         cache.set('docs', {
           pages: pages
         , index: index
-      }, 24 * 60 * 60 * 1000); // Expire after a day
+        }, 24 * 60 * 60 * 1000); // Expire after a day
       });
   }
 
