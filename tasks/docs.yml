@@ -10,4 +10,5 @@ plugins:
 
 templateData:
   site:
+    title: "Vanilla Documentation"
     url: "http://docs.vanillaforums.com"
