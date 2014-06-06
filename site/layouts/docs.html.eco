@@ -10,6 +10,8 @@ layout: default
 </header>
 
 <div class="container">
+  <%- @partial 'trail', false, items: @tree('html', @document, true) %>
+
   <div class="row">
 
     <div class="col-sm-2">

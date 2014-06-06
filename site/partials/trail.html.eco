@@ -1,0 +1,16 @@
+<% render = (items) => %>
+  <% for item in items: %>
+    <% if item.active: %>
+      <% if item.current: %>
+        <li class="active"><%= item.title %></li>
+      <% else: %>
+        <li><a href="<%= item.url %>"><%= item.title %></a></li>
+      <% end %>
+      <%- render item.children if item.children %>
+    <% end %>
+  <% end %>
+<% end %>
+
+<ol class="breadcrumb">
+  <%= render @items %>
+</ol>

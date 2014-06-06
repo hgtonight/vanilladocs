@@ -1,6 +1,7 @@
 ---
 title: Vanilla Forums Documentation
 layout: docs
+menu: Home
 ---
 
 You can contribute to these docs via the [GitHub repository](https://github.com/vanillaforums/VanillaDocs/).
