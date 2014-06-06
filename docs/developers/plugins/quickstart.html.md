@@ -4,7 +4,6 @@ layout: docs
 categories: ["Developers","Addons"]
 ---
 
-<h1>A Quick-Start Guide to Writing Plugins for Vanilla</h1>
 <h2>Getting Started</h2>
 <p>The first thing you do when writing a plugin is create a folder for your plugin in the plugin directory named after the plugin. Inside the folder create a default.php file. Next, open the default.php file and add the plugin definition at the top, like this:</p>
 <pre lang="php">// Define the plugin:

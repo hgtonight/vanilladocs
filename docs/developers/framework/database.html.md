@@ -4,7 +4,6 @@ layout: docs
 categories: ["Developers","Framework"]
 ---
 
-<h1>Database &amp; Query Building</h1>
 <p>The database files are located in /GardenRoot/library/database, and are as follows:</p>
 <center><img class="Border" title="Database Files" src="http://markosullivan.ca/blog/wp-content/uploads/2008/12/fs-database.gif" alt="" width="255" height="183" /></center>
 <p><strong>class.database.php</strong>: The main database file that is included by the Garden bootstrapper. <strong>class.databasestructure.php</strong>: A supplemental implementation of the database class specific to altering table (and view) structure in the database. This file is included on-demand. <strong>class.dataset.php</strong>: The dataset class allows you to traverse, manipulate, and return data objects or arrays. <strong>class.generic.driver.php</strong>: An abstract implementation of all properties and methods used to build and execute database queries. <strong>class.generic.structure.php</strong>: An abstract implementation of all properties and methods used to build and execute database queries specific to altering database (and view) structure. <strong>class.mysql.driver.php</strong>: A MySQL-specific implementation of the class.generic.driver.php abstract class. This class overrides the generic class where necessary in order to perform functions specific to MySQL. <strong>class.mysql.structure.php</strong>: A MySQL-specific implementation of the class.generic.structure.php abstract class. This class overrides the generic class where necessary in order to perform functions related to altering database (and view) structure specific to MySQL.</p>
@@ -143,7 +142,8 @@ Array
      } ?></pre>
 
 
-<h1>Database Objects</h1>
+<h2>Database Objects</h2>
+
 <p>Most open-source web applications have database setup scripts that are simply a set of SQL instructions that you can inject directly into your database (typically mysql) to get going. Vanilla 1 was no exception to this rule. The benefit of this approach is that you can quickly and easily get your app up and running. The downside to this approach is that when it is time to upgrade the application to a newer version, you have to write extremely convoluted scripts to figure out what application version the user currently user has, or write scripts to examine database table structure to see what fields need to be removed, or what fields need to be added. Hell, it's even difficult to understand what I just wrote, let alone the code that would go along with it.</p>
 <h2>The Database Structure Class</h2>
 <p>Garden does not have any SQL install or update scripts. Instead, every application in garden has a structure.php file which can be used by either the Garden installer, or by the application management screen when enabling that application. The structure.php file contains a set of instructions on how to build the structure of the database. This file uses the DatabaseStructure class to define the structure of the database. The class itself is extremely simple to use. Like the database class, the DatabaseStructure class uses method chaining, and it contains methods to create/drop/rename tables, create/drop/rename table columns, and create/modify views.</p>

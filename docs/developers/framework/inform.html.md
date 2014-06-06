@@ -4,7 +4,6 @@ layout: docs
 categories: ["Developers","Framework"]
 ---
 
-<h1>Inform User Notifications</h1>
 <h3>NOTE: Inform Messages were introduced to Vanilla in version 2.0.18</h3>
 <p>Inform Messages allow you to let users know of some action that your plugin or application has taken. You can send Inform Messages from within a controller or a plugin, or from a custom javascript function. By default, these messages are stackable, dismissable, and autodismissable. They can contain any plain-text string, or any unfiltered custom html string. They can be passed with javascript callbacks to fire on dismissal so some kind of further action can be taken. There are even CSS definitions that allow you access to over 100 readymade icon sprites you can use to denote meaning in your messaging.</p>
 <h3>Example 1</h3>
