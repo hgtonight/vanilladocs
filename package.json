@@ -18,7 +18,6 @@
     "bower": "*",
     "grunt": "*",
     "grunt-cli": "*",
-    "grunt-bower-install": "*",
     "grunt-contrib-clean": "*",
     "grunt-contrib-concat": "*",
     "grunt-contrib-connect": "*",
@@ -32,6 +31,7 @@
     "grunt-rev": "*",
     "grunt-usemin": "*",
     "grunt-useref": "*",
+    "grunt-wiredep": "^1.7.0",
     "load-grunt-config": "*",
     "time-grunt": "*"
   },

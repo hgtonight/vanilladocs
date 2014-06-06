@@ -1,22 +1,31 @@
 ---
+# This partial is used for all standard documentation pages. It provides a
+# sidebar with an automatically generated navgiation accordion as well as
+# breadcrumbs above the sidebar and content columns.
+
 layout: default
 ---
+
+<%- @partial 'header' %>
 
 <header class="jumbotron masthead" role="banner">
   <div class="container">
     <h1><%= @document.title %></h1>
-    <% if @document.description: %><p><%= @document.description %></p><% end %>
+
+    <% if @document.description: %>
+      <p><%= @document.description %></p>
+    <% end %>
   </div>
 </header>
 
 <div class="container">
-  <%- @partial 'trail', false, items: @tree('html', @document, true) %>
+  <%- @partial 'trail', false, items: @tree 'html', @document, true %>
 
   <div class="row">
 
     <div class="col-sm-2">
       <nav class="docs-nav js-docs-nav" role="navigation">
-        <%- @partial 'nav', false, items: @tree('html', @document) %>
+        <%- @partial 'nav', false, items: @tree 'html', @document %>
         <p><a class="text-muted" href="#top"><strong>Back to top</strong></a></p>
       </nav>
     </div>
@@ -25,6 +34,7 @@ layout: default
       <div class="edit-doc pull-right">
         <a class="btn btn-default btn-xs" href="https://github.com/vanilla/vanilladocs/edit/master/docs/<%= @document.relativePath %>">Improve document</a>
       </div>
+
       <article class="markdown-body" role="article">
         <%- @content %>
       </article>
@@ -32,3 +42,5 @@ layout: default
 
   </div>
 </div>
+
+<%- @partial 'footer' %>

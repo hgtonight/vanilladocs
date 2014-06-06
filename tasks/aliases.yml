@@ -19,5 +19,5 @@ serve:
   - watch
 
 default:
-  - bowerInstall
+  - wiredep
   - build

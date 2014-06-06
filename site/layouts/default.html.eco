@@ -8,8 +8,17 @@
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic">
 
     <!-- build:css({.tmp,bower_components}) /assets/main.css -->
+    <!--
+    The files below are automatically injected based on the Bower package
+    manifest (bower.json). Do therefore not edit this sectionmanually as any
+    changes will be overriden when building the docs!
+    -->
     <!-- bower:css -->
     <!-- endbower -->
+    <!--
+    All custom stylesheets should be included here. They will be concatenated
+    with the dependencies installed via Bower when building the docs.
+    -->
     <link rel="stylesheet" href="/assets/docs.css" />
     <!-- endbuild -->
   </head>
@@ -18,75 +27,14 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div id="top"></div>
-
-    <nav class="navbar navbar-default navbar-static-top" role="navigation">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/"><img class="logo" src="/assets/img/logo.svg" alt="Vanilla Forums"> Docs</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse">
-          <div class="navbar-form navbar-left" role="search">
-            <%- @partial('search') %>
-          </div>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Open Source Community</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
     <%- @content %>
 
-    <footer class="footer js-footer">
-
-      <div class="jumbotron">
-        <div class="container">
-          <div class="row">
-
-            <div class="col-sm-6">
-              <h3><a href="#">Cloud Hosting</a></h3>
-              <p><strong>We believe that online communities should be intuitive, engaging and true to your brand.</strong> Vanilla allows you to create a customized community that rewards positive participation, automatically curates content and lets members drive moderation.</p>
-            </div>
-
-            <div class="col-sm-6">
-              <h3><a href="#">Open Source</a></h3>
-              <p>Vanilla provides cloud and open source community forum software that powers discussion forums on more than 700,000 sites. Built for flexibility and integration, <strong>Vanilla is the best, most powerful community solution in the world.</strong></p>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-copyright">
-        <div class="container">
-
-          <p class="text-center">Copyright &copy; 2009-2014 <a href="//vanillaforums.com">Vanilla Forums Inc.</a> All rights reserved.</p>
-
-          <ul class="list-inline text-center">
-            <li><a href="#">Docs</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Cloud</a></li>
-            <li><a href="#">Community</a></li>
-            <li><a href="#">GitHub</a></li>
-            <li><a href="#">Issues</a></li>
-          </ul>
-
-        </div>
-      </div>
-
-    </footer>
-
     <!-- build:js({.tmp,bower_components}) /assets/main.js -->
+    <!--
+    The files below are automatically injected based on the Bower package
+    manifest (bower.json). Do therefore not edit this sectionmanually as any
+    changes will be overriden when building the docs!
+    -->
     <!-- bower:js -->
     <script src="/jquery/dist/jquery.js"></script>
     <script src="/bootstrap/js/transition.js"></script>
@@ -106,6 +54,10 @@
     <script src="/lunr.js/lunr.js"></script>
     <script src="/store.js/store.js"></script>
     <!-- endbower -->
+    <!--
+    All custom scripts should be included here. They will be concatenated with
+    the dependencies installed via Bower when building the docs.
+    -->
     <script src="/assets/docs.js"></script>
     <!-- endbuild -->
   </body>

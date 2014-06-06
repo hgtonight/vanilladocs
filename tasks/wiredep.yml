@@ -1,7 +1,7 @@
 templates:
   ignorePath: "../../bower_components"
   src:
-    - "site/**/*.html.{eco,hbs}"
+    - "site/**/*.html.eco"
 
 stylesheets:
   src:
