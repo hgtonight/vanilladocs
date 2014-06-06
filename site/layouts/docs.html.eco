@@ -17,7 +17,7 @@ layout: default
     <div class="col-sm-2">
       <nav class="docs-nav js-docs-nav" role="navigation">
         <%- @partial 'nav', false, items: @tree('html', @document) %>
-        <p><a class="text-muted" href="#top"><b>Back to top</b></a></p>
+        <p><a class="text-muted" href="#top"><strong>Back to top</strong></a></p>
       </nav>
     </div>
 

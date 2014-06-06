@@ -1,6 +1,6 @@
 <div id="search-docs" class="dropdown{{hasResults ? ' open' : ' closed'}}">
   <div class="form-group">
-    <input v-on="input:search" type="text" class="form-control" placeholder="Search">
+    <input v-on="input:search" class="form-control" id="docs-search" type="text" title="Search the documentation" placeholder="Search">
   </div>
   <ul class="dropdown-menu dropdown-search-results">
     <li v-repeat="results">
