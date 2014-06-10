@@ -28,7 +28,7 @@
     "grunt-contrib-uglify": "*",
     "grunt-contrib-watch": "*",
     "grunt-docs": "*",
-    "grunt-gh-pages": "^0.9.1",
+    "grunt-gh-pages": "*",
     "grunt-rev": "*",
     "grunt-usemin": "*",
     "grunt-useref": "*",
