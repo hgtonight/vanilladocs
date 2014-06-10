@@ -10,9 +10,9 @@ module.exports = {
 , img: {
     files: [{
       expand: true
-    , cwd: "site/assets/"
-    , src: "img/**/*"
-    , dest: ".tmp/assets/"
+    , cwd: "site/assets/img"
+    , src: "**/*"
+    , dest: "dist/assets/img"
     }]
   }
 };
