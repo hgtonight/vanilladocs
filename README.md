@@ -1,5 +1,4 @@
-VanillaDocs
-===========
+# VanillaDocs
 
 [![Build Status](http://img.shields.io/travis/vanilla/vanilladocs/master.svg?style=flat)](https://travis-ci.org/vanilla/vanilladocs)
 
