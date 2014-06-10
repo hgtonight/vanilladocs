@@ -1,9 +1,11 @@
 'use strict';
 
+var path = require('path');
+
 module.exports = function (grunt) {
   require('time-grunt')(grunt);
 
   require('load-grunt-config')(grunt, {
-    configPath: 'tasks'
+    configPath: path.join(process.cwd(), 'tasks')
   });
 };

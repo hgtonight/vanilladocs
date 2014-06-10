@@ -1,20 +1,20 @@
-function getDeployMessage() {
-  var ret = '\n\n';
+var getDeployMessage = function() {
+  var message = '\n\n';
 
   if (process.env.TRAVIS !== 'true') {
-    ret += 'missing env vars for travis-ci';
+    message += 'Missing environment variables for Travis CI';
 
-    return ret;
+    return message;
   }
 
-  ret += 'Branch:       ' + process.env.TRAVIS_BRANCH + '\n';
-  ret += 'SHA:          ' + process.env.TRAVIS_COMMIT + '\n';
-  ret += 'Range SHA:    ' + process.env.TRAVIS_COMMIT_RANGE + '\n';
-  ret += 'Build ID:     ' + process.env.TRAVIS_BUILD_ID  + '\n';
-  ret += 'Build number: ' + process.env.TRAVIS_BUILD_NUMBER + '\n';
+  message += 'Branch:       ' + process.env.TRAVIS_BRANCH + '\n';
+  message += 'SHA:          ' + process.env.TRAVIS_COMMIT + '\n';
+  message += 'Range SHA:    ' + process.env.TRAVIS_COMMIT_RANGE + '\n';
+  message += 'Build ID:     ' + process.env.TRAVIS_BUILD_ID  + '\n';
+  message += 'Build number: ' + process.env.TRAVIS_BUILD_NUMBER + '\n';
 
-  return ret;
-}
+  return message;
+};
 
 module.exports = {
   options: {
