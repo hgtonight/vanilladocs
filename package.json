@@ -28,17 +28,20 @@
     "grunt-contrib-uglify": "*",
     "grunt-contrib-watch": "*",
     "grunt-docs": "*",
+    "grunt-gh-pages": "^0.9.1",
     "grunt-rev": "*",
     "grunt-usemin": "*",
     "grunt-useref": "*",
-    "grunt-wiredep": "^1.7.0",
+    "grunt-wiredep": "*",
     "load-grunt-config": "*",
     "time-grunt": "*"
   },
   "scripts": {
     "start": "grunt serve",
     "build": "grunt",
-    "clean": "grunt clean"
+    "clean": "grunt clean",
+    "deploy": "grunt deploy",
+    "install": "bower install"
   },
   "engines": {
     "node": "0.10",

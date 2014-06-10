@@ -21,3 +21,8 @@ serve:
 default:
   - wiredep
   - build
+
+deploy:
+  - wiredep
+  - build
+  - "gh-pages"
