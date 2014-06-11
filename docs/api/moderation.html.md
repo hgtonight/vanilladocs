@@ -2,6 +2,7 @@
 title: Moderation
 layout: docs
 categories: ["API"]
+hidden: true
 ---
 
 ## Moderation API
