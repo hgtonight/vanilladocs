@@ -21,7 +21,7 @@
 
       return info.val;
     }
-  }
+  };
 
   var docs  = cache.get('docs')
     , pages = []
@@ -36,7 +36,7 @@
       this.field('title', 10);
       this.field('categories', 5);
       this.field('content');
-      this.ref('url')
+      this.ref('url');
     });
 
     oboe('/search.json')
@@ -74,7 +74,7 @@
           $.each(pages, function (index, page) {
             if (page.url === match.ref) {
               matches.push(page);
-            };
+	    }
           });
         });
 
@@ -86,7 +86,10 @@
     }
   });
 
-  var $docsNav = $('.js-docs-nav');
+  var $docsNav  = $('.js-docs-nav')
+    , $panelCol = $docsNav.parent();
+
+  $panelCol.css('min-height', $docsNav.outerHeight(true));
 
   $docsNav.affix({
     offset: {
