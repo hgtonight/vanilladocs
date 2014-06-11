@@ -1,7 +1,7 @@
 <footer class="footer js-footer">
 
   <div class="jumbotron">
-    <div class="container">
+    <div class="container<%= "-fluid" if @fluid %>">
       <div class="row">
 
         <div class="col-sm-6">
