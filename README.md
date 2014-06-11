@@ -1,4 +1,4 @@
-# VanillaDocs
+# Vanilla Docs
 
 [![Build Status](http://img.shields.io/travis/vanilla/vanilladocs/master.svg?style=flat)](https://travis-ci.org/vanilla/vanilladocs)
 
@@ -18,7 +18,7 @@ The "Workflow" folder is teams collaborating with Vanilla Forums, Inc. on projec
 
 ## Formatting
 
-* We use Jekyll, which you can read more about on their site: http://jekyllrb.com/
-* Every doc file must end in ".md" and be formatted in Markdown.
+* We use DocPad, which you can read more about on their site: http://docpad.org
+* Every doc file must end in `.html.md` and be formatted in Markdown.
 * Please use H2 (## in Markdown) as your top-level headings in each file.
 * Always use an 'images' folder in the same subfolder as the content referencing it.
