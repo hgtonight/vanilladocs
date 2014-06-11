@@ -1,0 +1,46 @@
+.code-canvas {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  background-color: #fafafa;
+  border-left: #ddd solid 1px;
+}
+
+.code-canvas-body {
+  position: relative;
+  z-index: 10;
+  padding-top: @navbar-margin-bottom;
+  margin-top: -@navbar-margin-bottom;
+  overflow: hidden;
+
+  > h1,
+  > h2,
+  > h3,
+  > h4,
+  > h5,
+  > h6,
+  > p,
+  > table,
+  > ul,
+  > ol,
+  > dl,
+  > aside {
+    width: 50%;
+    padding-right: @grid-gutter-width;
+  }
+
+  blockquote,
+  .highlight {
+    float: right;
+    clear: right;
+    width: 50%;
+    margin: 0;
+    border-left: #ddd solid 1px;
+  }
+
+  > h2 {
+    clear: both;
+  }
+}

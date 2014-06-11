@@ -1,0 +1,32 @@
+---
+# This partial is used for all API documentation pages.
+
+layout: default
+---
+
+<div id="top"></div>
+
+<%- @partial 'header', true, fluid: true %>
+
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-fixed-left">
+      <nav class="docs-nav js-docs-nav" role="navigation">
+        <%- @partial 'nav', false, items: @tree 'html', @document %>
+        <p><a class="text-muted" href="#top"><strong>Back to top</strong></a></p>
+      </nav>
+    </div>
+
+    <div class="col-fluid-right">
+      <article class="markdown-body code-canvas-body" role="article">
+        <%- @content %>
+      </article>
+
+      <aside class="code-canvas" role="complementary"></aside>
+    </div>
+
+  </div>
+</div>
+
+<%- @partial 'footer' %>

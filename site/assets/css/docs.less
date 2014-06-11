@@ -16,6 +16,7 @@
 @container-lg-min: @container-lg;
 
 @navbar-height: 60px;
+@navbar-margin-bottom: 30px;
 
 @navbar-default-bg: @brand-primary;
 @navbar-default-border: darken(@navbar-default-bg, 2.5%);
@@ -407,4 +408,20 @@ a {
   }
 }
 
+.col-fixed-left {
+  position: relative;
+  float: left;
+  width: 240px;
+  padding-right: (@grid-gutter-width / 2);
+  padding-left:  (@grid-gutter-width / 2);
+}
+
+.col-fluid-right {
+  position: relative;
+  padding-right: (@grid-gutter-width / 2);
+  padding-left:  (@grid-gutter-width / 2);
+  margin-left: 240px;
+}
+
 @import "syntax";
+@import "code-canvas";
