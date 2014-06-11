@@ -6,6 +6,8 @@
 layout: default
 ---
 
+<div id="top"></div>
+
 <%- @partial 'header' %>
 
 <header class="jumbotron masthead" role="banner">
