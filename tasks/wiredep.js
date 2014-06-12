@@ -1,11 +1,13 @@
+'use strict';
+
 module.exports = {
   templates: {
-    ignorePath: '../../bower_components',
-    src: [
+    ignorePath: '../../bower_components'
+  , src: [
       'site/**/*.html.eco'
     ]
-  },
-  stylesheets: {
+  }
+, stylesheets: {
     src: [
       'site/assets/**/*.less'
     ]

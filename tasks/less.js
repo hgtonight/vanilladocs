@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
   dist: {
     options: {
@@ -9,4 +11,4 @@ module.exports = {
       '.tmp/assets/docs.css': 'site/assets/css/docs.less'
     }
   }
-}
+};

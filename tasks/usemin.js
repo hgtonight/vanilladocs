@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
   options: {
     assetsDirs: [
@@ -5,4 +7,4 @@ module.exports = {
     ]
   }
 , html: 'dist/**/*.html'
-}
+};

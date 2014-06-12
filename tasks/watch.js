@@ -1,38 +1,40 @@
+'use strict';
+
 module.exports = {
   docs: {
     files: [
-      'docs/**/*',
-      'site/layouts/*',
-      'site/partials/*',
-      'site/documents/*'
-    ],
-    tasks: [
+      'docs/**/*'
+    , 'site/layouts/*'
+    , 'site/partials/*'
+    , 'site/documents/*'
+    ]
+  , tasks: [
       'docs'
     ]
-  },
-  less: {
+  }
+, less: {
     files: [
       'site/assets/**/*.less'
-    ],
-    tasks: [
+    ]
+  , tasks: [
       'less'
     ]
-  },
-  js: {
+  }
+, js: {
     files: [
       'site/assets/**/*.js'
-    ],
-    tasks: [
+    ]
+  , tasks: [
       'copy:js'
     ]
-  },
-  livereload: {
+  }
+, livereload: {
     options: {
       'livereload': true
-    },
-    files: [
-      '.tmp/assets/*.{css,js}',
-      'dist/**/*.html'
+    }
+  , files: [
+      '.tmp/assets/*.{css,js}'
+    , 'dist/**/*.html'
     ]
   }
 };
