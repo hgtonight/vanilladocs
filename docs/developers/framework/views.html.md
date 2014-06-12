@@ -14,9 +14,9 @@ Let's take a look at the profile controller's index method:
 
 ```php
 public function Index($UserReference = '') {
-   $UserModel = new UserModel();
-   $this-&gt;User = $UserModel-&gt;GetByReference($UserReference);
-   $this-&gt;Render();
+    $UserModel = new UserModel();
+    $this-&gt;User = $UserModel-&gt;GetByReference($UserReference);
+    $this-&gt;Render();
 }
 ```
 

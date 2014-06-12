@@ -26,11 +26,11 @@ In order to made the controller deliver content other than `DELIVERY_TYPE_ALL`, 
 
 ## Form Popups
 
-<center><img class="Border" title="users" src="http://markosullivan.ca/blog/wp-content/uploads/2008/12/users.gif" alt="users" width="400" height="163" /></center>
+![Users](http://markosullivan.ca/blog/wp-content/uploads/2008/12/users.gif)
 
 In a `DELIVERY_TYPE_ALL` request, you could be looking at a list of users with an "edit" link next to each of them. You click the edit link, and it takes you to a page that presents you with a form where you can edit all of their information. If you were editing my account, this url might look something like: `http://localhost/garden/user/edit/mark` This means that you've called Garden's `$UserController->Edit('mark');` method, and Garden is going to fetch the `/garden/views/user/edit.php` view file, place it in the `views/default.master` master view file and deliver everything to the screen. I've created a jquery "popup" plugin for Garden that allows you to turn any link in Garden into a view-based popup by applying a "Popup" class to the anchor tag of the link. So, if I had placed that class on the "edit" link next to my username, here's how the request would be handled by the controller: The jquery-based popup plugin appends a "DeliveryType=3" parameter to the request url and then sends the request. Garden's `$UserController->Edit('mark');` method is called, and Garden fetches the `/garden/views/user/edit.php` view file. At this point it only sends the view back to the popup plugin as a string of xhtml. The popup plugin takes the code from that view file and places it into an element on the page, positioning it above the existing page content. So, without loading a new page I've now been presented with the edit user form in an in-page popup.
 
-<center><img class="Border" title="edituser" src="http://markosullivan.ca/blog/wp-content/uploads/2008/12/edituser.gif" alt="edituser" width="422" height="436" /></center>
+![Edit user](http://markosullivan.ca/blog/wp-content/uploads/2008/12/edituser.gif)
 
 If I then make changes to the inputs and submit the form, the popup plugin once again hijacks this request, making it an ajax-based request. The controller sees that it only needs to deliver the view once again, and it also sees that a form has been posted back. So, it takes the resulting xhtml and places it into a JSON array to be sent to the response. It also adds extra information to the json array like: (1) a boolean value indicating if the form was saved, (2) a status message, (3) a redirect url, etc. Using these json values the popup can then decide if it should re-present the form with any errors that may have occurred, or hide the form and update data on the underlying page.
 
