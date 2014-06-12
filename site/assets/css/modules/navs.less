@@ -1,0 +1,89 @@
+// # Navs
+//
+// Styleguide Modules.Navs
+
+.docs-nav {
+  font-size: 12px;
+
+  p {
+    margin: @line-height-computed 0 0;
+  }
+
+  &.affix {
+    top: 30px;
+  }
+
+  &.affix,
+  &.affix-bottom {
+    @media (max-width: @screen-xs-max) {
+      position: static;
+    }
+
+    @media (min-width: @screen-sm) {
+      width: round((@container-sm * (2 / @grid-columns)) - @grid-gutter-width);
+    }
+
+    @media (min-width: @screen-md) {
+      width: round((@container-md * (2 / @grid-columns)) - @grid-gutter-width);
+    }
+
+    // @media (min-width: @screen-lg) {
+    //   width: round((@container-lg * (2 / @grid-columns)) - @grid-gutter-width);
+    // }
+  }
+
+  &.affix-bottom {
+    position: absolute;
+  }
+
+  .nav {
+    &:before,
+    &:after {
+      display: none;
+    }
+
+    li {
+      margin: 5px 0;
+
+      > a {
+        padding: 0;
+        padding-right: 5px;
+        line-height: @line-height-computed;
+        color: #666;
+        border-right: transparent solid 2px;
+
+        &:hover,
+        &:focus {
+          color: #444;
+          background-color: transparent;
+        }
+      }
+
+      &.active > a {
+        color: @brand-primary;
+        border-color: @brand-primary;
+      }
+
+      &.active > .nav {
+        display: block;
+      }
+
+      > .nav {
+        display: none;
+
+        li > .nav {
+          padding-left: @padding-base-horizontal;
+        }
+      }
+    }
+  }
+
+  > .nav > li {
+    margin-top: 0;
+
+    > a {
+      font-weight: 700;
+      color: #aaa;
+    }
+  }
+}
