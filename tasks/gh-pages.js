@@ -33,7 +33,7 @@ module.exports = {
     , auth: process.env.GH_OAUTH_TOKEN
     , hostname: 'github.com'
     , pathname: path.join(
-        process.env.GH_OWNER
+        process.env.GH_OWNER || ''
       , process.env.GH_PROJECT_NAME + '.git'
       )
     })
