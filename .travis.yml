@@ -9,6 +9,8 @@ env:
     - secure: "GKpq9raZzt+ANXhulAxesMUnk6bO31I5afmAoCIjluLQaARZVb1zWS5UnF+XNaz52fEtC3VeMXSSXVTNuVEBWRA8hh5ny7P99jDTLy/5awnDfW1vW8atuawpXuEP+uQ6c0qxHFJXfiy+YUff3vWSt+/LdtT92HRFFvAfXFVpcuM="
     - GH_OWNER: vanilla
     - GH_PROJECT_NAME: vanilladocs
+    - GH_USER: Todd Burry
+    - GH_EMAIL: todd@vanillaforums.com
 
 script:
   - npm run deploy

@@ -19,8 +19,8 @@ var getDeployMessage = function() {
 module.exports = {
   options: {
     user: {
-      name: 'Todd Burry'
-    , email: 'todd@vanillaforums.com'
+      name: process.env.GH_USER
+    , email: process.env.GH_EMAIL
     }
   , base: 'dist'
   , repo: 'https://' + process.env.GH_OAUTH_TOKEN + '@github.com/' + process.env.GH_OWNER + '/' + process.env.GH_PROJECT_NAME + '.git'
