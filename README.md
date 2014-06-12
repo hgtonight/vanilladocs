@@ -18,7 +18,42 @@ The "Workflow" folder is teams collaborating with Vanilla Forums, Inc. on projec
 
 ## Formatting
 
-* We use DocPad, which you can read more about on their site: http://docpad.org
 * Every doc file must end in `.html.md` and be formatted in Markdown.
-* Please use H2 (## in Markdown) as your top-level headings in each file.
-* Always use an 'images' folder in the same subfolder as the content referencing it.
+* Please use H2 (`##` in Markdown) as your top-level headings in each file.
+* Always use an `images` folder in the same subfolder as the content referencing it.
+
+## Running locally
+
+The following instructions assume that you have already installed Node.js on your computer. If this is not the case, please download and install the latest stable release from the official [Node.js download page](http://nodejs.org/download/). If you are using [Homebrew](http://brew.sh/), you can also install Node.js via the command line:
+
+```sh
+$ brew install node
+```
+
+> __Notice__: It is important that you install Node in a way that does not require you to `sudo`.
+
+Once you have Node.js up and running, you will need to install the local dependencies using [npm](http://npmjs.org):
+
+```sh
+$ npm install
+```
+
+### Tasks
+
+The following commands are available to be run from the root of the repository:
+
+#### Start - `npm start`
+Boots up a local development server and takes care of compiling docs pages, scripts, and stylesheets whenever they change.
+
+#### Build - `npm run build`
+One-time compilation of docs pages, scripts, and stylesheets. Will also inject Bower-managed dependencies and optimize all output files for deployment.
+
+#### Deploy - `npm run deploy`
+Similar to `npm run build` but will also deploy the output files to the `gh-pages` branch.  
+:bangbang: __This task can currently only be run by Travis CI.__
+
+#### Clean - `npm run clean`
+Cleans out the temporary and distribution directories created by the above tasks.
+
+---
+Copyright &copy; 2014 [Vanilla Forums Inc](http://vanillaforums.com). All rights reserved.

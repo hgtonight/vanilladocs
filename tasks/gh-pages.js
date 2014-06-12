@@ -1,3 +1,8 @@
+'use strict';
+
+var url  = require('url')
+  , path = require('path');
+
 var getDeployMessage = function() {
   var message = '\n\n';
 
@@ -19,11 +24,19 @@ var getDeployMessage = function() {
 module.exports = {
   options: {
     user: {
-      name: 'Todd Burry'
-    , email: 'todd@vanillaforums.com'
+      name: process.env.GH_USER
+    , email: process.env.GH_EMAIL
     }
   , base: 'dist'
-  , repo: 'https://' + process.env.GH_OAUTH_TOKEN + '@github.com/' + process.env.GH_OWNER + '/' + process.env.GH_PROJECT_NAME + '.git'
+  , repo: url.format({
+      protocol: 'https'
+    , auth: process.env.GH_OAUTH_TOKEN
+    , hostname: 'github.com'
+    , pathname: path.join(
+        process.env.GH_OWNER || ''
+      , process.env.GH_PROJECT_NAME + '.git'
+      )
+    })
   , silent: true
   , message: 'Publish gh-pages (auto)' + getDeployMessage()
   }
