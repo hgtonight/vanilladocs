@@ -156,6 +156,7 @@ Parameter           | Type      | Description
 **`ForeignType`**   | `enum`    | comment, discussion, activity, activity-comment, conversation - message
 **`ForeignID`**     | `string`  | The if of the content. Ie. DiscussionID
 **`ForeignUserID`** | `string`  | The user who generated the content
+**`ForeignIPAddress`** | `string`  | The user who generated the content
 `CategoryID`        | `string`  | Category ID
 `CustomerVariables` |           | Up to 10 custom variables
 
@@ -264,6 +265,7 @@ Parameter       | Type      | Description
 `ForeignType`   | `enum`    | comment, discussion, activity, activity-comment, conversation - message
 `ForeignID`     | `string`  |  ex d-12
 `ForeignUserID` | `string`  | The user who generated the content
+`ForeignIPAddress` | `string`  | The user who generated the content
 `Status`        | `string`  | approved, denied, unread
 `DateStatus`    |  `string` | Timestamp
 `StatusUserID`  | `int`     | The user who last change the status
