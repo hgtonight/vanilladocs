@@ -242,6 +242,35 @@ Parameter  | Type      |
 ---        | ---       | ---
 `IDs`      | `string`  | CSV of queue ids
 
+## POST /mod/approve/{id}
+
+Approve content in the queue.
+
+```
+POST /mod/approve.json/1 HTTP/1.1
+Host: http://example.vanillaforums.com
+
+{
+  "Approved": true
+}
+```
+
+
+## POST /mod/deny/{id}
+
+Deny content in the queue.
+
+```
+POST /mod/deny.json/1 HTTP/1.1
+Host: http://example.vanillaforums.com
+
+{
+  "Denied": true
+}
+```
+
+
+
 ## Notes
 
 counts - cache - memcache INCR. maybe table with denomarilzed data.
