@@ -91,6 +91,23 @@ Any errors will be returning in the following format.
 }
 ```
 
+Partial Errors
+
+```
+{
+    "ModeratorUserID": "1",
+    "Approved": "ForeignID = ab6e33fe-e509-37c3-0431-21884cf199e7 ",
+    "Errors": {
+        "Not Found": [
+            "ForeignID = 86d9e3e1-5752-41dc-aa55-2a832728ec33 ",
+            "ForeignID = a1fca416-5573-4662-a31a-a4ff808c34dd ",
+            "ForeignID = af777ea8-1874-463c-a97c-a1f9e494bee1 ",
+            "ForeignID = 73031050-2016-44fc-b8f6-b97184793587 "
+        ]
+    }
+}
+```
+
 ## GET /mod/premoderation/
 ## GET /mod/reported/
 ## GET /mod/spam/
@@ -269,15 +286,32 @@ Host: http://example.vanillaforums.com
 }
 ```
 
+## POST /mod/report/
+
+Report Content to the queue.  This endpoint will remove content if the number of reports has been exceeded.
+
+### Parameters
+
+Parameter  | Type      |
+---        | ---       | ---
+`ForeignID`      | `int`  | ID of the content. ie. DiscussionID
+`ForeignType`      | `string`  | Type of content. ie. Discussion
+`Reason`      | `string`  | Reason the content is being reported
+`ReportUserID`      | `int`  | UserID of the user reporting.
 
 
-## Notes
+### Example
+```
+POST /mod/report.json/1 HTTP/1.1
+Host: http://example.vanillaforums.com
 
-counts - cache - memcache INCR. maybe table with denomarilzed data.
+{
+    "Reported": true,
+    "QueueID": "4559"
+}
+```
 
-### Timestamps
 
-What format? MySQL Datetime format
 
 ### Database Table
 
