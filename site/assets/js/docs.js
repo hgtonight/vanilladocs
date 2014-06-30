@@ -91,15 +91,17 @@
 
   $panelCol.css('min-height', $docsNav.outerHeight(true));
 
-  $docsNav.affix({
-    offset: {
-      top: function () {
-        return (this.top = $docsNav.offset().top - 30);
+  if ($(window).outerHeight() < $('.js-footer').position().top) {
+    $docsNav.affix({
+      offset: {
+        top: function () {
+          return (this.top = $docsNav.offset().top - 30);
+        }
+      , bottom: function () {
+          return (this.bottom = $('.js-footer').outerHeight(true));
+        }
       }
-    , bottom: function () {
-        return (this.bottom = $('.js-footer').outerHeight(true));
-      }
-    }
-  });
+    });
+  }
 
 })(jQuery, window, document);
