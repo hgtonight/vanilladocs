@@ -10,9 +10,7 @@
     "docpad-plugin-partials": "*",
     "docpad-plugin-shortcodes": "*",
     "docpad-plugin-sitemap": "*",
-    "docpad-plugin-tree": "*",
-    "underscore": "1.x.x",
-    "underscore.string": "2.x.x"
+    "docpad-plugin-tree": "*"
   },
   "devDependencies": {
     "bower": "*",
@@ -31,7 +29,6 @@
     "grunt-gh-pages": "*",
     "grunt-rev": "*",
     "grunt-usemin": "*",
-    "grunt-useref": "*",
     "grunt-wiredep": "*",
     "load-grunt-config": "*",
     "time-grunt": "*"
