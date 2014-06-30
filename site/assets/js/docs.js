@@ -87,18 +87,19 @@
   });
 
   var $docsNav  = $('.js-docs-nav')
+    , $footer   = $('.js-footer')
     , $panelCol = $docsNav.parent();
 
   $panelCol.css('min-height', $docsNav.outerHeight(true));
 
-  if ($(window).outerHeight() < $('.js-footer').position().top) {
+  if ($(window).outerHeight() < $footer.position().top) {
     $docsNav.affix({
       offset: {
         top: function () {
           return (this.top = $docsNav.offset().top - 30);
         }
       , bottom: function () {
-          return (this.bottom = $('.js-footer').outerHeight(true));
+          return (this.bottom = $footer.outerHeight(true));
         }
       }
     });
