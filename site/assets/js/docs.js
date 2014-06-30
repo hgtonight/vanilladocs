@@ -74,7 +74,7 @@
           $.each(pages, function (index, page) {
             if (page.url === match.ref) {
               matches.push(page);
-	    }
+            }
           });
         });
 
