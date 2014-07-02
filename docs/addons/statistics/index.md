@@ -1,8 +1,7 @@
 ---
 title: Vanilla Statistics
 layout: docs
-categories: ["Features", "Addons"]
----
+categories: ["Addons"]
 
 ![Example of dashboard page](../images/dashboard.png)
 
