@@ -4,7 +4,7 @@ layout: docs
 categories: ["Addons"]
 ---
 
-![Example of dashboard page](../images/dashboard.png)
+![Example of dashboard page](images/dashboard.png)
 
 ## What Are Vanilla Statistics?
 
