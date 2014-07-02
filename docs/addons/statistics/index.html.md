@@ -2,6 +2,7 @@
 title: Vanilla Statistics
 layout: docs
 categories: ["Addons"]
+---
 
 ![Example of dashboard page](../images/dashboard.png)
 
