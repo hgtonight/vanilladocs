@@ -10,9 +10,20 @@ module.exports = function (grunt, options) {
       'documents/'
     , '../docs/'
     ]
+  , collections: {
+      docs: function () {
+        return this.getCollection('html').findAllLive({
+          layout: 'docs'
+        });
+      }
+    }
   , plugins: {
       cleanurls: {
         static: true
+      , collectionName: 'docs'
+      }
+    , sitemap: {
+        collectionName: 'docs'
       }
     }
   , templateData: {
