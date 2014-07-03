@@ -1,6 +1,6 @@
 # Vanilla Docs
 
-[![Build Status](http://img.shields.io/travis/vanilla/vanilladocs/master.svg?style=flat)](https://travis-ci.org/vanilla/vanilladocs) [![Open Issues](http://img.shields.io/github/issues/vanilla/vanilladocs.svg?style=flat)](https://github.com/vanilla/vanilladocs/issues)
+[![Build Status](http://img.shields.io/travis/vanilla/vanilladocs/master.svg?style=flat)](https://travis-ci.org/vanilla/vanilladocs) [![Dependency Status](http://img.shields.io/gemnasium/vanilla/vanilladocs.svg?style=flat)](https://gemnasium.com/vanilla/vanilladocs) [![Open Issues](http://img.shields.io/github/issues/vanilla/vanilladocs.svg?style=flat)](https://github.com/vanilla/vanilladocs/issues)
 
 ## Contributing
 
