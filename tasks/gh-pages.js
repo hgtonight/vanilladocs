@@ -3,7 +3,7 @@
 var url  = require('url')
   , path = require('path');
 
-var getDeployMessage = function() {
+var getDeployMessage = function () {
   var message = '\n\n';
 
   if (process.env.TRAVIS !== 'true') {
