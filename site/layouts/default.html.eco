@@ -19,7 +19,7 @@
     <!-- build:css({.tmp,bower_components}) /assets/main.css -->
     <!--
     The files below are automatically injected based on the Bower package
-    manifest (bower.json). Do therefore not edit this sectionmanually as any
+    manifest (bower.json). Do therefore not edit this section manually as any
     changes will be overriden when building the docs!
     -->
     <!-- bower:css -->
@@ -41,7 +41,7 @@
     <!-- build:js({.tmp,bower_components}) /assets/main.js -->
     <!--
     The files below are automatically injected based on the Bower package
-    manifest (bower.json). Do therefore not edit this sectionmanually as any
+    manifest (bower.json). Do therefore not edit this section manually as any
     changes will be overriden when building the docs!
     -->
     <!-- bower:js -->
