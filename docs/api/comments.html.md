@@ -13,7 +13,7 @@ Host: https://yoursite.vanillaforums.com
 
 Creates a new comment.
 
-[__Authentication__](../#toc_5): `required`
+[__Authentication__](../#making-api-calls): required
 
 ### Parameters
 

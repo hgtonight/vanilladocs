@@ -13,7 +13,7 @@ Host: https://yoursite.vanillaforums.com
 
 Creates a new discussion.
 
-[__Authentication__](../#toc_5): `required`
+[__Authentication__](../#making-api-calls): required
 
 ### Parameters
 
@@ -41,7 +41,7 @@ Host: https://yoursite.vanillaforums.com
 
 Bookmark or unbookmark a discussion.
 
-[__Authentication__](../#toc_5): `required`
+[__Authentication__](../#making-api-calls): required
 
 ### Parameters
 
@@ -65,7 +65,7 @@ Host: https://yoursite.vanillaforums.com
 
 List a user's bookmarked discussions.
 
-[__Authentication__](../#toc_5): `required`
+[__Authentication__](../#making-api-calls): required
 
 
 ## /discussions/edit
@@ -77,7 +77,7 @@ Host: https://yoursite.vanillaforums.com
 
 Edits an existing discussion.
 
-[__Authentication__](../#toc_5): `required`
+[__Authentication__](../#making-api-calls): required
 
 ### Parameters
 
@@ -104,7 +104,7 @@ POST /api/v1/discussions/list.ext HTTP/1.1
 Host: https://yoursite.vanillaforums.com
 ```
 
-[__Authentication__](../#toc_5): `optional`  
+[__Authentication__](../#making-api-calls): `optional`  
 If not provided, perspective will be that of a guest.
 
 
@@ -117,7 +117,7 @@ Host: https://yoursite.vanillaforums.com
 
 Get a list of discussions within a category.
 
-[__Authentication__](../#toc_5): `optional`  
+[__Authentication__](../#making-api-calls): `optional`  
 If not provided, perspective will be that of a guest.
 
 ### Parameters

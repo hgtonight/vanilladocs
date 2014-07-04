@@ -13,7 +13,7 @@ Host: https://yoursite.vanillaforums.com
 
 Adds a new category.
 
-[__Authentication__](../#toc_5): `required`
+[__Authentication__](../#making-api-calls): required
 
 ### Parameters
 
@@ -39,7 +39,7 @@ Host: https://yoursite.vanillaforums.com
 
 Edits an existing category.
 
-[__Authentication__](../#toc_5): `required`
+[__Authentication__](../#making-api-calls): required
 
 ### Parameters
 
@@ -67,7 +67,7 @@ Host: https://yoursite.vanillaforums.com
 
 Deletes an existing category.
 
-[__Authentication__](../#toc_5): `required`
+[__Authentication__](../#making-api-calls): required
 
 ### Parameters
 
@@ -86,7 +86,7 @@ Host: https://yoursite.vanillaforums.com
 
 Get a list of categories.
 
-[__Authentication__](../#toc_5): `optional`  
+[__Authentication__](../#making-api-calls): `optional`  
 If not provided, perspective will be that of a guest.
 
 ### Parameters
