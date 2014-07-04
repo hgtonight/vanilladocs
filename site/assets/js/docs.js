@@ -74,7 +74,7 @@
           $.each(pages, function (index, page) {
             if (page.url === match.ref) {
               matches.push(page);
-	    }
+            }
           });
         });
 
@@ -87,19 +87,22 @@
   });
 
   var $docsNav  = $('.js-docs-nav')
+    , $footer   = $('.js-footer')
     , $panelCol = $docsNav.parent();
 
   $panelCol.css('min-height', $docsNav.outerHeight(true));
 
-  $docsNav.affix({
-    offset: {
-      top: function () {
-        return (this.top = $docsNav.offset().top - 30);
+  if ($(window).outerHeight() < $footer.position().top) {
+    $docsNav.affix({
+      offset: {
+        top: function () {
+          return (this.top = $docsNav.offset().top - 30);
+        }
+      , bottom: function () {
+          return (this.bottom = $footer.outerHeight(true));
+        }
       }
-    , bottom: function () {
-        return (this.bottom = $('.js-footer').outerHeight(true));
-      }
-    }
-  });
+    });
+  }
 
 })(jQuery, window, document);

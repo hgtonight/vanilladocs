@@ -21,13 +21,13 @@ layout: default
 </header>
 
 <div class="container">
-  <%- @partial 'trail', false, items: @tree 'html', @document, true %>
+  <%- @partial 'trail', false, items: @tree 'docs', @document, true %>
 
   <div class="row">
 
     <div class="col-sm-2">
       <nav class="docs-nav js-docs-nav" role="navigation">
-        <%- @partial 'nav', false, items: @tree 'html', @document %>
+        <%- @partial 'nav', false, items: @tree 'docs', @document %>
         <p><a class="text-muted" href="#top"><strong>Back to top</strong></a></p>
       </nav>
     </div>

@@ -2,7 +2,7 @@
   "name": "vanilla-docs",
   "private": true,
   "dependencies": {
-    "docpad": "6.64.x",
+    "docpad": "6.x.x",
     "docpad-plugin-cleanurls": "*",
     "docpad-plugin-eco": "*",
     "docpad-plugin-highlightjs": "*",
@@ -10,9 +10,7 @@
     "docpad-plugin-partials": "*",
     "docpad-plugin-shortcodes": "*",
     "docpad-plugin-sitemap": "*",
-    "docpad-plugin-tree": "*",
-    "underscore": "1.x.x",
-    "underscore.string": "2.x.x"
+    "docpad-plugin-tree": "*"
   },
   "devDependencies": {
     "bower": "*",
@@ -27,11 +25,9 @@
     "grunt-contrib-less": "*",
     "grunt-contrib-uglify": "*",
     "grunt-contrib-watch": "*",
-    "grunt-docs": "*",
     "grunt-gh-pages": "*",
     "grunt-rev": "*",
     "grunt-usemin": "*",
-    "grunt-useref": "*",
     "grunt-wiredep": "*",
     "load-grunt-config": "*",
     "time-grunt": "*"

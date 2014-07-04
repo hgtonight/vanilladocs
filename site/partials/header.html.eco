@@ -19,6 +19,7 @@
       </div>
 
       <ul class="nav navbar-nav navbar-right">
+	<li><a href="http://vanillaforums.com">Cloud Hosted Community</a></li>
         <li><a href="http://vanillaforums.org">Open Source Community</a></li>
       </ul>
     </div>

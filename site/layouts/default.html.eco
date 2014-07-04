@@ -12,12 +12,14 @@
     <meta name="description" content="<%= @document.description %>">
     <meta name="viewport" content="width=device-width">
 
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic">
 
     <!-- build:css({.tmp,bower_components}) /assets/main.css -->
     <!--
     The files below are automatically injected based on the Bower package
-    manifest (bower.json). Do therefore not edit this sectionmanually as any
+    manifest (bower.json). Do therefore not edit this section manually as any
     changes will be overriden when building the docs!
     -->
     <!-- bower:css -->
@@ -39,7 +41,7 @@
     <!-- build:js({.tmp,bower_components}) /assets/main.js -->
     <!--
     The files below are automatically injected based on the Bower package
-    manifest (bower.json). Do therefore not edit this sectionmanually as any
+    manifest (bower.json). Do therefore not edit this section manually as any
     changes will be overriden when building the docs!
     -->
     <!-- bower:js -->
