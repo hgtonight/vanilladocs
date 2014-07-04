@@ -1,4 +1,4 @@
-<% pages = @getCollection('html').toJSON() %>{
+<% pages = @getCollection('docs').toJSON() %>{
   "docs": [<% for page, pageIndex in pages: %>{
     "url": "<%= page.url %>",
     "title": "<%= page.title %>",
