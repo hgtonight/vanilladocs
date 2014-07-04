@@ -13,7 +13,9 @@ module.exports = function (grunt, options) {
   , collections: {
       docs: function () {
         return this.getCollection('html').findAllLive({
-          layout: 'docs'
+          layout: {
+            $has: ['docs', 'api']
+          }
         });
       }
     }
