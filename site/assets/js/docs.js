@@ -39,52 +39,66 @@
       this.ref('url');
     });
 
-    oboe('/search.json')
-      .node('docs.*', function (result) {
+    $.ajax({
+      url: '/search.json'
+    })
+    .done(function (data) {
+      $.each(data.docs, function (i, doc) {
         // Decode the URL encoded content
-        result.content = decodeURI(result.content);
+        doc.content = decodeURI(doc.content);
 
-        index.add(result);
-        pages.push(result);
-      })
-      .done(function () {
-        cache.set('docs', {
-          pages: pages
-        , index: index
-        }, 24 * 60 * 60 * 1000); // Expire after a day
+        index.add(doc);
+        pages.push(doc);
       });
+
+      cache.set('docs', {
+        pages: pages
+      , index: index
+      }, 24 * 60 * 60 * 1000); // Expire after a day
+    });
   }
 
-  var search = new Vue({
-    el: '#search-docs'
-  , data: {
-      results: []
-    }
-  , computed: {
-      hasResults: function () {
-        return this.results.length;
-      }
-    }
-  , methods: {
-      search: function (e) {
-        var matches = []
-          , query   = $(e.target).val();
+  var searchHandler = function (e) {
+    var $input   = $(e.currentTarget)
+      , $search  = $('.js-search')
+      , $results = $('.js-search-results')
+      , matches  = []
+      , query    = $input.val();
 
-        index.search(query).map(function (match) {
-          $.each(pages, function (index, page) {
-            if (page.url === match.ref) {
-              matches.push(page);
-            }
-          });
-        });
+    index.search(query).map(function (match) {
+      $.each(pages, function (i, page) {
+        if (page.url === match.ref) {
+          matches.push(page);
+        }
+      });
+    });
 
-        // Grab the first 5 results
-        matches = matches.slice(0, 5);
+    matches = matches.slice(0, 5);
 
-        this.results = matches;
-      }
+    if (matches.length) {
+      output = '';
+
+      $.each(matches, function (i, match) {
+        output += [
+          '<li>',
+            '<a href="' + match.url + '">',
+              '<span class="title">' + match.title + '</span>',
+              '<span class="categories">' + match.categories.join(' / ') + '</span>',
+            '</a>',
+          '</li>'
+        ].join('');
+      });
+
+      $results.html(output);
+      $search.addClass('open');
     }
-  });
+    else {
+      $results.empty();
+      $search.removeClass('open');
+    }
+  };
+
+  $(document).on('input', '.js-search-input', searchHandler);
 
   var $docsNav  = $('.js-docs-nav')
     , $footer   = $('.js-footer')

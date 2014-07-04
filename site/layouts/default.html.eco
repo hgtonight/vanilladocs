@@ -50,8 +50,6 @@
     <script src="/bootstrap/js/scrollspy.js"></script>
     <script src="/bootstrap/js/tab.js"></script>
     <script src="/bootstrap/js/affix.js"></script>
-    <script src="/oboe/dist/oboe-browser.js"></script>
-    <script src="/vue/dist/vue.js"></script>
     <script src="/lunr.js/lunr.js"></script>
     <script src="/store.js/store.js"></script>
     <!-- endbower -->
