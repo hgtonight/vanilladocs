@@ -15,7 +15,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse">
       <div class="navbar-form navbar-left">
-        <div id="search-docs" class="dropdown{{hasResults ? ' open' : ' closed'}}" role="search">
+        <div id="search-docs" class="dropdown {{hasResults ? 'open' : 'closed'}}" role="search">
           <div class="form-group">
             <input v-on="input:search" class="form-control" id="docs-search" type="text" title="Search the documentation" placeholder="Search">
           </div>

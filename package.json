@@ -26,6 +26,7 @@
     "grunt-contrib-watch": "*",
     "grunt-gh-pages": "*",
     "grunt-rev": "*",
+    "grunt-uncss": "*",
     "grunt-usemin": "*",
     "grunt-wiredep": "*",
     "load-grunt-config": "*",

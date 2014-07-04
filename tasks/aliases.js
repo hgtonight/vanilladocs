@@ -6,6 +6,7 @@ module.exports = {
   , 'docs'
   , 'less'
   , 'copy'
+  , 'uncss'
   , 'useminPrepare'
   , 'concat'
   , 'uglify'
