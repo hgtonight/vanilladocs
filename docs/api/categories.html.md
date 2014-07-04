@@ -1,6 +1,6 @@
 ---
 title: Categories
-layout: docs
+layout: api
 categories: ["API"]
 ---
 

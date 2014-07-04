@@ -1,6 +1,6 @@
 ---
 title: Moderation
-layout: docs
+layout: api
 categories: ["API"]
 hidden: true
 ---

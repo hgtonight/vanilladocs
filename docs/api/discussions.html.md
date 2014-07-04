@@ -1,6 +1,6 @@
 ---
 title: Discussions
-layout: docs
+layout: api
 categories: ["API"]
 ---
 
