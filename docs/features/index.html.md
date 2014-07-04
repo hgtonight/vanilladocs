@@ -1,6 +1,7 @@
 ---
 title: Features
 layout: docs
+categories: ["Features"]
 ---
 
 ## Features Overview
