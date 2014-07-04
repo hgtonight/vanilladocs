@@ -2,6 +2,7 @@
 title: Forum Administration
 layout: docs
 categories: ["API"]
+order: -1
 ---
 
 ## /configuration

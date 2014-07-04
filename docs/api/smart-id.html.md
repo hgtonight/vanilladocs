@@ -2,6 +2,7 @@
 title: Smart ID
 layout: docs
 categories: ["API"]
+order: -1
 ---
 
 ## Smart ID
