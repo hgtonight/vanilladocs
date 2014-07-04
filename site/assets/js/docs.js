@@ -63,9 +63,9 @@
     , $template = $results.find('li');
 
   var searchHandler = function (e) {
-    var $input   = $(e.currentTarget)
-      , matches  = []
-      , query    = $input.val();
+    var $input  = $(e.currentTarget)
+      , matches = []
+      , query   = $input.val();
 
     index.search(query).map(function (match) {
       $.each(pages, function (i, page) {
