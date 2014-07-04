@@ -2,15 +2,15 @@
   <% for item in items: %>
     <% if item.active: %>
       <% if item.current: %>
-	<li class="active" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-	  <span itemprop="title"><%= item.title %></span>
-	</li>
+        <li class="active" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+          <span itemprop="title"><%= item.title %></span>
+        </li>
       <% else: %>
-	<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-	  <a href="<%= item.url %>" itemprop="url">
-	    <span itemprop="title"><%= item.title %></span>
-	  </a>
-	</li>
+        <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+          <a href="<%= item.url %>" itemprop="url">
+            <span itemprop="title"><%= item.title %></span>
+          </a>
+        </li>
       <% end %>
       <%- render item.children if item.children %>
     <% end %>
