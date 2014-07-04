@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
       </button>
 
-      <a class="navbar-brand" href="/"><img class="logo" src="/assets/img/logo.svg" alt="Vanilla Forums"> Docs</a>
+      <a class="navbar-brand" href="/"><img class="logo" src="/assets/img/logo.svg" alt="Vanilla Forums" width="102" height="41"> Docs</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
