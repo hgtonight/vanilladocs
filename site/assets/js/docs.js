@@ -58,10 +58,12 @@
     });
   }
 
+  var $search   = $('.js-search')
+    , $results  = $('.js-search-results')
+    , $template = $results.find('li');
+
   var searchHandler = function (e) {
     var $input   = $(e.currentTarget)
-      , $search  = $('.js-search')
-      , $results = $('.js-search-results')
       , matches  = []
       , query    = $input.val();
 
@@ -73,27 +75,29 @@
       });
     });
 
+    // Clear previous results before moving on
+    $results.empty();
+
+    // Grab the first 5 search results
     matches = matches.slice(0, 5);
 
     if (matches.length) {
-      output = '';
-
       $.each(matches, function (i, match) {
-        output += [
-          '<li>',
-            '<a href="' + match.url + '">',
-              '<span class="title">' + match.title + '</span>',
-              '<span class="categories">' + match.categories.join(' / ') + '</span>',
-            '</a>',
-          '</li>'
-        ].join('');
+        var url        = match.url
+          , title      = match.title
+          , categories = match.categories.join(' / ')
+          , $item      = $template.clone();
+
+        $item.find('a').attr('href', url);
+        $item.find('.title').text(title);
+        $item.find('.categories').text(categories);
+
+        $results.append($item);
       });
 
-      $results.html(output);
       $search.addClass('open');
     }
     else {
-      $results.empty();
       $search.removeClass('open');
     }
   };

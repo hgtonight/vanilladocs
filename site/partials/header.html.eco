@@ -19,7 +19,14 @@
           <div class="form-group">
             <input class="form-control js-search-input" id="docs-search" type="text" title="Search the documentation" placeholder="Search">
           </div>
-          <ul class="dropdown-menu dropdown-search-results js-search-results"></ul>
+          <ul class="dropdown-menu dropdown-search-results js-search-results">
+            <li>
+              <a>
+                <span class="title"></span>
+                <span class="categories"></span>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
 
