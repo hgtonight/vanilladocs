@@ -6,7 +6,7 @@
     <meta name="description" content="<%= @document.description %>">
     <meta name="viewport" content="width=device-width">
 
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic|Source+Code+Pro:400,600">
 
     <!-- build:css({.tmp,bower_components}) /assets/main.css -->
     <!--
