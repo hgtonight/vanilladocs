@@ -15,11 +15,23 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse">
       <div class="navbar-form navbar-left">
-        <%- @partial('search') %>
+        <div id="search-docs" class="dropdown{{hasResults ? ' open' : ' closed'}}" role="search">
+          <div class="form-group">
+            <input v-on="input:search" class="form-control" id="docs-search" type="text" title="Search the documentation" placeholder="Search">
+          </div>
+          <ul class="dropdown-menu dropdown-search-results">
+            <li v-repeat="results">
+              <a href="{{url}}">
+                <span class="title">{{title}}</span>
+                <span class="categories">{{categories.join(' / ')}}</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <ul class="nav navbar-nav navbar-right">
-	<li><a href="http://vanillaforums.com">Cloud Hosted Community</a></li>
+        <li><a href="http://vanillaforums.com">Cloud Hosted Community</a></li>
         <li><a href="http://vanillaforums.org">Open Source Community</a></li>
       </ul>
     </div>

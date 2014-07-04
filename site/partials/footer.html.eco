@@ -21,7 +21,7 @@
   <div class="footer-copyright">
     <div class="container">
 
-      <p class="text-center">Copyright &copy; 2009-<%= @site.date.getFullYear() %> <a href="//vanillaforums.com">Vanilla Forums Inc.</a> All rights reserved.</p>
+      <p class="text-center">Copyright &copy; 2009-<%= @year %> <a href="//vanillaforums.com">Vanilla Forums Inc.</a> All rights reserved.</p>
 
       <ul class="list-inline text-center">
         <li><a href="//docs.vanillaforums.com">Docs</a></li>

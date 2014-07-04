@@ -8,7 +8,7 @@ layout: default
 
 <div id="top"></div>
 
-<%- @partial 'header' %>
+<%- @partial 'header', false %>
 
 <header class="jumbotron masthead" role="banner">
   <div class="container">
@@ -45,4 +45,4 @@ layout: default
   </div>
 </div>
 
-<%- @partial 'footer' %>
+<%- @partial 'footer', false, year: @site.date.getFullYear() %>
