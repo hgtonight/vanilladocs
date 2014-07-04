@@ -104,7 +104,7 @@ POST /api/v1/discussions/list.ext HTTP/1.1
 Host: https://yoursite.vanillaforums.com
 ```
 
-[__Authentication__](../#making-api-calls): `optional`  
+[__Authentication__](../#making-api-calls): optional  
 If not provided, perspective will be that of a guest.
 
 
@@ -117,7 +117,7 @@ Host: https://yoursite.vanillaforums.com
 
 Get a list of discussions within a category.
 
-[__Authentication__](../#making-api-calls): `optional`  
+[__Authentication__](../#making-api-calls): optional  
 If not provided, perspective will be that of a guest.
 
 ### Parameters

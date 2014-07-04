@@ -86,7 +86,7 @@ Host: https://yoursite.vanillaforums.com
 
 Get a list of categories.
 
-[__Authentication__](../#making-api-calls): `optional`  
+[__Authentication__](../#making-api-calls): optional  
 If not provided, perspective will be that of a guest.
 
 ### Parameters
