@@ -23,8 +23,21 @@
   right: 0;
   bottom: 0;
   width: 50%;
+  padding-bottom: (@line-height-computed * 4);
+  margin-bottom: -(@line-height-computed * 4);
   background-color: #fafafa;
   border-left: #ddd solid 1px;
+
+  &:after {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: -1px;
+    height: (@line-height-computed * 4);
+    background-image: linear-gradient(fade(#f9f9f9, 0%), #f9f9f9);
+    content: " ";
+  }
 }
 
 .code-canvas-body {
