@@ -2,6 +2,7 @@
 title: Forum Administration
 layout: docs
 categories: ["API"]
+order: -1
 ---
 
 ## /configuration
@@ -13,7 +14,7 @@ Host: https://yoursite.vanillaforums.com
 
 Retrieve forum configuration.
 
-[__Authentication__](../#toc_5): `required`
+[__Authentication__](../#making-api-calls): required
 
 ### Parameters
 
