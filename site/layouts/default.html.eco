@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title><%- @document.title + " &middot; " if @document.url isnt "/" %><%- @site.title %></title>
     <meta name="description" content="<%= @document.description %>">
+    <meta name="keywords" content="<%= @document.keywords.join() if @document.keywords %>">
     <meta name="viewport" content="width=device-width">
 
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic|Source+Code+Pro:400,600">
