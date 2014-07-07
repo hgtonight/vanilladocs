@@ -7,7 +7,7 @@ module.exports = {
     , ignoreSheets: [/fonts.googleapis/]
     , htmlroot: '.tmp'
     , ignore: [
-	'.open > .dropdown-menu'
+        '.open > .dropdown-menu'
       , '.dropdown-menu > li + li > a'
       , '.affix'
       , '.docs-nav.affix'
