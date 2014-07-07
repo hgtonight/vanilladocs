@@ -8,6 +8,7 @@
     "docpad-plugin-highlightjs": "*",
     "docpad-plugin-marked": "*",
     "docpad-plugin-partials": "*",
+    "docpad-plugin-shortcodeparser": "*",
     "docpad-plugin-sitemap": "*",
     "docpad-plugin-tree": "*"
   },

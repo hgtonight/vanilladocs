@@ -25,6 +25,10 @@ module.exports = function (grunt, options) {
     , sitemap: {
         collectionName: 'docs'
       }
+    , shortcodeparser: {
+        codes: require('../site/shortcodes')
+      , extension: 'md'
+      }
     }
   , templateData: {
       site: {
