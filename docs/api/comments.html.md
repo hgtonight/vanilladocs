@@ -6,10 +6,12 @@ categories: ["API"]
 
 ## /comments/add
 
+[code-canvas]
 ```http
 POST /api/v1/comments/add.ext HTTP/1.1
 Host: https://yoursite.vanillaforums.com
 ```
+[/code-canvas]
 
 Creates a new comment.
 

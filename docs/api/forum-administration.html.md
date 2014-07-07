@@ -6,10 +6,12 @@ categories: ["API"]
 
 ## /configuration
 
+[code-canvas]
 ```http
 GET /api/v1/configuration.ext HTTP/1.1
 Host: https://yoursite.vanillaforums.com
 ```
+[/code-canvas]
 
 Retrieve forum configuration.
 

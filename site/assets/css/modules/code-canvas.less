@@ -47,6 +47,10 @@
   margin-top: -@navbar-margin-bottom;
   overflow: hidden;
 
+  p:empty {
+    display: none;
+  }
+
   > h1,
   > h2,
   > h3,
@@ -58,21 +62,21 @@
   > ul,
   > ol,
   > dl,
-  > aside {
+  > aside,
+  > pre,
+  > blockquote {
     width: 50%;
     padding-right: @grid-gutter-width;
   }
 
-  blockquote,
-  .highlight {
+  > h2 {
+    clear: both;
+  }
+
+  .push {
     float: right;
     clear: right;
     width: 50%;
-    margin: 0;
-    border-left: #ddd solid 1px;
-  }
-
-  > h2 {
-    clear: both;
+    padding-left: 1px;
   }
 }
