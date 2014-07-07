@@ -29,7 +29,6 @@ module.exports = function (grunt, options) {
       }
     , shortcodeparser: {
         codes: require('../site/shortcodes')
-      , extension: 'md'
       }
     }
   , templateData: {

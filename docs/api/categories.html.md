@@ -1,17 +1,15 @@
 ---
 title: Categories
-layout: api
+layout: docs
 categories: ["API"]
 ---
 
 ## /categories/add
 
-[code-canvas]
 ```http
 POST /api/v1/categories/add.ext HTTP/1.1
 Host: https://yoursite.vanillaforums.com
 ```
-[/code-canvas]
 
 Adds a new category.
 
@@ -34,12 +32,10 @@ __`Description`__   | `string`  | Description of this category
 
 ## /categories/edit
 
-[code-canvas]
 ```http
 POST /api/v1/categories/edit.ext HTTP/1.1
 Host: https://yoursite.vanillaforums.com
 ```
-[/code-canvas]
 
 Edits an existing category.
 
@@ -64,12 +60,10 @@ __`Description`__   | `string`  | Description of this category
 
 ## /categories/delete
 
-[code-canvas]
 ```http
 POST /api/v1/categories/delete.ext HTTP/1.1
 Host: https://yoursite.vanillaforums.com
 ```
-[/code-canvas]
 
 Deletes an existing category.
 
@@ -85,12 +79,10 @@ __`Category`__      | `string`  | Category to be deleted (Name, use if no ID)
 
 ## /categories/list
 
-[code-canvas]
 ```http
 GET /api/v1/categories/list.ext HTTP/1.1
 Host: https://yoursite.vanillaforums.com
 ```
-[/code-canvas]
 
 Get a list of categories.
 
