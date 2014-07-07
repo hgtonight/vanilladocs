@@ -16,7 +16,7 @@ module.exports = {
       ]
     },
     files: {
-      '.tmp/assets/docs.css': ['dist/**/*.html']
+      '.tmp/assets/docs.css': 'dist/**/*.html'
     }
   }
 };
