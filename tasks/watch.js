@@ -7,6 +7,14 @@ module.exports = {
     , 'tasks/*.js'
     ]
   }
+, bower: {
+    files: [
+      'bower.json'
+    ]
+  , tasks: [
+      'wiredep'
+    ]
+  }
 , docs: {
     files: [
       'docs/**/*'
