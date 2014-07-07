@@ -1,12 +1,26 @@
 'use strict';
 
 module.exports = {
-  docs: {
+  grunt: {
+    files: [
+      'Gruntfile.js'
+    , 'tasks/*.js'
+    ]
+  }
+, bower: {
+    files: [
+      'bower.json'
+    ]
+  , tasks: [
+      'wiredep'
+    ]
+  }
+, docs: {
     files: [
       'docs/**/*'
+    , 'site/documents/*'
     , 'site/layouts/*'
     , 'site/partials/*'
-    , 'site/documents/*'
     ]
   , tasks: [
       'docs'
@@ -30,11 +44,11 @@ module.exports = {
   }
 , livereload: {
     options: {
-      'livereload': true
+      livereload: true
     }
   , files: [
-      '.tmp/assets/*.{css,js}'
-    , 'dist/**/*.html'
+      '.tmp/assets/*'
+    , 'dist/**/*'
     ]
   }
 };

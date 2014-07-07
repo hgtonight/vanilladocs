@@ -2,6 +2,9 @@
 
 module.exports = {
   dist: {
-    src: [".tmp", "dist/"]
+    src: [
+      '.tmp'
+    , 'dist/'
+    ]
   }
 };

@@ -1,15 +1,17 @@
 ---
 title: Discussions
-layout: docs
+layout: api
 categories: ["API"]
 ---
 
 ## /discussions/add
 
+[code-canvas]
 ```http
 POST /api/v1/discussions/add.ext HTTP/1.1
 Host: https://yoursite.vanillaforums.com
 ```
+[/code-canvas]
 
 Creates a new discussion.
 
@@ -34,10 +36,12 @@ __`Category`__      | `string`  | Discussion Category (Name, use if no ID)
 
 ## /discussions/bookmark
 
+[code-canvas]
 ```http
 POST /api/v1/discussions/bookmark.ext HTTP/1.1
 Host: https://yoursite.vanillaforums.com
 ```
+[/code-canvas]
 
 Bookmark or unbookmark a discussion.
 
@@ -58,10 +62,12 @@ You need the `Garden.Moderation.Manage` permission to bookmark a discussion for 
 
 ## /discussions/bookmarked
 
+[code-canvas]
 ```http
 GET /api/v1/discussions/bookmarked.ext HTTP/1.1
 Host: https://yoursite.vanillaforums.com
 ```
+[/code-canvas]
 
 List a user's bookmarked discussions.
 
@@ -70,10 +76,12 @@ List a user's bookmarked discussions.
 
 ## /discussions/edit
 
+[code-canvas]
 ```http
 POST /api/v1/discussions/edit.ext HTTP/1.1
 Host: https://yoursite.vanillaforums.com
 ```
+[/code-canvas]
 
 Edits an existing discussion.
 
@@ -99,10 +107,12 @@ __`Discussion`__    | [`smart id`](../smart-id) | Discussion to be deleted.
 
 ## /discussions/list
 
+[code-canvas]
 ```http
 POST /api/v1/discussions/list.ext HTTP/1.1
 Host: https://yoursite.vanillaforums.com
 ```
+[/code-canvas]
 
 [__Authentication__](../#making-api-calls): optional  
 If not provided, perspective will be that of a guest.
@@ -110,10 +120,12 @@ If not provided, perspective will be that of a guest.
 
 ## /discussions/category
 
+[code-canvas]
 ```http
 GET /api/v1/discussions/category.ext HTTP/1.1
 Host: https://yoursite.vanillaforums.com
 ```
+[/code-canvas]
 
 Get a list of discussions within a category.
 
