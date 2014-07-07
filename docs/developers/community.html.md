@@ -6,7 +6,7 @@ categories: ["Developers"]
 
 ## Developers Community
 
-We have a vibrant [developers' community at vanillaforums.org](http://vanillaforums.org/discussion/). Please register there to ask general questions, contribute feedback and ideas, help others, add your own plugins & themes to the [official directory](http://vanillaforums.org/addons), and sign the [contributors' agreement](http://vanillaforums.org/contributors).
+We have a vibrant [developers' community at vanillaforums.org](http://vanillaforums.org/discussions/). Please register there to ask general questions, contribute feedback and ideas, help others, add your own plugins & themes to the [official directory](http://vanillaforums.org/addons), and sign the [contributors' agreement](http://vanillaforums.org/contributors).
 
 ### Get Notified
 
