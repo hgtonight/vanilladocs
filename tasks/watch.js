@@ -18,9 +18,9 @@ module.exports = {
 , docs: {
     files: [
       'docs/**/*'
+    , 'site/documents/*'
     , 'site/layouts/*'
     , 'site/partials/*'
-    , 'site/documents/*'
     ]
   , tasks: [
       'docs'
