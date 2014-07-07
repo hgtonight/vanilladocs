@@ -1,7 +1,13 @@
 'use strict';
 
 module.exports = {
-  docs: {
+  grunt: {
+    files: [
+      'Gruntfile.js'
+    , 'tasks/*.js'
+    ]
+  }
+, docs: {
     files: [
       'docs/**/*'
     , 'site/layouts/*'
