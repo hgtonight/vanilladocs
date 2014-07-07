@@ -44,7 +44,7 @@ module.exports = {
   }
 , livereload: {
     options: {
-      'livereload': true
+      livereload: true
     }
   , files: [
       '.tmp/assets/*'
