@@ -5,6 +5,7 @@ module.exports = {
     options: {
       collapseBooleanAttributes: true
     , collapseWhitespace: true
+    , minifyCSS: true
     , removeAttributeQuotes: true
     , removeCommentsFromCDATA: true
     , removeEmptyAttributes: true

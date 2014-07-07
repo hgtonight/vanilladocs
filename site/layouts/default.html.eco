@@ -2,19 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>
-      <% if @document.url is "/": %>
-        <%= @site.title %>
-      <% else: %>
-        <%= @document.title %> &middot; <%= @site.title %>
-      <% end %>
-    </title>
+    <title><%- @document.title + " &middot; " if @document.url isnt "/" %><%- @site.title %></title>
     <meta name="description" content="<%= @document.description %>">
+    <meta name="keywords" content="<%= @document.keywords.join() if @document.keywords %>">
     <meta name="viewport" content="width=device-width">
 
-    <link rel="shortcut icon" href="/assets/img/favicon.ico">
-
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic|Source+Code+Pro:400,600">
 
     <!-- build:css({.tmp,bower_components}) /assets/main.css -->
     <!--
@@ -33,7 +26,7 @@
   </head>
   <body>
     <!--[if lt IE 9]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <p class="alert alert-warning text-center outdated-browser">You are using an <strong>outdated</strong> browser. Please <a class="alert-link" href="http://outdatedbrowser.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <%- @content %>
@@ -58,8 +51,6 @@
     <script src="/bootstrap/js/scrollspy.js"></script>
     <script src="/bootstrap/js/tab.js"></script>
     <script src="/bootstrap/js/affix.js"></script>
-    <script src="/oboe/dist/oboe-browser.js"></script>
-    <script src="/vue/dist/vue.js"></script>
     <script src="/lunr.js/lunr.js"></script>
     <script src="/store.js/store.js"></script>
     <!-- endbower -->

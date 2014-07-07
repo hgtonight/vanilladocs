@@ -39,52 +39,70 @@
       this.ref('url');
     });
 
-    oboe('/search.json')
-      .node('docs.*', function (result) {
+    $.ajax({
+      url: '/search.json'
+    })
+    .done(function (data) {
+      $.each(data.docs, function (i, doc) {
         // Decode the URL encoded content
-        result.content = decodeURI(result.content);
+        doc.content = decodeURI(doc.content);
 
-        index.add(result);
-        pages.push(result);
-      })
-      .done(function () {
-        cache.set('docs', {
-          pages: pages
-        , index: index
-        }, 24 * 60 * 60 * 1000); // Expire after a day
+        index.add(doc);
+        pages.push(doc);
       });
+
+      cache.set('docs', {
+        pages: pages
+      , index: index
+      }, 24 * 60 * 60 * 1000); // Expire after a day
+    });
   }
 
-  var search = new Vue({
-    el: '#search-docs'
-  , data: {
-      results: []
-    }
-  , computed: {
-      hasResults: function () {
-        return this.results.length;
-      }
-    }
-  , methods: {
-      search: function (e) {
-        var matches = []
-          , query   = $(e.target).val();
+  var $search   = $('.js-search')
+    , $results  = $('.js-search-results')
+    , $template = $results.find('li');
 
-        index.search(query).map(function (match) {
-          $.each(pages, function (index, page) {
-            if (page.url === match.ref) {
-              matches.push(page);
-            }
-          });
-        });
+  var searchHandler = function (e) {
+    var $input  = $(e.currentTarget)
+      , matches = []
+      , query   = $input.val();
 
-        // Grab the first 5 results
-        matches = matches.slice(0, 5);
+    index.search(query).map(function (match) {
+      $.each(pages, function (i, page) {
+        if (page.url === match.ref) {
+          matches.push(page);
+        }
+      });
+    });
 
-        this.results = matches;
-      }
+    // Clear previous results before moving on
+    $results.empty();
+
+    // Grab the first 5 search results
+    matches = matches.slice(0, 5);
+
+    if (matches.length) {
+      $.each(matches, function (i, match) {
+        var url        = match.url
+          , title      = match.title
+          , categories = match.categories.join(' / ')
+          , $item      = $template.clone();
+
+        $item.find('a').attr('href', url);
+        $item.find('.title').text(title);
+        $item.find('.categories').text(categories);
+
+        $results.append($item);
+      });
+
+      $search.addClass('open');
     }
-  });
+    else {
+      $search.removeClass('open');
+    }
+  };
+
+  $(document).on('input', '.js-search-input', searchHandler);
 
   var $docsNav  = $('.js-docs-nav')
     , $footer   = $('.js-footer')

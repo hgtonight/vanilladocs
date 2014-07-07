@@ -8,7 +8,7 @@
     "docpad-plugin-highlightjs": "*",
     "docpad-plugin-marked": "*",
     "docpad-plugin-partials": "*",
-    "docpad-plugin-shortcodes": "*",
+    "docpad-plugin-shortcodeparser": "*",
     "docpad-plugin-sitemap": "*",
     "docpad-plugin-tree": "*"
   },
@@ -27,6 +27,7 @@
     "grunt-contrib-watch": "*",
     "grunt-gh-pages": "*",
     "grunt-rev": "*",
+    "grunt-uncss": "*",
     "grunt-usemin": "*",
     "grunt-wiredep": "*",
     "load-grunt-config": "*",
