@@ -23,12 +23,22 @@
 
     .row {
       margin: 0 -(@grid-gutter-width * 1.8);
+
+      @media (max-width: @screen-xs-max) {
+        margin: 0;
+      }
     }
 
     [class^="col"] {
       padding-right: (@grid-gutter-width * 1.8);
       padding-left:  (@grid-gutter-width * 1.8);
       border-right: #eee solid 1px;
+
+      @media (max-width: @screen-xs-max) {
+        padding-right: 0;
+        padding-left: 0;
+        border-width: 0 !important;
+      }
 
       &:last-child {
         border-right-color: transparent;
@@ -37,14 +47,6 @@
       + [class^="col"] {
         margin-left: -1px;
         border-left: #eee solid 1px;
-      }
-    }
-
-    p {
-      margin-bottom: 0;
-
-      + p {
-        margin-top: (@line-height-computed / 2);
       }
     }
   }
