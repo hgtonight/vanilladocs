@@ -11,8 +11,6 @@
     "bootstrap": {
       "main": [
         "less/bootstrap.less",
-        "js/transition.js",
-        "js/collapse.js",
         "js/scrollspy.js",
         "js/affix.js"
       ]
