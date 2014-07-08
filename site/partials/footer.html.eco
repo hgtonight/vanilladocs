@@ -23,7 +23,7 @@
 
       <p class="text-center">Copyright &copy; 2009-<%= @year %> <a href="http://vanillaforums.com">Vanilla Forums Inc.</a> All rights reserved.</p>
 
-      <ul class="list-inline text-center">
+      <ul class="list-inline text-center hidden-xs">
         <li><a href="http://docs.vanillaforums.com">Docs</a></li>
         <li><a href="http://blog.vanillaforums.com">Blog</a></li>
         <li><a href="http://vanillaforums.com">Cloud</a></li>
