@@ -1,6 +1,5 @@
 <nav class="navbar navbar-default navbar-static-top" role="navigation">
   <div class="container<%= "-fluid" if @fluid %>">
-    <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <a class="navbar-brand" href="/"><img class="logo" src="/assets/img/logo.svg" alt="Vanilla Forums" width="102" height="41"> Docs</a>
     </div>
