@@ -9,8 +9,6 @@
 
     <meta name="google-site-verification" content="IWfWjN_f_82e7heCa9D0SJRhIf8aZdPNKZm_ympcB54">
 
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic|Source+Code+Pro:400,600">
-
     <!-- build:css({.tmp,bower_components}) /assets/main.css -->
     <!--
     The files below are automatically injected based on the Bower package
@@ -54,6 +52,19 @@
     -->
     <script src="/assets/docs.js"></script>
     <!-- endbuild -->
+
+    <!-- Web Fonts -->
+    <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: [
+            'Source Sans Pro:300,400,600,300italic,400italic,600italic:latin'
+          , 'Source Code Pro:400,600:latin'
+          ]
+        }
+      });
+    </script>
 
     <!-- Google Analytics -->
     <script>
