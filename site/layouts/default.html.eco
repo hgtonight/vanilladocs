@@ -25,10 +25,6 @@
     <!-- endbuild -->
   </head>
   <body>
-    <!--[if lt IE 9]>
-      <p class="alert alert-warning text-center outdated-browser">You are using an <strong>outdated</strong> browser. Please <a class="alert-link" href="http://outdatedbrowser.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
     <%- @content %>
 
     <!-- build:js({.tmp,bower_components}) /assets/main.js -->
