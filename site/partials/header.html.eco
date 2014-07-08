@@ -2,17 +2,9 @@
   <div class="container<%= "-fluid" if @fluid %>">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-
       <a class="navbar-brand" href="/"><img class="logo" src="/assets/img/logo.svg" alt="Vanilla Forums" width="102" height="41"> Docs</a>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse">
       <div class="navbar-form navbar-left">
         <div class="dropdown js-search" role="search">
