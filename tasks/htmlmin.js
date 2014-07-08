@@ -8,6 +8,7 @@ module.exports = {
     , minifyCSS: true
     , minifyJS: true
     , removeAttributeQuotes: true
+    , removeComments: true
     , removeCommentsFromCDATA: true
     , removeEmptyAttributes: true
     , removeOptionalTags: true
