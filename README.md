@@ -22,6 +22,20 @@ The "Workflow" folder is teams collaborating with Vanilla Forums, Inc. on projec
 * Please use H2 (`##` in Markdown) as your top-level headings in each file.
 * Always use an `images` folder in the same subfolder as the content referencing it.
 
+### YAML Meta
+
+The following meta data can be defined in the YAML Front Matter block of each document:
+
+Key           | Type    | Description
+---           | ---     | ---
+`title`       | String  | Title of the page. Will appear in the search results, breadcrumbs, sidebar, and `<title>` tag.
+`description` | String  | Description used in the `<meta name="description">` tag.
+`categories`  | Array   | Array of document categories. Used for the search results.
+`order`       | Integer | Document order. Used for sorting in breadcrumbs and sidebar (low to high).
+`menu`        | String  | Optional title for use in breadcrumbs and sidebar.
+`hidden`      | Boolean | Whether or not to hide the document from breadcrumbs and sidebar.
+`keywords`    | Array   | Array of keywords used in the `<meta name="keywords">` tag.
+
 ## Running locally
 
 The following instructions assume that you have already installed Node.js on your computer. If this is not the case, please download and install the latest stable release from the official [Node.js download page](http://nodejs.org/download/). If you are using [Homebrew](http://brew.sh/), you can also install Node.js via the command line:
