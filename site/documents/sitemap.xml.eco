@@ -1,4 +1,4 @@
-<% pages = @getCollection('docs').findAllLive({}, [title:1]).toJSON() %><?xml version="1.0" encoding="UTF-8"?>
+<% pages = @getCollection('docs').findAllLive({}, [url:1]).toJSON() %><?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><% for page, pageIndex in pages: %>
   <url>
     <loc><%= @site.url + page.url %></loc>
