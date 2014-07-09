@@ -1,4 +1,4 @@
-<% pages = @getCollection('docs').toJSON() %>{
+<% pages = @getCollection('docs').findAllLive({}, [title:1]).toJSON() %>{
   "docs": [<% for page, pageIndex in pages: %>{
     "url": "<%= page.url %>",
     "title": "<%= page.title %>",
