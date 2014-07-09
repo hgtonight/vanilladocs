@@ -16,7 +16,9 @@ module.exports = function (grunt, options) {
           layout: {
             $has: ['docs', 'api']
           }
-        });
+        }, [{
+          url: 1
+        }]);
       }
     }
   , plugins: {
