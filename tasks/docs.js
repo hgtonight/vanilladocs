@@ -24,9 +24,6 @@ module.exports = function (grunt, options) {
         static: true
       , collectionName: 'docs'
       }
-    , sitemap: {
-        collectionName: 'docs'
-      }
     , shortcodeparser: {
         codes: require('../site/shortcodes')
       }
