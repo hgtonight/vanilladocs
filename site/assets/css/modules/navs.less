@@ -3,6 +3,7 @@
 // Styleguide Modules.Navs
 
 .docs-nav {
+  margin-bottom: @line-height-computed;
   font-size: 12px;
 
   p {
@@ -44,6 +45,10 @@
 
     li {
       margin: 5px 0;
+
+      @media (max-width: @screen-xs-max) {
+        margin: 10px 0;
+      }
 
       > a {
         padding: 0;
