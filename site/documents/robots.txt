@@ -3,3 +3,4 @@ Disallow: README.md
 Disallow: CNAME
 Disallow: search.json
 Disallow: 404.html
+Disallow: manifest.appcache
