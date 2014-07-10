@@ -10,7 +10,8 @@ module.exports = {
       ]
     }
   , src: [
-      '**/*.{html,css,js,json,svg,png,jpg}'
+      '**/index.html'
+    , '**/*.{css,js,json,svg,png,jpg}'
     ]
   , dest: 'dist/manifest.appcache'
   }
