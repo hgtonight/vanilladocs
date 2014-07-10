@@ -25,6 +25,7 @@
     "grunt-contrib-uglify": "*",
     "grunt-contrib-watch": "*",
     "grunt-gh-pages": "*",
+    "grunt-manifest": "*",
     "grunt-rev": "*",
     "grunt-uncss": "*",
     "grunt-usemin": "*",

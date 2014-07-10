@@ -14,6 +14,7 @@ module.exports = {
   , 'rev'
   , 'usemin'
   , 'htmlmin'
+  , 'manifest'
   ]
 , serve: [
     'docs'
