@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" manifest="manifest.appcache">
+<html lang="en" manifest="/manifest.appcache">
   <head>
     <meta charset="utf-8">
     <title><%- @document.title + " &middot; " if @document.url isnt "/" %><%- @site.title %></title>
