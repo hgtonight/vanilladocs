@@ -47,8 +47,8 @@ module.exports = {
       livereload: true
     }
   , files: [
-      '.tmp/assets/*'
-    , 'dist/**/*'
+      '.tmp/assets/*.{css,js}'
+    , 'dist/**/*.{html}'
     ]
   }
 };
