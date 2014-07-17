@@ -11,6 +11,6 @@ module.exports = {
       ]
     }
   }
-, html: 'dist/**/*.html'
 , js: 'dist/assets/*.js'
+, html: 'dist/**/*.html'
 };
