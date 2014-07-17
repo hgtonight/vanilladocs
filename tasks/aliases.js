@@ -26,7 +26,6 @@ module.exports = {
 , deploy: [
     'wiredep'
   , 'build'
-  , 'cdnify'
   , 'gh-pages'
   ]
 , default: [
