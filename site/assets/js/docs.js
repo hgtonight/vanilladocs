@@ -1,5 +1,15 @@
 ;(function ($, window, document, undefined) {
 
+  // Load web fonts
+  WebFont.load({
+    google: {
+      families: [
+        'Source Sans Pro:300,400,600,300italic,400italic,600italic:latin'
+      , 'Source Code Pro:400,600:latin'
+      ]
+    }
+  });
+
   var cache = {
     set: function (key, val, exp) {
       store.set(key, {
