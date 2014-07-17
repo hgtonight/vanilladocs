@@ -11,7 +11,7 @@ module.exports = {
   , 'concat'
   , 'uglify'
   , 'cssmin'
-  , 'rev'
+  , 'filerev'
   , 'usemin'
   , 'htmlmin'
   , 'manifest'
