@@ -9,8 +9,8 @@ module.exports = {
       protocol: false
     , hostname: 'cdn.rawgit.com'
     , pathname: path.join(
-        process.env.GH_OWNER
-      , process.env.GH_PROJECT_NAME
+        process.env.GH_OWNER || ''
+      , process.env.GH_PROJECT_NAME || ''
       , 'gh-pages'
       )
     })
