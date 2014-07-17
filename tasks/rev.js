@@ -4,7 +4,8 @@ module.exports = {
   dist: {
     files: {
       src: [
-        'dist/assets/**/*.{js,css,svg,png,jpg}'
+        'dist/*.json'
+      , 'dist/assets/**/*.{js,css,svg,png,jpg}'
       ]
     }
   }
