@@ -50,7 +50,7 @@
     });
 
     $.ajax({
-      url: '/search.json'
+      url: window.searchManifest
     })
     .done(function (data) {
       $.each(data.docs, function (i, doc) {

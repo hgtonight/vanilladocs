@@ -6,11 +6,11 @@ module.exports = {
       'dist'
     ]
   , patterns: {
-      js: [
-        [/url:\s*['"]([^"']+\.json)['"]/gm, 'Update references to local Ajax\'ed JSON documents']
+      searchgrun: [
+        [/searchManifest\s=\s*['"]([^"']+\.json)['"]/gm, 'Update references to search manifest']
       ]
     }
   }
-, js: 'dist/assets/*.js'
 , html: 'dist/**/*.html'
+, search: 'dist/**/*.html'
 };

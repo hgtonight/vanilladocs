@@ -27,6 +27,12 @@
   <body>
     <%- @content %>
 
+    <!--
+    The reference to the search manifest gets automatically revisioned to
+    ensure CDN support.
+    -->
+    <script>window.searchManifest = '/search.json';</script>
+
     <!-- build:js({.tmp,bower_components}) /assets/main.js -->
     <!--
     The files below are automatically injected based on the Bower package
