@@ -5,6 +5,7 @@ module.exports = {
     'clean'
   , 'docs'
   , 'less'
+  , 'autoprefixer'
   , 'copy'
   , 'uncss'
   , 'useminPrepare'
