@@ -8,7 +8,7 @@ categories: ["Addons"]
 
 The Vanilla Statistics plugin allows forum administrators to review vital activity on their forums over a specific time periods.
 
-![Example of dashboard page](images/dashboard.png)
+![Example of dashboard page](/images/dashboard.png)
 
 
 ## How to use Vanilla Statistics

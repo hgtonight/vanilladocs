@@ -20,7 +20,7 @@ The "Workflow" folder is teams collaborating with Vanilla Forums, Inc. on projec
 
 * Every doc file must end in `.html.md` and be formatted in Markdown.
 * Please use H2 (`##` in Markdown) as your top-level headings in each file.
-* Always use an `images` folder in the same subfolder as the content referencing it.
+* All images go within [`docs/images`](docs/images) and must be referenced absolutely (`/images/foo.png`).
 
 ### YAML Meta
 
