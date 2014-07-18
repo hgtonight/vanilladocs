@@ -31,7 +31,7 @@
     The reference to the search manifest gets automatically revisioned to
     ensure CDN support.
     -->
-    <script id="search-manifest" src="/search.json" type="application/json"></script>
+    <script src="/search.json" id="search-manifest" type="application/json"></script>
 
     <!-- build:js({.tmp,bower_components}) /assets/main.js -->
     <!--
