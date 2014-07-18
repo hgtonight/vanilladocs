@@ -6,7 +6,7 @@ module.exports = {
       'dist'
     ]
   , patterns: {
-      searchgrun: [
+      search: [
         [/searchManifest\s=\s*['"]([^"']+\.json)['"]/gm, 'Update references to search manifest']
       ]
     }
