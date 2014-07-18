@@ -3,40 +3,7 @@
 var docpad = require('docpad');
 
 module.exports = function (grunt, options) {
-  var config = {
-    srcPath: 'site'
-  , outPath: 'dist'
-  , documentsPaths: [
-      'documents/'
-    , '../docs/'
-    ]
-  , collections: {
-      docs: function () {
-        return this.getCollection('html').findAllLive({
-          layout: {
-            $has: ['docs', 'api']
-          }
-        }, [{
-          url: 1
-        }]);
-      }
-    }
-  , plugins: {
-      cleanurls: {
-        static: true
-      , collectionName: 'docs'
-      }
-    , shortcodeparser: {
-        codes: require('../site/shortcodes')
-      }
-    }
-  , templateData: {
-      site: {
-        title: 'Vanilla Documentation'
-      , url: 'http://docs.vanillaforums.com'
-      }
-    }
-  };
+  var config = require('../site/config');
 
   grunt.registerTask('docs', function () {
     var done = this.async();
