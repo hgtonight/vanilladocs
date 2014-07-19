@@ -45,12 +45,12 @@
     <script src="/bootstrap/js/affix.js"></script>
     <script src="/lunr.js/lunr.js"></script>
     <script src="/store.js/store.js"></script>
+    <script src="/components-webfontloader/webfont.js"></script>
     <!-- endbower -->
     <!--
     All custom scripts should be included here. They will be concatenated with
     the dependencies installed via Bower when building the docs.
     -->
-    <script src="//ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js"></script>
     <script src="/assets/docs.js"></script>
     <!-- endbuild -->
 
