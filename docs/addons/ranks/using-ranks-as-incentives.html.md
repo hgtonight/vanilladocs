@@ -4,9 +4,11 @@ layout: docs
 categories: ["Features", "Addons", "Ranks"]
 ---
 
+## Using Ranks: Incentives
+
 You can use Ranks as an incentive for members to participate by rewarding them for more and better participation.
 
-## Example Case
+### Example Case
 
 What follows is an example for abilities to grant to higher ranks. It uses the default ranks Levels 1-5 and assumes the default Criteria of 50, 100, 500, and 1000 points for Level 2 thru 5 consecutively.
 
