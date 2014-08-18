@@ -9,7 +9,25 @@ categories: ["Developers"]
 2.1
 ===
 
-### 2.1.0
+
+### 2.1.1
+
+*[Released 2 Aug 2014](http://vanillaforums.org/discussion/27540/vanilla-2-1-1-important-security-bug-release)*
+
+
+* HtmLawed was upgraded to close an XSS vector (thanks to Psych0tr1a for responsibly disclosing this to us & to HtmLawed for a fast patch in response).
+* Multiple XSS exploits were fixed (thanks to @x00 for responsibly disclosing and both he and @businessdad for assistance in making our patches as bulletproof as possible).
+* Fixed a Twitter SSL bug (thanks @Adrian for the patch).
+* Fixed a missing permission check in the sorting utility (thanks @R_J for the patch).
+* cleditor was patched to fix a crippling IE11 bug.
+* Profile Extender was upgraded and a security flaw in it was fixed.
+* Fixed a bug in Announcing while starting a discussion.
+* Corrected the default theme README.
+* Backported GDN_UserAuthenticationProvider.IsDefault so the latest version of jsConnect will work with 2.1.1.
+* Fixes a theme screenshot bug (thanks @hgtonight‌ for the patch).
+
+
+### 2.1
 
 *[Released 28 April 2014](http://vanillaforums.org/discussion/26685/vanilla-2-1-stable-released)*
 
