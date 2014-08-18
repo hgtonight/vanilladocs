@@ -98,9 +98,11 @@ Gdn::Database()->Structure()
    ->Column('Preferences', 'text', TRUE)
    ->Column('DateOfBirth', 'datetime', TRUE)
    ->Column('Score', 'float', NULL)
-   ->Set($Explicit, $Drop);
+   ->Set();
 ```
 
 `Column` takes 4 parameters: name, type, nulldefault (`true` to allow nulls, `false` to not - any other value becomes the default with disallowed nulls), and keytype ('primary', 'key', 'index', 'unique', or 'fulltext' - defaults to false). 
 
 `PrimaryKey` creates an auto-incrementing column. The Gender column uses an array to create an `enum` type; the rest are self-explanatory. 
+
+The `Set()` method takes 2 parameters which should nearly _always_ be false, which is their default. The first is `$Explicit` which is whether to force the structure of the table to match _exactly_ the definition above. The second is `$Drop` which is whether to drop and recreate the table. 
