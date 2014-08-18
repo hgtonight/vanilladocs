@@ -19,7 +19,7 @@ There are four delivery types available:
 
 If no delivery type is provided in the request, `DELIVERY_TYPE_ALL` is assumed.
 
-In order to made the controller deliver content other than `DELIVERY_TYPE_ALL`, you would have to append the request URL (or post data) with the `DeliveryType` parameter set to the above value you want. 
+In order to make the controller deliver content other than `DELIVERY_TYPE_ALL`, you would have to append the request URL (or post data) with the `DeliveryType` parameter set to the above value you want. 
 
 A `DELIVERY_TYPE_VIEW` request can be easily used for progressive data loading. That or a `DELIVERY_TYPE_ASSET` request could be used to update part of a page. A `DELIVERY_TYPE_BOOL` request is used for actions like closing a discussion.
 
