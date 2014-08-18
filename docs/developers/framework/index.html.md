@@ -4,9 +4,17 @@ layout: docs
 categories: ["Developers","Framework"]
 ---
 
-## Garden
+## Garden's place in Vanilla
 
 Vanilla is built on an MVC framework named Garden. Its purpose is to provide an extensible, pluggable platform on which to build all the addons that make Vanilla awesome. The design of its database handling was influenced by CodeIgniter, but its plugin architecture is pretty unique.
+
+Technically, Vanilla is a forum application (addon) built on top of the Garden framework. However, we typically refer to the entire stack as "Vanilla" for branding consistency and simplicity - including in these docs. 
+
+Garden is a secondary concern to Vanilla, and therefore our decisions on the framework are primarily focused on improving the Vanilla application. In practice, this means that an issue or enhancement that effects Vanilla will be prioritized over one that exists solely to round out Garden's framework features.
+
+## Addons are everything
+
+Addons are the most important feature of the Garden framework. Our crown jewel, the Vanilla forum itself, is technically an addon. There are many ways for addons to hook into each other, and we're constantly refining their integration.
 
 There are 4 types of addons in Garden:
 
@@ -15,7 +23,19 @@ There are 4 types of addons in Garden:
 * Applications
 * Locales
 
-At some point in the near future, we'll be combining applications and plugins to simplify things. In the meantime, the primary difference between them is that applications can use native controllers more easily, making more complex software a little less messy to navigate.
+In the future, we plan to combine applications and plugins to simplify things. In the meantime, the primary difference between them is that applications can use native controllers more easily, making more complex software a little less messy to navigate. However, as of 2.3, plugins will be able to use native controllers.
+
+Themes have the full power of plugins via their hooks file, but we suggest only using it for aesthetic changes.
+
+## File structure
+
+The core framework files are located in `/library/core`. The database layer is contained in `/library/database` and third-party libraries are in `/library/vendors`.
+
+Our framework's frontend is built on Javascript and jQuery. jQuery files and plugins are in `/js/library` while files in the root `js` folder are custom to our framework.
+
+Common subfolders in addons will include `design` (CSS and images), `js`, `modules`, `views`, and `settings` (structure and config).
+
+Non-view PHP files are named in the format `{type}.{name}.php`. "Type" is one of class, functions, or interface. We do not rename third-party files included in Vanilla. Classes in addons nearly always inherit from one or more framework classes.
 
 ## Default applications
 
@@ -28,6 +48,8 @@ If you just want to use the Garden framework, you could, theoretically, disable 
 ## Let the code guide you
 
 Because so much is possible with the Garden framework, it can be intimidating to get started. Our best advice is: look at an existing plugin that does something *close* to what you're attempting to see how they do it. Code examples are the very best way to learn about Garden, and they can guide you to new solutions you didn't know were possible.
+
+The Skeleton application in `/applications/skeleton` is heavily documented inline to help you get started.
 
 ## Where to start
 
