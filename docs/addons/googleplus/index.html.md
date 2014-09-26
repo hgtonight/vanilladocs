@@ -18,4 +18,4 @@ The Google Plus Sign-In adds the ability to sign to your community with Google P
 6. For authorized redirect URL, add "/entry/googleplus" to your Vanilla Forums URL.
 7. Copy over Client ID and Secret into appropriate fields in Vanilla Dashboard.
 
-![Settings in Google Plus](images/Google_Developers_Console_Settings.png)
+![Settings in Google Plus](/addons/googleplus/images/Google_Developers_Console_Settings.png)
