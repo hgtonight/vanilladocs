@@ -10,7 +10,7 @@ The Google Plus Sign-In adds the ability to sign to your community with Google P
 
 ### Setting up social login in Google Plus
 
-1. Once you have enabled the Google+ Plugin in your vanilla Dashboard, go to your API Console at Google.
+1. Once you have enabled the Google+ Plugin in your Vanilla Dashboard, go to your API Console at Google.
 2. You will  need to create a project.
 2. Once you have a project, click on the project name. You will be presented with a side menu. Select “Credentials”. 
 3. Create New ClientID and fill in the form.
