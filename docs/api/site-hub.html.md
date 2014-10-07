@@ -6,9 +6,9 @@ categories: ["API"]
 
 ## Overview
 
-The site hub api allows you to create sites on your VIP cluster. You can make hub api calls just like other api calls, but you make those calls against your site hub rather than an individual site. Most hub api calls will be against `https://yourdomain.com/hub/api/v1`.
+The site hub is a special service for VIP customers. It allows you to create sites on your VIP cluster and is used for people that want to integrate communities within their entire organization. You can make hub api calls just like other api calls, but you make those calls against your site hub rather than an individual site. Most hub api calls will be against `https://yourdomain.com/hub/api/v1`.
 
-All endpoints for multisites require an access token with administrative privledges.
+*Note: All endpoints for multisites require an access token with administrative privledges.*
 
 ## GET /multisites
 
