@@ -45,7 +45,7 @@ Parameter           | Type      | Description
 __`Name`__          | `string`  | A human readable name for the site.
 __`Slug`__          | `string`  | The site's folder. Make sure to use just alphanumeric, lowercase characters for the slug.
 
-## GET /multisites/<id>
+## GET /multisites/&gt;id&lt;
 
 ```
 GET /hub/api/v1/multisites/1.json?access_token=token HTTP/1.1
