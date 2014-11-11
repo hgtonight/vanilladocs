@@ -16,7 +16,7 @@ This topic deals with importing your old forum into Vanilla 2 using the Vanilla 
 
 We’ve made a tool that you can use to put your old forum into a format that Vanilla 2 can import. We currently support [these platforms](/developers/importing/support). Here is how you use it:
 
-1. Grab the Vanilla 2 exporter [here][export tool]. The download is one file that you will copy to your server and run.
+1. Grab the Vanilla 2 exporter [here](http://vanillaforums.org/addon/porter-core). The download is one file that you will copy to your server and run.
 2. Unzip the file to a directory in your old forum. For example, if your forum is located in **/www/mysite/myforum** then you would unzip the file to **/www/mysite/myforum/vanilla2export.php**.By default, the exporter will prompt you to save your export file. If your forum has a lot of data, it might make more sense to have the exporter save your data to a file on your server. If this is the case, you will need to place the vanilla2export.php file in a directory that is writable. Most forums have a **/files**or **/uploads** directory for this.
 3. Browse to vanilla2export.php in your web browser. You should see a page like this:![Vanilla Exporter UI](http://blog.vanillaforums.com/wp-content/uploads/2010/07/VanillaPorter.png)
 4. You will need to know some information about your database in order to do the export. If you can’t remember, try looking at your forum’s configuration file. Once you’ve entered the information click **Begin Export**.
