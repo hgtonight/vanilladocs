@@ -10,9 +10,9 @@ The Google Plus Sign-In adds the ability to sign to your community with Google P
 
 ### Setting up social login in Google Plus
 
-1. Create a project.
-2. Select credentials under APIS & Auth.
-3. Create New ClientID.
+1. Once in your API Console, create a project.
+2. Once you have a project, click on the project name. You will be presented with a side menu. Select “Credentials”. 
+3. Create New ClientID and fill in the form.
 4. Select Web Application as Type.
 5. For authorized Javascript Origins URL will be your Vanilla Forums URL
 6. For authorized redirect URL, add "/entry/googleplus" to your Vanilla Forums URL.
