@@ -8,7 +8,7 @@ categories: ["Features","Embedding"]
 
 Embedding Vanilla Forums works by putting a snippet of code on your website page, and may be a choice if you want to insert your forum into a site quickly. The snippet points to some javascript and the forum is embedded into the page using an iframe
 
-*Embedding Checklist*
+**Embedding Checklist**
 
 1.  Choose the embed friendly theme. This theme has minimal padding around it and will look good at any width.
 2.  Ensure you have enabled embed in your dashboard.
