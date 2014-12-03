@@ -5,9 +5,12 @@ categories: ["Developers","Configuration"]
 ---
 ##Messages - Talk to your Community
 
-Messages can appear anywhere in your application, and can be used to inform your users of news and events. Messages can be added to your forum by clicking on the Add Message button when on the Message page.
+Messages can appear anywhere in your community, and can be used to inform your users of news and events. 
 
-Message Options:
+###Configuring Messages 
+
+Messages can be added to your forum by clicking on the Add Message button when on the Message page, and choosing the following
+Message options:
 
 1. You can determine on which page a Message will seen, for example just on the profile page. 
 2. You can add a Message to a specfic category.
