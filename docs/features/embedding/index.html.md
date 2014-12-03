@@ -10,11 +10,9 @@ Embedding Vanilla Forums works by putting a snippet of code on your website page
 
 **Embedding Checklist**
 
-1.  Choose the embed friendly theme. This theme has minimal padding around it and will look good at any width.
-2.  Ensure you have enabled embed in your dashboard.
-3.  Set up the forum on a sub-domain. (Even though nobody will see the URL, this helps search engines attribute the SEO juice to your main domain.)
-4.  Register this sub-domain in your Google Webmaster Tools account. (If you are not embedding, you should do this too.)
-5.  Make sure that the page in which you embed is free of javascript errors.
+1.  Choose the embed friendly theme. This theme has minimal padding around it and will look good at any width. (Make modifications in Customize theme as you like).
+2.  Ensure you have ***"Enabled Embedding"*** in your dashboard.
+3.  Make sure that the page in which you embed is free of javascript errors.
 
 Some considerations when it comes to  Embedding: 
 
