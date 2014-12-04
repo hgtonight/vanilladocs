@@ -3,7 +3,6 @@ title: Homepage Settings
 layout: docs
 categories: ["Developers","Configuration"]
 ---
-## Homepage - Change the Default Landing Page of your Forum
+## Homepage
 
-The Homepage settings page allows you to change what people see when they visit your site. 
-We use "Discussions" as your homepage by default, but you can change it to whatever you like.
+The Homepage settings allows you to change the default homepage of your community when they visit your site.  By default, Vanilla will use "Discussions" as your homepage, but you can change it to whatever you like.
