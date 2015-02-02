@@ -10,6 +10,8 @@ The Developers section is primarily targeted at folks using the **open source pr
 
 Clients of VanillaForums.com (cloud) should [contact support](http://vanillaforums.com/help) to address technical issues. Our hosted product does not allow direct file access to ensure security and performance, which precludes many instructions in this section.
 
-## Responsible Disclosure
+## Security Issues and Responsible Disclosure
 
-Find a security issue that requires an immediate patch before knowledge of it is widespread? Or, has a previously unreported exploit been found "in the wild"? Please contact the senior development team directly at dev [at] vanillaforums [dot] com. For all other issues, please use the [GitHub issue tracker](http://github.com/vanillaforums/vanilla).
+Found a security issue? Please contact us at support@vanillaforums.com. This allows us to release a patch as quickly as possible and, hopefully, before knowledge of it becomes widespread. For all other issues, please use the [GitHub issue tracker](http://github.com/vanillaforums/vanilla).
+
+We do not currently offer a bug bounty program. We count on the support of the tens of thousands of folks running our software freely around the world to help us improve the product for the benefit of everyone.
