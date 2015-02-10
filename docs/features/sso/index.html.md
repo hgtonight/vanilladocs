@@ -64,3 +64,7 @@ We bounce them to your sign-in page after they sign-out on the forum. To do the 
 **What do we do if SSO breaks and we're locked out?**
 
 You can log back in using the "hidden" URL `/entry/password` to sign-in with an existing forum account. This page is never redirected for SSO.
+
+**Does this work for native applications, non-web scenarios, or third-party products?** 
+
+No, jsConnect is purely a web-based SSO workflow for your existing login system. We have separate products for popular third-party platforms and non-web scenarios.
