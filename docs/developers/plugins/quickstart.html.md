@@ -38,7 +38,7 @@ First, create a folder in the `plugin` directory, using the slug name you select
 <php
 // Define the plugin:
 $PluginInfo['FancyPlugin'] = array(
-   'Name' => 'Lincoln's Fancy Plugin',
+   'Name' => 'Lincoln&rsquo;s Fancy Plugin',
    'Description' => 'This is a sample plugin.',
    'Version' => '1.0',
    'Author' => "Your Name",
@@ -53,7 +53,9 @@ The array key (`FancyPlugin` above) ***must exactly match*** the folder name, in
 
 #### Define basic info
 
-The `Name` parameter is optional; it will default to the slug if omitted. Provide a great `Description` that briefly explains what your plugin does from the users' perspective. For `Version`, familiarize yourself with [semantic versioning](http://semver.org/).
+The `Name` parameter is optional; it will default to the slug if omitted. To include special characters here or in the description, use their HTML code.
+
+Provide a great `Description` that briefly explains what your plugin does from the users' perspective. For `Version`, familiarize yourself with [semantic versioning](http://semver.org/).
 
 The `Author` parameters are at your discretion. We recommend using a support address for both the email and URL.
 
