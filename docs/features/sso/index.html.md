@@ -49,6 +49,10 @@ To get very tight SSO integration, you will also want to:
 
 Always carefully test your basic SSO setup BEFORE changing your registration method to 'Connect' OR attempting an [embedded SSO solution](http://blog.vanillaforums.com/jsconnect-technical-documentation-for-embedded-sso/).
 
+**Can't we just add users over the API?**
+
+We _strongly recommend against_ adding users over the API. Using jsConnect and allowing it to add users as they sign-in is the most robust and reliable approach that will cause you the fewest issues.
+
 **Can we use multiple SSO connections?**
 
 Absolutely. However, only one can be the default, which is what will trigger when `/sso` is used.
@@ -67,4 +71,16 @@ You can log back in using the "hidden" URL `/entry/password` to sign-in with an 
 
 **Does this work for native applications, non-web scenarios, or third-party products?** 
 
-No, jsConnect is purely a web-based SSO workflow for your existing login system. We have separate products for popular third-party platforms and non-web scenarios.
+No. jsConnect is purely a web-based SSO workflow for your existing login system. We have separate products for popular third-party platforms and non-web scenarios.
+
+**Can we reverse-SSO to Vanilla via API to see if a user is logged in there?**
+
+Not at this time.
+
+**Can we use jsConnect without providing an email address?**
+
+No. You absolutely must send an email, which is the only method for mapping users. If you are importing forum users without email addresses and need a way to map them over SSO, we recommend using dummy email addresses that follow a formula like `{uniqueID}`@yoursite.com. 
+
+**Our system has overlapping names but Vanilla needs unique ones. How can we handle this?**
+
+We strongly recommend assigning them unique usernames in your system, then passing that unique username to jsConnect. Keep in mind that, for features like mentions and autocomplete to work, usernames must be unique and adhere to Vanilla's username restrictions. Passing a duplicate `Name` field for a new user over jsConnect will cause the connection to fail.
