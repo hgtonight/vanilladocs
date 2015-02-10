@@ -84,3 +84,7 @@ No. You absolutely must send an email, which is the only method for mapping user
 **Our system has overlapping names but Vanilla needs unique ones. How can we handle this?**
 
 We strongly recommend assigning them unique usernames in your system, then passing that unique username to jsConnect. Keep in mind that, for features like mentions and autocomplete to work, usernames must be unique and adhere to Vanilla's username restrictions. Passing a duplicate `Name` field for a new user over jsConnect will cause the connection to fail.
+
+**Can we set roles over jsConnect?**
+
+Yes, see our [technical documentation](http://blog.vanillaforums.com/jsconnect-technical-documentation/) for more information.
