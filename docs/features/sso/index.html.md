@@ -26,7 +26,7 @@ Our example libaries help you structure the output so that jsConnect can read it
 
 ### How jsConnect maps users
 
-After calling your endpoint and getting a "signed in" reply, jsConnect looks up the user. If they've _already_ done SSO before, we've permanently mapped them (your unique ID to our UserID) so we sign them into that account. If they _haven't_ used SSO before, 1 of 3 things happens:
+After calling your endpoint and getting a "signed in" reply, jsConnect looks up the user. If they've _already_ used SSO, we've permanently mapped their unique ID to our UserID, so we sign them into that account. If they _haven't_ used SSO before, 1 of 3 things happens:
 
 1. If the email for the user has never been used on the forum, it makes them a new account using the data passed and signs them into it.
 2. If the email is in use and `AutoConnect` is enabled, we will immediately sign them in (and permanently store the mapping).
@@ -41,13 +41,17 @@ To get very tight SSO integration, you will also want to:
 1. Change your registration method to 'Connect' to block non-SSO users from registering.
 2. Set your sign-in, sign-out, and registration URLs under jsConnect's settings in your Dashboard.
 3. Check "Make this connection your default signin method." 
-4. When linking or redirecting signed-in users to your forum, use the `/sso` endpoint on the forum. This triggers jsConnect's user lookup **on the connection with "default sign in method" selected** without the user needing to click. Optionally provide a `Target` parameter with a relative path to specify where they should ultimately land on the forum. Example: `http://forum.yoursite.com/sso?Target=/categories`. This is the final critical step in a fully seamless experience.
+4. When linking or redirecting signed-in users to your forum, use the `/sso` endpoint on the forum. This triggers jsConnect's user lookup **on the connection with "default sign in method" selected** without the user needing to click. Optionally, you can provide a `Target` parameter with a relative path to specify where they should ultimately land on the forum. Example: `http://forum.yoursite.com/sso?Target=/categories`. This is the final critical step in a fully seamless experience.
 
 ### Common questions
 
 **How do we start troubleshooting?**
 
 Always carefully test your basic SSO setup BEFORE changing your registration method to 'Connect' OR attempting an [embedded SSO solution](http://blog.vanillaforums.com/jsconnect-technical-documentation-for-embedded-sso/).
+
+**What do we do if SSO breaks and we're locked out?**
+
+You can log back in using the "hidden" URL `/entry/password` to sign-in with an existing forum account. This page is never redirected for SSO.
 
 **Can't we just add users over the API?**
 
@@ -64,10 +68,6 @@ If you've followed all the steps above, the only way a user can be not signed in
 **How is sign-out handled?**
 
 We bounce them to your sign-in page after they sign-out on the forum. To do the opposite, redirect users thru our sign-out page, again passing a `Target` parameter so they finish where you want them to.
-
-**What do we do if SSO breaks and we're locked out?**
-
-You can log back in using the "hidden" URL `/entry/password` to sign-in with an existing forum account. This page is never redirected for SSO.
 
 **Does this work for native applications, non-web scenarios, or third-party products?** 
 
