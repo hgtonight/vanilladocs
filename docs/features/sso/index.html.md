@@ -36,18 +36,22 @@ Vanilla Cloud customers should request Support enable `AutoConnect` if they desi
 
 ### Tightening the integration
 
-To get very tight SSO integration, you will also want to:
+To get very tight SSO integration, you will also want to follow these steps. Always carefully test your _basic_ SSO authentication **before** tightening your integration.
 
 1. Change your registration method to 'Connect' to block non-SSO users from registering.
 2. Set your sign-in, sign-out, and registration URLs under jsConnect's settings in your Dashboard.
 3. Check "Make this connection your default signin method." 
 4. When linking or redirecting signed-in users to your forum, use the `/sso` endpoint on the forum. This triggers jsConnect's user lookup **on the connection with "default sign in method" selected** without the user needing to click. Optionally, you can provide a `Target` parameter with a relative path to specify where they should ultimately land on the forum. Example: `http://forum.yoursite.com/sso?Target=/categories`. This is the final critical step in a fully seamless experience.
+5. For seamless SSO on an embedded forum, see our [embedded SSO solution](http://blog.vanillaforums.com/jsconnect-technical-documentation-for-embedded-sso/).
+
+### Testing the integration
+
+Use the "Test URL" link under your jsConnect settings to see if your endpoint is returning a good response. 
+
+Try using your browser's Incognite/Private window mode for testing. This allows you to have a separate "test" session while you stay logged in as the administrator in your main session to make changes quickly.
+
 
 ### Common questions
-
-**How do we start troubleshooting?**
-
-Always carefully test your basic SSO setup BEFORE changing your registration method to 'Connect' OR attempting an [embedded SSO solution](http://blog.vanillaforums.com/jsconnect-technical-documentation-for-embedded-sso/).
 
 **What do we do if SSO breaks and we're locked out?**
 
@@ -88,3 +92,9 @@ We strongly recommend assigning them unique usernames in your system, then passi
 **Can we set roles over jsConnect?**
 
 Yes, see our [technical documentation](http://blog.vanillaforums.com/jsconnect-technical-documentation/) for more information.
+
+**The settings & endpoint response look correct now, but it's still not working or redirecting properly.**
+
+Try clearing your cookies and browser cache and restarting your browser. Use Incognito/Private mode whenever possible. Also, beware of Firefox caching redirects; when in doubt, double-check a redirect using another browser.
+
+Repeatedly attempting SSO with many sessions and accounts with changing settings can cause unexpected results. This isn't a problem users would ever run into day-to-day.
