@@ -22,6 +22,7 @@ Migration tools are available for the following platforms. All migration tools m
 * Joomla Kuena
 * Drupal Forum
 * MyBB
+* esoTalk
 
 ### ASP / .NET forums
 
