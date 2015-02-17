@@ -11,13 +11,13 @@ Migration tools are available for the following platforms. All migration tools m
 ### PHP forums
 
 * Vanilla 1
-* phpBB
-* vBulletin
-* bbPress
-* SimplePress
-* Simple Machines
-* PunBB
-* IP.Board
+* phpBB 2-3
+* vBulletin 3-5
+* bbPress 1
+* SimplePress 1
+* Simple Machines 1-2
+* PunBB 1
+* IP.Board 3
 * XenForo
 * Joomla Kuena
 * Drupal Forum
