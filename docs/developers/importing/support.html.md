@@ -23,6 +23,7 @@ Migration tools are available for the following platforms. All migration tools m
 * Drupal Forum
 * MyBB
 * esoTalk
+* Expression Engine
 
 ### ASP / .NET forums
 
