@@ -18,4 +18,4 @@ The best way to get started with theming is to run thru our [Quickstart](/themin
 
 ### Cloud upgrade considerations
 
-If you're considering moving to one of the lower cloud plans in the future, we recommend limiting your modifications to the default.master.tpl view and CSS overrides. That will allow a smooth transition without any customization services being required.
+If you're considering moving to one of our cloud plans in the future, we recommend limiting your modifications to the default.master.tpl view and CSS overrides. That will allow a smooth transition without any customization services being required.
