@@ -14,7 +14,7 @@ Your config-defaults file should **never** be edited. It is overwritten during e
 
 All configuration changes are to be exclusively made to your config.php file. We recommend periodically making a backup copy of your `config.php` and storing it in a safe location (not on your web server).
 
-## Editing configuation
+## Editing configuration
 
 ```php
 <?php
